@@ -1,25 +1,27 @@
 baseURL = "https://example.com/"
-title = "Compose Docs"
+title = "Henri L."
 enableRobotsTXT = true
 # this example loads the theme as hugo module
 # comment out line below, and uncomment the line after it if you prefer to load the theme normally
-theme = ["github.com/onweru/compose"] # edit this if you'ld rather use a fork of this repo
-# theme = "compose"
+# theme = ["github.com/onweru/compose"] # edit this if you'ld rather use a fork of this repo
+theme = "compose"
 enableGitInfo = true
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 #  menu items
 [[menu.main]]
-    name = "Docs"
+    name = "PHP"
     weight = 2
-    url = "docs/"
-
+    url = "/php"
 [[menu.main]]
-    name = "Example"
+    name = "Systems"
     weight = 3
-    url = "https://docs.neuralvibes.com"
-
+    url = "/systems"
+[[menu.main]]
+    name = "Symfony"
+    weight = 4
+    url = "/dim"
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -45,7 +47,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
 
-  repo = "https://github.com/onweru/compose"
+  repo = "https://github.com/decima/cv"
 
   time_format_blog = "Monday, January 02, 2006"
   time_format_default = "January 2, 2006"
@@ -53,16 +55,12 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
   # Site logo
   [params.logo]
-    lightMode = "compose.svg"
-    darkMode = "compose-light.svg"
+    lightMode = "logo-dark.svg"
+    darkMode = "logo-light.svg"
 
-  [params.source]
-    name = "GitHub"
-    icon = "github.svg"
-    url = "https://github.com/onweru/compose/"
 
   # optional
   # attribution. Feel free to delete this
   [params.author]
-    name = "Weru"
-    url = "https://neuralvibes.com/author/"
+    name = "Henri LARGET"
+    url = "https://larget.fr"
