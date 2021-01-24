@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PHP-101 on Henri L.</title>
+    <link>http://0fd660284dee.ngrok.io/php/php-101/</link>
+    <description>Recent content in PHP-101 on Henri L.</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://0fd660284dee.ngrok.io/php/php-101/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro</title>
+      <link>http://0fd660284dee.ngrok.io/php/php-101/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/php/php-101/intro/</guid>
+      <description>PHP, c&#39;est quoi ? 🐘 PHP (officiellement, ce sigle est un acronyme récursif pour PHP Hypertext Preprocessor) est un langage de scripts généraliste et Open Source, spécialement conçu pour le développement d&#39;applications web. Il peut être intégré facilement au HTML.
+TOP ! mais... ça veut dire quoi 🤷 ? Un exemple :
+Exemple #1 Exemple d&#39;introduction
+1 2 3 4 5 6 7 8 9 10 11  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Exemple&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;?</description>
+    </item>
+    
+    <item>
+      <title>Installation et Prérequis</title>
+      <link>http://0fd660284dee.ngrok.io/php/php-101/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/php/php-101/install/</guid>
+      <description>La seule chose qui sera requise pour cette partie du cours sera PHP 8 installé sur votre machine.
+Linux 🐧 Ubuntu (avec APT) Il faut dabord ajouter le PPA PHP de Ondrej Sury, le PPA le plus maintenu à jour avec PHP.
+sudo add-apt-repository ppa:ondrej/php sudo apt-get update Une fois les bibliothèques mises à jour, il ne reste plus qu&#39;à installer php :
+sudo apt-get install php8.0-common php8.0-cli Mac OSX 🍏 Le plus simple pour installer PHP 8 sur Mac OSX est d&#39;installer d&#39;abord Homebrew.</description>
+    </item>
+    
+    <item>
+      <title>Basic Syntax</title>
+      <link>http://0fd660284dee.ngrok.io/php/php-101/basic_syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/php/php-101/basic_syntax/</guid>
+      <description>Scripts et Fichiers PHP Le PHP est un langage interprété comme le javascript. Lors de l&#39;execution le code source est lu puis executé par l&#39;interpréteur PHP. Aucun executable n&#39;est produit donc seul le code source est distribué.
+La manière la plus simple d&#39;executer du code PHP est de créer un fichier avec l&#39;extension .php et de lancer la commande suivante :
+1  php monScript.php   la balise PHP s&#39;utilise ainsi</description>
+    </item>
+    
+  </channel>
+</rss>

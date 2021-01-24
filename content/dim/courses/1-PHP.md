@@ -4,7 +4,7 @@ weight: 1
 ---
 
 ## Introduction
-### À quoi ça sert ?
+### Why ?
 
 - Langage de scripting
 - Langage Backend pour le web

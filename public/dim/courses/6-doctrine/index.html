@@ -1,0 +1,1246 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.79.1" />
+<link rel="apple-touch-icon" sizes="180x180" href='http://0fd660284dee.ngrok.io/favicons/apple-touch-icon.png'>
+<link rel="icon" type="image/png" sizes="32x32" href='http://0fd660284dee.ngrok.io/favicons/favicon-32x32.png'>
+<link rel="icon" type="image/png" sizes="16x16" href='http://0fd660284dee.ngrok.io/favicons/favicon-16x16.png'>
+<link rel="manifest" href='http://0fd660284dee.ngrok.io/favicons/site.webmanifest'>
+<link rel="mask-icon" href='http://0fd660284dee.ngrok.io/favicons/safari-pinned-tab.svg'  color="#004750">
+<link rel="shortcut icon" href='http://0fd660284dee.ngrok.io/favicons/favicon.ico'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.css" integrity="sha512-zu0eodDPCBAZf1vnIgwZ6qchMBt1xqgGkS9vBjVmunoH8pU7cc9OQKBiSQCclpvqySupy9Y1pLZc87VB40G4Sw==" crossorigin="anonymous" />
+<meta name="msapplication-config" content='http://0fd660284dee.ngrok.io/favicons/browserconfig.xml'>
+<title>6 - Doctrine | Henri L.</title><meta property="og:title" content="6 - Doctrine" />
+<meta property="og:description" content="Doctrine-Project est une suite de bibliothèques dont la fonction première est la manipulation de données de base de données.
+On distingue 2 projets Doctrine :
+Doctrine DBAL (DataBase Abstraction Layer) et Doctrine ORM (Object Relational Mapper).
+ Qu&#39;est-ce qu&#39;un ORM ?
+ Un mapping objet-relationnel (en anglais object-relational mapping ou ORM) est un type de programme informatique qui se place en interface entre un programme applicatif et une base de données relationnelle pour simuler une base de données orientée objet." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://0fd660284dee.ngrok.io/dim/courses/6-doctrine/" />
+<meta property="article:modified_time" content="2020-12-19T16:40:00+01:00" />
+<meta itemprop="name" content="6 - Doctrine">
+<meta itemprop="description" content="Doctrine-Project est une suite de bibliothèques dont la fonction première est la manipulation de données de base de données.
+On distingue 2 projets Doctrine :
+Doctrine DBAL (DataBase Abstraction Layer) et Doctrine ORM (Object Relational Mapper).
+ Qu&#39;est-ce qu&#39;un ORM ?
+ Un mapping objet-relationnel (en anglais object-relational mapping ou ORM) est un type de programme informatique qui se place en interface entre un programme applicatif et une base de données relationnelle pour simuler une base de données orientée objet.">
+<meta itemprop="dateModified" content="2020-12-19T16:40:00+01:00" />
+<meta itemprop="wordCount" content="1573">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="6 - Doctrine"/>
+<meta name="twitter:description" content="Doctrine-Project est une suite de bibliothèques dont la fonction première est la manipulation de données de base de données.
+On distingue 2 projets Doctrine :
+Doctrine DBAL (DataBase Abstraction Layer) et Doctrine ORM (Object Relational Mapper).
+ Qu&#39;est-ce qu&#39;un ORM ?
+ Un mapping objet-relationnel (en anglais object-relational mapping ou ORM) est un type de programme informatique qui se place en interface entre un programme applicatif et une base de données relationnelle pour simuler une base de données orientée objet."/>
+
+
+<link rel="stylesheet" href="http://0fd660284dee.ngrok.io/css/styles.53af939a24d87ccb3e9d9b878957d4b23e59611e8c8b907bfd2e7a811d59955027daceac350bdf60c7ea91291830e1c46a2a5483259eb8b36bdd77f836707ab4.css" integrity="sha512-U6&#43;TmiTYfMs&#43;nZuHiVfUsj5ZYR6Mi5B7/S56gR1ZlVAn2s6sNQvfYMfqkSkYMOHEaipUgyWeuLNr3Xf4NnB6tA==">
+
+</head>
+<body class="page-page">
+  <header class="nav_header">
+<nav class="wrap nav menu">
+	<a href="http://0fd660284dee.ngrok.io/" class="nav_brand">
+		<picture data-lit="http://0fd660284dee.ngrok.io/images/logo-dark.svg" data-dark="http://0fd660284dee.ngrok.io/images/logo-light.svg">
+			
+			<source srcset = 'http://0fd660284dee.ngrok.io/images/logo-light.svg' media="(prefers-color-scheme: dark)">
+			
+			<img srcset = 'http://0fd660284dee.ngrok.io/images/logo-dark.svg' alt = 'Henri L. Logo' style='height:35px;'>
+		</picture>
+		<label class="nav_toggle toggle" title='Site Menu' role="button">
+			<svg class="icon">
+  <use xlink:href="#harmburger"></use>
+</svg>
+		</label>
+	</a>
+	<ul class="nav_body">
+		<li class="nav-item">
+<div class="search">
+  <label for="find" class="search_label"><svg class="icon">
+  <use xlink:href="#search"></use>
+</svg>
+  </label>
+  <input type="search" class="search_field" placeholder='Search the docs ...' id="find" autocomplete="off">
+  <div class="search_results results"></div>
+</div>
+
+
+
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="http://0fd660284dee.ngrok.io/php"><span>PHP</span></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="http://0fd660284dee.ngrok.io/systems"><span>Systems</span></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="http://0fd660284dee.ngrok.io/dim"><span>Symfony</span></a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link" href="" target="_blank"></a>
+		</li>
+		<li class="nav-item"><div class = 'color_mode'>
+  <label for = 'mode'></label>
+  <input type = 'checkbox' class = 'color_choice' id = 'mode' title="Toggle Dark Mode">
+</div>
+</li>
+	</ul>
+</nav>
+
+  </header>
+  <div class="main wrap pt-4"><div class="grid-auto"><aside class="aside menu">
+  <div>
+    <label class="aside_toggle toggle" title='Docs Menu' role="button">Docs Menu <svg class="icon">
+  <use xlink:href="#harmburger"></use>
+</svg></label>
+  </div>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="http://0fd660284dee.ngrok.io/dim/" class="group">Symfony et PHP</a></h2>
+      <section class="" id="docs-symfony-et-php">
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="http://0fd660284dee.ngrok.io/dim/courses/" class="group">Courses</a></h2>
+      <section class="" id="docs-courses">
+        <h3 class="section_link"><a id="docs-1---php" href="http://0fd660284dee.ngrok.io/dim/courses/1-php/">1 - PHP</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#why-">Why ?</a></li>
+        <li><a href="#qui-sen-sert-">Qui s'en sert ?</a></li>
+      </ul>
+    </li>
+    <li><a href="#symfony">Symfony</a>
+      <ul>
+        <li><a href="#qui-sen-sert--1">Qui s'en sert ?</a></li>
+        <li><a href="#historique">Historique</a></li>
+        <li><a href="#pourquoi-ce-cours-">Pourquoi ce cours ?</a></li>
+      </ul>
+    </li>
+    <li><a href="#outils-pour-ce-cours">Outils pour ce cours</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#usage">Usage</a></li>
+      </ul>
+    </li>
+    <li><a href="#syntaxe-de-base">Syntaxe de base</a></li>
+    <li><a href="#syntaxe-objet">Syntaxe Objet</a>
+      <ul>
+        <li><a href="#typage-php">Typage PHP</a></li>
+        <li><a href="#namespaces">Namespaces</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-2---http" href="http://0fd660284dee.ngrok.io/dim/courses/2-http/">2 - HTTP</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#pourquoi-http">Pourquoi HTTP</a></li>
+    <li><a href="#flux-http">Flux HTTP</a></li>
+    <li><a href="#message-http">Message HTTP</a>
+      <ul>
+        <li><a href="#requete">Requete</a>
+          <ul>
+            <li><a href="#methodes">Methodes</a></li>
+            <li><a href="#mime-types">Mime-types</a></li>
+          </ul>
+        </li>
+        <li><a href="#reponse">Reponse</a>
+          <ul>
+            <li><a href="#code-http">Code HTTP</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-3---composer" href="http://0fd660284dee.ngrok.io/dim/courses/3-composer/">3 - Composer</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#installation-de-composer">Installation de Composer</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-4---http-foundation" href="http://0fd660284dee.ngrok.io/dim/courses/4-http_foundation/">4 - HTTP Foundation</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#request">Request</a></li>
+    <li><a href="#response">Response</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-5---annotations" href="http://0fd660284dee.ngrok.io/dim/courses/5-annotations/">5 - Annotations</a></h3><nav id="TableOfContents"></nav>
+        <h3 class="section_link active"><a id="docs-6---doctrine" href="http://0fd660284dee.ngrok.io/dim/courses/6-doctrine/">6 - Doctrine</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#entities">Entities</a>
+      <ul>
+        <li><a href="#typage-des-colonnes">Typage des colonnes</a></li>
+        <li><a href="#relation">Relation</a></li>
+      </ul>
+    </li>
+    <li><a href="#entity-manipulation">Entity Manipulation</a>
+      <ul>
+        <li><a href="#data-loading">Data Loading</a></li>
+        <li><a href="#edit">Edit</a></li>
+        <li><a href="#add">Add</a></li>
+        <li><a href="#delete">Delete</a></li>
+        <li><a href="#apply-changes">Apply changes</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-7---twig" href="http://0fd660284dee.ngrok.io/dim/courses/7-twig/">7 - Twig</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#templating">Templating</a></li>
+    <li><a href="#twig">Twig</a>
+      <ul>
+        <li><a href="#syntaxe-de-base">Syntaxe de base</a></li>
+        <li><a href="#filtres">Filtres</a></li>
+        <li><a href="#functions">Functions</a></li>
+        <li><a href="#controle-structures">Controle Structures</a></li>
+        <li><a href="#operateur-de-comparaison">Operateur de comparaison</a></li>
+      </ul>
+    </li>
+    <li><a href="#inclusion">Inclusion</a></li>
+    <li><a href="#heritage">Heritage</a></li>
+    <li><a href="#ressources">Ressources</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-8---router" href="http://0fd660284dee.ngrok.io/dim/courses/8-router/">8 - Router</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#ressources">Ressources</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-9---symfony" href="http://0fd660284dee.ngrok.io/dim/courses/9-symfony/">9 - Symfony</a></h3><nav id="TableOfContents"></nav>
+      </section>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="http://0fd660284dee.ngrok.io/dim/evaluation/" class="group">Evaluations</a></h2>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="http://0fd660284dee.ngrok.io/dim/tp1/" class="group">TP1</a></h2>
+      <section class="" id="docs-tp1">
+        <h3 class="section_link"><a id="docs-tp1---todo-list" href="http://0fd660284dee.ngrok.io/dim/tp1/tp1/">TP1 - Todo list</a></h3><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1---base-de-donnees">1 - Base de donnees</a></li>
+        <li><a href="#2---simplifier-lintegration-phphtml">2 - Simplifier l'integration PHP/HTML</a></li>
+        <li><a href="#3---separer-lhtml">3 - Separer l'HTML</a></li>
+        <li><a href="#4---composer-et-reorganisation">4 - Composer et reorganisation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </section>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="http://0fd660284dee.ngrok.io/dim/tp2/" class="group">TP2</a></h2>
+      <section class="" id="docs-tp2">
+        <h3 class="section_link"><a id="docs-1---http-foundation" href="http://0fd660284dee.ngrok.io/dim/tp2/1-httpfoundation/">1 - Http Foundation</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#initialisation-du-projet">Initialisation du projet</a></li>
+    <li><a href="#mon-premier-controller">Mon premier Controller</a></li>
+    <li><a href="#la-classe-appkernel">La classe App\Kernel</a></li>
+    <li><a href="#abstraction-du-controller">Abstraction du controller</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-2---doctrine" href="http://0fd660284dee.ngrok.io/dim/tp2/2-doctrine/">2 - Doctrine</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#creation-des-entities-et-repositories">Creation des Entities et Repositories</a></li>
+    <li><a href="#implementer-les-fonctionnalites-de-la-plateforme">Implementer les fonctionnalites de la plateforme</a></li>
+    <li><a href="#aller-plus-loin">Aller plus loin</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-3---twig" href="http://0fd660284dee.ngrok.io/dim/tp2/3-twig/">3 - Twig</a></h3><nav id="TableOfContents"></nav>
+        <h3 class="section_link"><a id="docs-4---router" href="http://0fd660284dee.ngrok.io/dim/tp2/4-router/">4 - Router</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#kernel-update">Kernel Update</a></li>
+    <li><a href="#router-usage">Router Usage</a></li>
+    <li><a href="#naming-and-generation">Naming and Generation</a></li>
+  </ul>
+</nav>
+      </section>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="http://0fd660284dee.ngrok.io/dim/tp3/" class="group">TP3</a></h2>
+      <section class="" id="docs-tp3">
+        <h3 class="section_link"><a id="docs-specifications-techniques" href="http://0fd660284dee.ngrok.io/dim/tp3/00-specs/">Specifications Techniques</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#objectif">Objectif</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#permissions">Permissions</a></li>
+    <li><a href="#wireframe">Wireframe</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-getting-started" href="http://0fd660284dee.ngrok.io/dim/tp3/01-getting-started-with-symfony/">Getting Started</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#installation-du-framework">Installation du Framework</a></li>
+    <li><a href="#console">Console</a></li>
+    <li><a href="#server-web">Server Web</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-doctrine" href="http://0fd660284dee.ngrok.io/dim/tp3/02-doctrine/">Doctrine</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#modele">Modele</a>
+      <ul>
+        <li><a href="#ressources">Ressources</a></li>
+        <li><a href="#create-entities">Create entities</a></li>
+        <li><a href="#connexion-a-la-base">Connexion a la base</a></li>
+        <li><a href="#migrations">Migrations</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-administration" href="http://0fd660284dee.ngrok.io/dim/tp3/03-administration/">Administration</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#administration">Administration</a>
+      <ul>
+        <li><a href="#administration-dans-symfony">Administration dans Symfony</a></li>
+        <li><a href="#easyadmin">EasyAdmin</a></li>
+        <li><a href="#ressources">Ressources</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-controllers" href="http://0fd660284dee.ngrok.io/dim/tp3/04-controllers/">Controllers</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#ressources">Ressources</a></li>
+    <li><a href="#implementation">Implementation</a>
+      <ul>
+        <li><a href="#paramresolver">ParamResolver</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-form" href="http://0fd660284dee.ngrok.io/dim/tp3/05-form/">Form</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#formulaires">Formulaires</a>
+      <ul>
+        <li><a href="#ressources">Ressources</a></li>
+        <li><a href="#integration-dans-le-projet">Integration dans le projet</a></li>
+        <li><a href="#themes-de-formulaires">Themes de formulaires</a></li>
+        <li><a href="#formulaires-externes">Formulaires externes</a></li>
+        <li><a href="#theme-custom">Theme Custom</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-security" href="http://0fd660284dee.ngrok.io/dim/tp3/06-security/">Security</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#avant-propos">Avant-propos</a></li>
+    <li><a href="#etat-du-projet">Etat du projet</a>
+      <ul>
+        <li><a href="#solution-a--recreate-the-entity-easy">Solution A : recreate the entity (easy)</a></li>
+        <li><a href="#solution-b--update-the-existing-entity-advanced">Solution B : update the existing entity (advanced)</a>
+          <ul>
+            <li><a href="#getroles">getRoles</a></li>
+            <li><a href="#getpassword">getPassword</a></li>
+            <li><a href="#getsalt">getSalt</a></li>
+            <li><a href="#getusername">getUsername</a></li>
+          </ul>
+        </li>
+        <li><a href="#erasecredentials">eraseCredentials</a></li>
+      </ul>
+    </li>
+    <li><a href="#authentification">Authentification</a>
+      <ul>
+        <li><a href="#formulaire">Formulaire</a></li>
+      </ul>
+    </li>
+    <li><a href="#inscription">Inscription</a></li>
+    <li><a href="#autorisation">Autorisation</a>
+      <ul>
+        <li><a href="#roles">Roles</a></li>
+        <li><a href="#access-control">Access Control</a></li>
+        <li><a href="#voters">Voters</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-services" href="http://0fd660284dee.ngrok.io/dim/tp3/07-services/">Services</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#travail-preparatoire">Travail preparatoire</a>
+      <ul>
+        <li><a href="#premier-service">Premier service</a></li>
+        <li><a href="#gestion-dun-utilisateur">Gestion d'un utilisateur</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-validateurs" href="http://0fd660284dee.ngrok.io/dim/tp3/08-validateurs/">Validateurs</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#data-validation">Data Validation</a>
+      <ul>
+        <li><a href="#mise-en-place">Mise en place</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-serializer" href="http://0fd660284dee.ngrok.io/dim/tp3/09-serializer/">Serializer</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#avant-propos">Avant-propos</a></li>
+    <li><a href="#implementation">Implementation</a>
+      <ul>
+        <li><a href="#get-authors-and-their-posts">Get Authors and their Posts</a></li>
+        <li><a href="#consulter-la-liste-des-derniers-posts">Consulter la liste des derniers posts</a></li>
+        <li><a href="#le-top-des-posts">Le Top des posts</a></li>
+        <li><a href="#les-commentaires-pour-un-post">Les commentaires pour un Post</a></li>
+        <li><a href="#heading"></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </section>
+  </section>
+      </section>
+  </section>
+</aside>
+
+  <main class="content">
+
+
+    <h1>6 - Doctrine</h1>
+    <p><img src="https://i.imgur.com/CPicCl0.png" alt=""></p>
+<hr>
+<p>Doctrine-Project est une suite de bibliothèques dont la fonction première est la manipulation de données de base de données.</p>
+<p>On distingue 2 projets Doctrine :</p>
+<p>Doctrine <strong>DBAL</strong> (DataBase Abstraction Layer) et Doctrine <strong>ORM</strong> (Object Relational Mapper).</p>
+<hr>
+<p>Qu'est-ce qu'un ORM ?</p>
+<blockquote>
+<p>Un mapping objet-relationnel (en anglais object-relational mapping ou ORM) est un type de programme informatique qui se place en interface entre un programme applicatif et une base de données relationnelle pour simuler une base de données orientée objet.</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>Ce programme définit des correspondances entre les schémas de la base de données et les classes du programme applicatif. On pourrait le désigner par là, « comme une couche d'abstraction entre le monde objet et monde relationnel».</p>
+</blockquote>
+<hr>
+<img src="https://i.imgur.com/8fWiKTV.png"/>
+<hr>
+<h2 id="entities">Entities</h2>
+<hr>
+<p>Les entités Doctrine se déclarent par des annotations apportées à même le code.</p>
+<p>L'entité est une classe qui, une fois instanciée, représente une entrée dans la base de données.</p>
+<hr>
+<p>Prenons par exemple la classe Trainer. Les conventions de nommage nous dit de stocker l'entité dans un dossier <strong>Entity</strong>.</p>
+<p>Pour la suite, imaginons que les propriétés ont toutes des getters/setters déclarés. Id n'a pas de setter.</p>
+<hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="k">class</span> <span class="nc">Trainer</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="nv">$id</span><span class="p">;</span>
+<pre><code>&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$badgeCount&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$startedOn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;void&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getBadgeCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;badgeCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setBadgeCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$badgeCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;void&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;badgeCount&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$badgeCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getStartedOn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;\DateTime&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;startedOn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setStartedOn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;\DateTime&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$startedOn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;void&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;startedOn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$startedOn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+</code></pre>
+<p><span class="p">}</span>
+</code></pre></td></tr></table></p>
+</div>
+</div><hr>
+<p>avec les annotations pour déclarer la classe comme entité</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="k">use</span> <span class="nx">Doctrine\ORM\Mapping</span> <span class="k">as</span> <span class="nx">ORM</span><span class="p">;</span>
+<p><span class="sd">/**
+</span><span class="sd">* On déclare la classe comme entity :
+</span><span class="sd">* @ORM\Entity()
+</span><span class="sd">*
+</span><span class="sd">* On définit le nom de sa table :
+</span><span class="sd">* @ORM\Table(name=&quot;trainers&quot;)
+</span><span class="sd">*
+</span><span class="sd">*/</span>
+<span class="k">class</span> <span class="nc">Trainer</span><span class="p">{</span></p>
+<p><span class="o">....</span>
+</code></pre></td></tr></table></p>
+</div>
+</div><hr>
+<p>Puis sur le champs Id qui sera celui qui s'auto-incrémentera et sera primaire :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="o">...</span>
+<span class="k">class</span> <span class="nc">Trainer</span><span class="p">{</span>
+<pre><code>&lt;span class=&quot;sd&quot;&gt;/**
+</code></pre>
+<p></span><span class="sd">     * // Le champ sera une clé primaire
+</span><span class="sd">     * @ORM\Id()
+</span><span class="sd">     * // Le champ sera de type int
+</span><span class="sd">     * @ORM\Column(type=&quot;integer&quot;)
+</span><span class="sd">     * // Le champ sera une valeur auto-générée (autoincrement)
+</span><span class="sd">     * @ORM\GeneratedValue()
+</span><span class="sd">     */</span>
+<span class="k">private</span> <span class="nv">$id</span><span class="p">;</span>
+<span class="o">...</span>
+</code></pre></td></tr></table></p>
+</div>
+</div><hr>
+<p>Puis sur chacun des champs on ajoutera :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="sd">/**
+</span><span class="sd"> * @ORM\Column(type=&#34;string&#34;, length=50, nullable=false)
+</span><span class="sd"> */</span>
+<span class="k">private</span> <span class="nv">$name</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Le type string a pour length par défaut 50, et le champs nullable est toujours à false.</p>
+<hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="sd">/**
+</span><span class="sd"> * @ORM\Column(type=&#34;integer&#34;)
+</span><span class="sd"> */</span>
+<span class="k">private</span> <span class="nv">$badgeCount</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="sd">/**
+</span><span class="sd"> * @var \DateTime
+</span><span class="sd"> * @ORM\Column(type=&#34;datetime&#34;)
+</span><span class="sd"> */</span>
+<span class="k">private</span> <span class="nv">$startedOn</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>En executant la requête de création/mise à jour du schéma de la base (dans cet exemple PostgreSQL), on obtient le code suivant :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">trainers</span> <span class="p">(</span>
+    <span class="n">id</span> <span class="nb">INT</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span> 
+    <span class="n">name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span> 
+    <span class="n">badgeCount</span> <span class="nb">INT</span> <span class="k">DEFAULT</span> <span class="k">NULL</span><span class="p">,</span> 
+    <span class="n">startedOn</span> <span class="k">TIMESTAMP</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="k">WITHOUT</span> <span class="n">TIME</span> <span class="k">ZONE</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span> 
+    <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">(</span><span class="n">id</span><span class="p">)</span>
+<span class="p">);</span>
+<p><span class="k">CREATE</span> <span class="n">SEQUENCE</span> <span class="n">trainers_id_seq</span>
+<span class="k">INCREMENT</span> <span class="k">BY</span> <span class="mi">1</span> <span class="k">MINVALUE</span> <span class="mi">1</span> <span class="k">START</span> <span class="mi">1</span><span class="p">;</span></p>
+<p></code></pre></td></tr></table></p>
+</div>
+</div><hr>
+<p>Si on souhaite supprimer une table, il suffit de supprimer son entité et de détacher les différents liens avec la table en question.</p>
+<hr>
+<h3 id="typage-des-colonnes">Typage des colonnes</h3>
+<hr>
+<p>Une liste des types non exhaustive que l'on peut utiliser en temps que type de colonne :</p>
+<ul>
+<li>integer</li>
+<li>string</li>
+<li>text</li>
+<li>date</li>
+<li>datetime</li>
+<li>float</li>
+<li>array</li>
+<li>json</li>
+</ul>
+<hr>
+<h3 id="relation">Relation</h3>
+<hr>
+<p>Avant de continuer dans l'explication, créons une entité Pokemon avec ses getters/setters :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">
+<span class="k">use</span> <span class="nx">Doctrine\ORM\Mapping</span> <span class="k">as</span> <span class="nx">ORM</span><span class="p">;</span>
+<span class="sd">/**
+</span><span class="sd"> * @ORM\Entity()
+</span><span class="sd"> * @ORM\Table(name=&#34;pokemons&#34;)
+</span><span class="sd"> */</span>
+<span class="k">class</span> <span class="nc">Pokemon</span>
+<span class="p">{</span>
+<pre><code>&lt;span class=&quot;sd&quot;&gt;/**
+</code></pre>
+<p></span><span class="sd">     * @ORM\Id()
+</span><span class="sd">     * @ORM\Column(type=&quot;integer&quot;, unique=true, nullable=false)
+</span><span class="sd">     <em>/</span>
+<span class="k">private</span> <span class="nv">$id</span><span class="p">;</span>
+<span class="sd">/</em>*
+</span><span class="sd">     * @ORM\Column(type=&quot;string&quot;)
+</span><span class="sd">     */</span>
+<span class="k">private</span> <span class="nv">$name</span><span class="p">;</span>
+<span class="o">....</span>
+<span class="p">}</span>
+</code></pre></td></tr></table></p>
+</div>
+</div><hr>
+<p>Dans cet exemple simple, on va partir du principe qu'un dresseur a enregistré un ou plusieurs Pokemons dans le pokedex, mais qu'un pokemon n'a été enregistré que par un seul dresseur.</p>
+<hr>
+<p>Dans la class Pokemon, nous allons ajouter un champs suivant qui s'appellera registrar :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">    <span class="sd">/**
+</span><span class="sd">     * // Nous faisons une relation Many(Pokemon) To One(Trainer) 
+</span><span class="sd">     * @var Trainer
+</span><span class="sd">     * @ORM\ManyToOne(targetEntity=&#34;Trainer&#34;, inversedBy=&#34;registrations&#34;)
+</span><span class="sd">     */</span>
+    <span class="k">private</span> <span class="nv">$registrar</span><span class="p">;</span>
+<pre><code>&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getRegistrar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Trainer&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;registrar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setRegistrar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Trainer&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$registrar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;void&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;registrar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$registrar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+</code></pre>
+<p></code></pre></td></tr></table></p>
+</div>
+</div><hr>
+<p>A partir de maintenant, nous ne travaillons pas avec des Id mais uniquement avec des entités : si on récupère un pokemon, en appelant la méthode getRegistrar, on obtiendra un objet de type Trainer.</p>
+<hr>
+<p>Du coté de la classe Trainer, on ajoute le champs suivant :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="sd">/**
+</span><span class="sd"> * @var ArrayCollection
+</span><span class="sd"> * @ORM\OneToMany(targetEntity=&#34;Pokemon&#34;, mappedBy=&#34;registrar&#34;)
+</span><span class="sd"> */</span>
+<span class="k">private</span> <span class="nv">$registrations</span><span class="p">;</span>
+<p><span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span> <span class="p">{</span>
+<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">registrations</span><span class="o">=</span><span class="k">new</span> <span class="nx">\Doctrine\Common\Collections\ArrayCollection</span><span class="p">();</span>
+<span class="p">}</span></p>
+<p><span class="k">public</span> <span class="k">function</span> <span class="nf">register</span><span class="p">(</span><span class="nx">Pokemon</span> <span class="nv">$pokemon</span><span class="p">)</span> <span class="p">{</span>
+<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">registrations</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$pokemon</span><span class="p">;</span>
+<span class="p">}</span></p>
+<p><span class="k">public</span> <span class="k">function</span> <span class="nf">getRegistrations</span><span class="p">()</span> <span class="p">{</span>
+<span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">registrations</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table></p>
+</div>
+</div><hr>
+<p>En executant la mise à jour de la base, les requêtes executées sont les suivante :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">pokemons</span> <span class="p">(</span>
+    <span class="n">id</span> <span class="nb">INT</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span> 
+    <span class="n">registrar_id</span> <span class="nb">INT</span> <span class="k">DEFAULT</span> <span class="k">NULL</span><span class="p">,</span> 
+    <span class="n">name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span> 
+    <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">(</span><span class="n">id</span><span class="p">)</span>
+<span class="p">);</span>
+<p><span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">IDX_3FD8B03DD1AA2FC1</span> <span class="k">ON</span> <span class="n">pokemons</span> <span class="p">(</span><span class="n">registrar_id</span><span class="p">);</span></p>
+<p><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">pokemons</span>
+<span class="k">ADD</span> <span class="k">CONSTRAINT</span> <span class="n">FK_3FD8B03DD1AA2FC1</span>
+<span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">registrar_id</span><span class="p">)</span>
+<span class="k">REFERENCES</span> <span class="n">trainers</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span>
+<span class="k">NOT</span> <span class="k">DEFERRABLE</span> <span class="k">INITIALLY</span> <span class="k">IMMEDIATE</span><span class="p">;</span></p>
+<p></code></pre></td></tr></table></p>
+</div>
+</div><hr>
+<p>En continuant sur cet example on dira qu'un dresseur souhaite capturer plusieurs pokemons, que les pokemons peuvent être traqués par plusieurs personnes.</p>
+<hr>
+<p>On rajoute dans l'entité trainer :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="sd">/**
+</span><span class="sd"> * @var ArrayCollection
+</span><span class="sd"> * @ORM\ManyToMany(targetEntity=&#34;Pokemon&#34;,inversedBy=&#34;hunters&#34;)
+</span><span class="sd"> */</span>
+<span class="k">private</span> <span class="nv">$targets</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>et dans pokemon :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="sd">/**
+</span><span class="sd"> * @var ArrayCollection
+</span><span class="sd"> * @ORM\ManyToMany(targetEntity=&#34;Trainer&#34;,mappedBy=&#34;targets&#34;)
+</span><span class="sd"> */</span>
+<span class="k">private</span> <span class="nv">$hunters</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>Une fois le SQL executé on retrouve :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">trainer_pokemon</span> <span class="p">(</span>
+    <span class="n">trainer_id</span> <span class="nb">INT</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span> 
+    <span class="n">pokemon_id</span> <span class="nb">INT</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span> 
+    <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">(</span><span class="n">trainer_id</span><span class="p">,</span> <span class="n">pokemon_id</span><span class="p">)</span>
+<span class="p">);</span>
+<span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">IDX_AEE3A93CFB08EDF6</span> <span class="k">ON</span> <span class="n">trainer_pokemon</span> <span class="p">(</span><span class="n">trainer_id</span><span class="p">);</span>
+<span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">IDX_AEE3A93C2FE71C3E</span> <span class="k">ON</span> <span class="n">trainer_pokemon</span> <span class="p">(</span><span class="n">pokemon_id</span><span class="p">);</span>
+<p><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">trainer_pokemon</span>
+<span class="k">ADD</span> <span class="k">CONSTRAINT</span> <span class="n">FK_AEE3A93CFB08EDF6</span>
+<span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">trainer_id</span><span class="p">)</span>
+<span class="k">REFERENCES</span> <span class="n">trainers</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span>
+<span class="k">ON</span> <span class="k">DELETE</span> <span class="k">CASCADE</span> <span class="k">NOT</span> <span class="k">DEFERRABLE</span> <span class="k">INITIALLY</span> <span class="k">IMMEDIATE</span><span class="p">;</span></p>
+<p><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">trainer_pokemon</span>
+<span class="k">ADD</span> <span class="k">CONSTRAINT</span> <span class="n">FK_AEE3A93C2FE71C3E</span>
+<span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">pokemon_id</span><span class="p">)</span>
+<span class="k">REFERENCES</span> <span class="n">pokemons</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span>
+<span class="k">ON</span> <span class="k">DELETE</span> <span class="k">CASCADE</span> <span class="k">NOT</span> <span class="k">DEFERRABLE</span> <span class="k">INITIALLY</span> <span class="k">IMMEDIATE</span><span class="p">;</span></p>
+<p></code></pre></td></tr></table></p>
+</div>
+</div><hr>
+<p><img src="https://i.imgur.com/AbxUe0b.png" alt=""></p>
+<hr>
+<p style="font-size: 40px !important;font-weight:bold; color:#D22;">On parle des objets et de leurs relations entre eux.</p>
+<p>et non de tables et d'entrées. C'est la puissance de l'<strong>ORM</strong>.</p>
+<hr>
+<p>Par exemple :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="nv">$trainer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Trainer</span><span class="p">();</span>
+<span class="nv">$trainer</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s2">&#34;Henri&#34;</span><span class="p">);</span>
+<span class="nv">$trainer</span><span class="o">-&gt;</span><span class="na">setBadgeCount</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="nv">$trainer</span><span class="o">-&gt;</span><span class="na">startedOn</span><span class="p">(</span><span class="k">new</span> <span class="nx">\DateTime</span><span class="p">());</span>
+<p></code></pre></td></tr></table></p>
+</div>
+</div><hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="nv">$pokemon</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Pokemon</span><span class="p">();</span>
+<span class="nv">$pokemon</span><span class="o">-&gt;</span><span class="na">setId</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span>
+<span class="nv">$pokemon</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s2">&#34;Squirtle&#34;</span><span class="p">);</span>
+<span class="nv">$pokemon</span><span class="o">-&gt;</span><span class="na">setRegistrar</span><span class="p">(</span><span class="nv">$trainer</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="nv">$pokemons</span> <span class="o">=</span> <span class="nv">$trainer</span><span class="o">-&gt;</span><span class="na">getTargets</span><span class="p">();</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="entity-manipulation">Entity Manipulation</h2>
+<hr>
+<p>La manipulation des entités se fait via l'entityManager <code>Doctrine\ORM\EntityManagerInterface</code>.</p>
+<p>Cet objet a 4 méthodes indispensables :</p>
+<ul>
+<li><code>persist($entity)</code></li>
+<li><code>remove($entity)</code></li>
+<li><code>flush()</code></li>
+<li><code>getRepository($entityClassName)</code></li>
+</ul>
+<p>Nous aborderons juste après ces différentes méthodes.</p>
+<hr>
+<h3 id="data-loading">Data Loading</h3>
+<hr>
+<p>Un Repository est une classe liée directement au modèle. Dans les conventions de code, elle se nom EntityRepository et se trouve dans un dossier Entity.</p>
+<hr>
+<p>Pour lier une entitée à un Repository il faut modifier l'annotation Entity ajoutée à l'entité et rajouter la propriété repositoryClass=&quot;\App\Repository\EntityRepository&quot;</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="sd">/**
+</span><span class="sd"> * @ORM\Entity(repositoryClass=&#34;App\Repository\PokemonRepository&#34;)
+</span><span class="sd"> * ...
+</span><span class="sd"> */</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>et le Repository doit hériter de <code>Doctrine\ORM\EntityRepository</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">
+<span class="k">namespace</span> <span class="nx">App\Repository</span><span class="p">;</span>
+<p><span class="k">use</span> <span class="nx">Doctrine\ORM\EntityRepository</span><span class="p">;</span></p>
+<p><span class="k">class</span> <span class="nc">PokemonRepository</span> <span class="k">extends</span> <span class="nx">EntityRepository</span>
+<span class="p">{</span></p>
+<p><span class="p">};</span>
+</code></pre></td></tr></table></p>
+</div>
+</div><hr>
+<p>Une fois le lien fait entre entité et repository, on peut récupérer le répository de cette manière :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="nv">$repository</span> <span class="o">=</span> <span class="nv">$entityManager</span><span class="o">-&gt;</span><span class="na">getRepository</span><span class="p">(</span><span class="nx">Pokemon</span><span class="o">::</span><span class="na">class</span><span class="p">);</span>
+<p></code></pre></td></tr></table></p>
+</div>
+</div><hr>
+<p>Cette classe offre plusieurs méthodes de récupération :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">
+<span class="nv">$repository</span><span class="o">-&gt;</span><span class="na">findAll</span><span class="p">();</span> <span class="c1">//renvoie toute la table
+</span><span class="c1"></span><span class="nv">$repository</span><span class="o">-&gt;</span><span class="na">find</span><span class="p">(</span><span class="nv">$id</span><span class="p">);</span> <span class="c1">//récupère l&#39;entité par id
+</span><span class="c1"></span><span class="nv">$repository</span><span class="o">-&gt;</span><span class="na">findBy</span><span class="p">([</span><span class="s2">&#34;field&#34;</span><span class="o">=&gt;</span><span class="s2">&#34;value&#34;</span><span class="p">]);</span> 
+<span class="c1">//récupère des entités par un ou plusieurs champs.
+</span><span class="c1"></span><span class="nv">$repository</span><span class="o">-&gt;</span><span class="na">findOneBy</span><span class="p">([</span><span class="s2">&#34;field&#34;</span><span class="o">=&gt;</span><span class="s2">&#34;value&#34;</span><span class="p">]);</span> 
+<span class="c1">//récupère une entité par un ou plusieurs champs.
+</span><span class="c1"></span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>Par exemple :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="nv">$pokemon</span> <span class="o">=</span> <span class="nv">$repository</span><span class="o">-&gt;</span><span class="na">findBy</span><span class="p">([</span><span class="s2">&#34;nom&#34;</span><span class="o">=&gt;</span><span class="s2">&#34;Charizard&#34;</span><span class="p">]);</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>pour plus de souplesse, on peut définir nos propres méthodes dans le Repository et utiliser le query Builder - Dans les rares cas où les fonctions de base ne suffisent pas.</p>
+<hr>
+<p>Par exemple, trouver les potentiels intéressés pour un échange avec le dresseur qui a enregistré un pokemon.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">    <span class="k">public</span> <span class="k">function</span> <span class="nf">getTradingInteresedTrainers</span><span class="p">(</span><span class="nx">Trainer</span> <span class="nv">$trainer</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$qb</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">createQueryBuilder</span><span class="p">(</span><span class="s2">&#34;trainer&#34;</span><span class="p">);</span>
+        <span class="nv">$query</span> <span class="o">=</span> <span class="nv">$qb</span><span class="o">-&gt;</span><span class="na">join</span><span class="p">(</span><span class="s2">&#34;trainer.targets&#34;</span><span class="p">,</span> <span class="s2">&#34;targets&#34;</span><span class="p">)</span>
+            <span class="o">-&gt;</span><span class="na">join</span><span class="p">(</span><span class="s2">&#34;targets.registrar&#34;</span><span class="p">,</span> <span class="s2">&#34;registrar&#34;</span><span class="p">)</span>
+            <span class="o">-&gt;</span><span class="na">where</span><span class="p">(</span><span class="s2">&#34;registrar = :trainer&#34;</span><span class="p">)</span>
+            <span class="o">-&gt;</span><span class="na">setParameter</span><span class="p">(</span><span class="s2">&#34;trainer&#34;</span><span class="p">,</span> <span class="nv">$trainer</span><span class="p">)</span>
+            <span class="o">-&gt;</span><span class="na">getQuery</span><span class="p">();</span>
+        <span class="k">return</span> <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">getResult</span><span class="p">();</span>
+    <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="edit">Edit</h3>
+<hr>
+<p>Pour modifier une entité, il faut la récupérer du modèle et après la modifier naturellement.</p>
+<hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="nv">$pokemonRepository</span> <span class="o">=</span> <span class="nv">$entityManager</span><span class="o">-&gt;</span><span class="na">getRepository</span><span class="p">(</span><span class="nx">Pokemon</span><span class="o">::</span><span class="na">class</span><span class="p">);</span>
+<p><span class="nv">$pokemon</span> <span class="o">=</span> <span class="nv">$pokemonRepository</span><span class="o">-&gt;</span><span class="na">find</span><span class="p">(</span><span class="mi">124</span><span class="p">);</span>
+<span class="nv">$pokemon</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s2">&quot;Nicki Minaj&quot;</span><span class="p">);</span></p>
+<p></code></pre></td></tr></table></p>
+</div>
+</div><hr>
+<p>L'objet a été modifié dans le modèle Doctrine mais  <strong>n'est pas enregistré en base</strong>.</p>
+<hr>
+<h3 id="add">Add</h3>
+<hr>
+<p>Lors de la création d'un objet de type Entity, cet objet n'est aucunement lié au modèle. La méthode de liaison est la méthode <code>persist()</code>.</p>
+<hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="nv">$trainer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Trainer</span><span class="p">();</span>
+<span class="nv">$trainer</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s2">&#34;Henri&#34;</span><span class="p">);</span>
+<span class="nv">$trainer</span><span class="o">-&gt;</span><span class="na">setStartedOn</span><span class="p">(</span><span class="k">new</span> <span class="nx">\DateTime</span><span class="p">());</span>
+<span class="nv">$entityManager</span><span class="o">-&gt;</span><span class="na">persist</span><span class="p">(</span><span class="nv">$trainer</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>L'objet est maintenant lié au modèle Doctrine mais <strong>n'est pas enregistré en base</strong>.</p>
+<hr>
+<h3 id="delete">Delete</h3>
+<hr>
+<p>Pour supprimer une entité, il faut la récupérer puis dire à l'entity manager de la supprimer.</p>
+<hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="nv">$pokemonRepository</span> <span class="o">=</span> <span class="nv">$entityManager</span><span class="o">-&gt;</span><span class="na">getRepository</span><span class="p">(</span><span class="nx">Pokemon</span><span class="o">::</span><span class="na">class</span><span class="p">);</span>
+<p><span class="nv">$pokemon</span> <span class="o">=</span> <span class="nv">$pokemonRepository</span><span class="o">-&gt;</span><span class="na">find</span><span class="p">(</span><span class="mi">582</span><span class="p">);</span>
+<span class="nv">$entityManager</span><span class="o">-&gt;</span><span class="na">remove</span><span class="p">(</span><span class="nv">$pokemon</span><span class="p">);</span></p>
+<p></code></pre></td></tr></table></p>
+</div>
+</div><hr>
+<p>L'objet a été marqué comme à supprimer dans le modèle Doctrine mais  <strong>n'est pas enregistré en base</strong>.</p>
+<hr>
+<h3 id="apply-changes">Apply changes</h3>
+<hr>
+<p>Une fois les changements effectués sur les entités, il faut appliquer ses modifications, en appelant la méthode :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="nv">$entityManager</span><span class="o">-&gt;</span><span class="na">flush</span><span class="p">();</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+    <div class="pager">
+    <div class="pager_item prev">
+        
+        <a href="http://0fd660284dee.ngrok.io/dim/courses/5-annotations/" class="pager_link button" title="5 - Annotations">
+            <span class="pager_label">5 - Annotations</span>
+        </a>
+        
+
+    </div>
+    <div class="pager_item next">
+
+        
+        <a href="http://0fd660284dee.ngrok.io/dim/courses/7-twig/" class="pager_link button" title="7 - Twig">
+            <span class="pager_label">7 - Twig</span>
+        </a>
+        
+    </div>
+
+</div>
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004" id="next">
+    <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.999 511.999" id="search">
+    <path d="M508.874 478.708L360.142 329.976c28.21-34.827 45.191-79.103 45.191-127.309C405.333 90.917 314.416 0 202.666 0S0 90.917 0 202.667s90.917 202.667 202.667 202.667c48.206 0 92.482-16.982 127.309-45.191l148.732 148.732c4.167 4.165 10.919 4.165 15.086 0l15.081-15.082c4.165-4.166 4.165-10.92-.001-15.085zM202.667 362.667c-88.229 0-160-71.771-160-160s71.771-160 160-160 160 71.771 160 160-71.771 160-160 160z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 179" id="harmburger">
+    <path d="M1 10C1 4.477 5.477 0 11 0h220c5.523 0 10 4.477 10 10s-4.477 10-10 10H11C5.477 20 1 15.523 1 10zm0 80c0-5.523 4.477-10 10-10h220c5.523 0 10 4.477 10 10s-4.477 10-10 10H11c-5.523 0-10-4.477-10-10zm9 69c-5.523 0-10 4.477-10 10s4.477 10 10 10h220c5.523 0 10-4.477 10-10s-4.477-10-10-10H10z"></path>
+  </symbol>
+</svg>
+
+  </main>
+</div>
+
+  </div>
+<footer class="pt-2 pb-2">
+  <div class="wrap">
+    <p>&copy; <span class="year">2021</span> <a href ="https://larget.fr" target="_blank" rel="noopener">Henri LARGET</a></p>
+  </div>
+</footer>
+
+
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004" id="next">
+    <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.999 511.999" id="search">
+    <path d="M508.874 478.708L360.142 329.976c28.21-34.827 45.191-79.103 45.191-127.309C405.333 90.917 314.416 0 202.666 0S0 90.917 0 202.667s90.917 202.667 202.667 202.667c48.206 0 92.482-16.982 127.309-45.191l148.732 148.732c4.167 4.165 10.919 4.165 15.086 0l15.081-15.082c4.165-4.166 4.165-10.92-.001-15.085zM202.667 362.667c-88.229 0-160-71.771-160-160s71.771-160 160-160 160 71.771 160 160-71.771 160-160 160z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 179" id="harmburger">
+    <path d="M1 10C1 4.477 5.477 0 11 0h220c5.523 0 10 4.477 10 10s-4.477 10-10 10H11C5.477 20 1 15.523 1 10zm0 80c0-5.523 4.477-10 10-10h220c5.523 0 10 4.477 10 10s-4.477 10-10 10H11c-5.523 0-10-4.477-10-10zm9 69c-5.523 0-10 4.477-10 10s4.477 10 10 10h220c5.523 0 10-4.477 10-10s-4.477-10-10-10H10z"></path>
+  </symbol>
+</svg>
+<script src="http://0fd660284dee.ngrok.io/js/bundle.min.a251c7f0550864f354f94c9538ce8980b7b9447e027c10ec3d6a005903e293fec757620e8be58e37c5432355e9b5eb4a96512b594a38c7d0fa5db57a9a1baf76.js"></script>
+<script src="http://0fd660284dee.ngrok.io/js/search.min.c014e4474413b21eba28a1c5597da13a6300dd0ae9749ac99961df33764b9af9558ecf605cb520eede578cf42023f5165cf5b58916304a2eba3eea922ecb5131.js" async defer></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.js" integrity="sha512-LGXpHNR8kKb3liBoiowLefRfx9BahbZ0FWE8vfTOV3vU4jD/9SpoyZQ49rc7gBwSzbFTZAaLCsSkpujb6ic+Og==" crossorigin="anonymous"></script>
+</body>
+</html>

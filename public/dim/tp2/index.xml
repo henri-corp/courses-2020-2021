@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TP2 on Henri L.</title>
+    <link>http://0fd660284dee.ngrok.io/dim/tp2/</link>
+    <description>Recent content in TP2 on Henri L.</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://0fd660284dee.ngrok.io/dim/tp2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1 - Http Foundation</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp2/1-httpfoundation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp2/1-httpfoundation/</guid>
+      <description>Initialisation du projet  Maintenant que vous avez installé Composer, on va créer une structure de dossiers adaptée au projet.
+. ├── public │ └── index.php └── src │ └── Controller On va laisser le fichier index.php vide pour le moment.
+La première étape va être d&#39;appeler la commande composer init qui va initialiser le projet Composer. Une série de questions seront posées. On peut ignorer chaque question pour le moment et passer à la suite.</description>
+    </item>
+    
+    <item>
+      <title>2 - Doctrine</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp2/2-doctrine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp2/2-doctrine/</guid>
+      <description>Téléchargez le code disponible ici : tp3.zip et décompressez l&#39;archive. Faire une nouvelle branche appelée p2 sur le projet du TP2 et mettre son code dans cette branche.
+Allez ensuite avec votre terminal dans le dossier en question, et avant de continuer il va falloir installer les dépendances composer. L&#39;archive contient déjà un dossier composer mais de dossier vendor, la première étape consiste à faire php bin/composer install. Une fois les dépendances installées, vous pouvez démarrer le serveur comme au premier TP.</description>
+    </item>
+    
+    <item>
+      <title>3 - Twig</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp2/3-twig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp2/3-twig/</guid>
+      <description>En partant du TP précédent et de la branche correspondante, créez une nouvelle branche p3 :
+1 2  git checkout p2 git checkout -b p3   L&#39;objectif est de remplacer dans le tp2 les fichiers HTML par des fichiers twig, en utilisant obligatoirement les fonctionnalités suivantes :
+ Syntaxe for else Héritage Inclusion Filtres  Le cache de notre application n&#39;ira pas dans le dossier src mais dans un dossier à la racine du projet qui s&#39;appellera var/cache et la totalité du dossier var ne doit pas être commit.</description>
+    </item>
+    
+    <item>
+      <title>4 - Router</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp2/4-router/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp2/4-router/</guid>
+      <description>À partir du TP précédent, créez une nouvelle branche p4.
+Kernel Update Pour commencer, installez les composants suivants avec composer
+symfony/routing doctrine/annotations doctrine/cache symfony/config symfony/framework-bundle Une fois les composants installés, on va modifier 2 fichiers du début du projet, le point d&#39;entrée de toutes les requêtes HTTP
+1 2 3 4 5 6 7 8 9 10  &amp;lt;?php $loader = require __DIR__ . &amp;#39;/../vendor/autoload.php&amp;#39;; \Doctrine\Common\Annotations\AnnotationRegistry::registerLoader([$loader, &amp;#39;loadClass&amp;#39;]); use App\Kernel; $kernel = new Kernel(false, true); $kernel-&amp;gt;run();   Mais on fait également évoluer le kernel de cette manière :</description>
+    </item>
+    
+  </channel>
+</rss>

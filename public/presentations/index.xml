@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Presentations on Henri L.</title>
+    <link>http://0fd660284dee.ngrok.io/presentations/</link>
+    <description>Recent content in Presentations on Henri L.</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://0fd660284dee.ngrok.io/presentations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello</title>
+      <link>http://0fd660284dee.ngrok.io/presentations/php/1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/presentations/php/1/</guid>
+      <description>Usage Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis semper eros. Donec aliquet tincidunt tincidunt. In sollicitudin hendrerit rhoncus. Donec felis ex, sollicitudin vel odio sit amet, bibendum porttitor eros. Donec imperdiet, lectus ut fermentum pellentesque, ligula nibh lacinia purus, eget imperdiet ante tortor sit amet velit. Donec maximus felis nec velit mollis, et aliquam nulla pulvinar. Sed tincidunt enim ut neque varius porttitor. Aenean rhoncus, erat sed varius pellentesque, nunc nunc cursus eros, id mollis tortor ligula a ante.</description>
+    </item>
+    
+    <item>
+      <title>PHP 101 - Introduction</title>
+      <link>http://0fd660284dee.ngrok.io/presentations/php101/1-intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/presentations/php101/1-intro/</guid>
+      <description>Le PHP c&#39;est quoi ? --
+PHP est un langage de scripts généraliste et Open Source, spécialement conçu pour le développement d&#39;applications web. Il peut être intégré facilement au HTML.
+--
+👏👏👏 Cool background-image: url(../thinking.gif) background-size: cover ?
+-- background-image: none
+1 2 3 4 5 6 7 8 9 10 11  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Exemple&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;?php echo &amp;#34;Bonjour, je suis un script PHP !&amp;#34;; ?&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;   --</description>
+    </item>
+    
+    <item>
+      <title>Systems 101</title>
+      <link>http://0fd660284dee.ngrok.io/presentations/sys101/1-intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/presentations/sys101/1-intro/</guid>
+      <description>Un système d&#39;exploitation c&#39;est quoi ? --
+En informatique, un système d&#39;exploitation (souvent appelé OS — de l&#39;anglais Operating System) est un ensemble de programmes qui dirige l&#39;utilisation des ressources d&#39;un ordinateur par des logiciels applicatifs.
+--
+ Il reçoit les demandes d&#39;utilisation des applications pour les ressources de l&#39;ordinateur  ressources de stockage (mémoire vive et disque durs) 💾 ressources de calcul du CPU 🧠 ressources de communications vers les périphériques 🖱️🖨️⌨️ ressources de réseau 🌍     class: img-margins</description>
+    </item>
+    
+  </channel>
+</rss>

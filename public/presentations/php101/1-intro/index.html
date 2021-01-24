@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>PHP 101 - Introduction - Presentation</title>
+    <style>
+        @import url('//fonts.googleapis.com/css2?family=Quicksand:wght@400');
+
+        .remark-container {
+            background: hsl(0, 0%, 15%);
+        }
+
+        .remark-slide-scaler {
+            box-shadow: none;
+        }
+
+        body, h1, h2, h3 {
+            font-family: 'Quicksand';
+        }
+
+        h1, h2, h3 {
+            font-weight: normal;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .inverse {
+            background: hsl(0, 0%, 15%);
+            color: hsl(0, 5%, 75%);
+        }
+
+        h1 {
+            text-align: center;
+            line-height: 0.8em;
+        }
+
+        .inverse h1 {
+            color: hsl(0, 5%, 95%);
+        }
+
+        h2 {
+            line-height: 0.8em;
+
+        }
+
+        .inverse h2 {
+            color: hsl(0, 5%, 90%);
+        }
+        a{
+            text-decoration: none;
+            color: orangered;
+        }
+        .inverse a {
+            color: hsl(330, 75%, 50%);
+        }
+
+        .inverse code {
+            color: hsl(330, 75%, 100%);
+        }
+
+         
+        span.red {
+            color: hsl(0, 90%, 50%);
+        }
+
+         
+        @media print {
+            .remark-slide-scaler {
+                left: 5vw !important;
+                width: 90vw !important;
+                top: 5vh !important;
+                height: 90vh !important;
+                transform: scale(1) !important;
+            }
+        }
+
+        .first-slide {
+            padding-top: 20vh;
+            box-sizing: border-box;
+        }
+
+        .first-slide h1 {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .first-slide p {
+            text-align: center;
+        }
+
+
+        .img-list p {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        .img-list img {
+            width: 100%;
+        }
+        .img-margins img{
+            margin-right: 16px;
+        }
+    </style>
+</head>
+
+<body class="page-page">
+<textarea id="source">
+class: inverse 
+layout: true
+---
+class: first-slide
+count: false
+
+# PHP 101 - Introduction
+
+Qu&#39;est ce que le PHP ? Qui l&#39;utilise ? Pourquoi l&#39;apprendre ?
+---
+
+# Le PHP c&#39;est quoi ?
+
+--
+
+PHP est un langage de scripts **généraliste** et **Open Source**, spécialement conçu pour le développement
+d&#39;applications web. Il peut être intégré facilement au **HTML**.
+
+--
+
+👏👏👏 Cool 
+--
+background-image: url(../thinking.gif)
+background-size: cover 
+?
+
+--
+background-image: none
+
+```phtml
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Exemple&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;?php
+      echo &#34;Bonjour, je suis un script PHP !&#34;;
+    ?&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+```
+
+--
+
+Les pages PHP Contiennent des fragments d&#39;HTML et ce `&lt;?php ?&gt;` Quelque chose.
+---
+
+## Pourquoi apprendre le PHP ?
+
+--
+
+- Le PHP est un langage mort
+
+--
+
+- PHP est mort en 20**
+
+--
+
+- PHP n&#39;existe que parce que Wordpress
+
+--
+
+- Les développeurs PHP sont sous-payés
+
+--
+
+Le PHP est le 20ème sur 25 des langage aimés 2020 - [source](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages)
+
+--
+
+Donc pourquoi l&#39;apprendre ?
+
+
+---
+
+## Qui utilise PHP ?
+
+--
+
+**75% des sites du web sont en PHP.**
+
+--
+
+![](../usages.png)
+
+---
+class: img-list
+
+## Qui utilise PHP ?
+
+--
+![](../logo-blablacar.svg)
+![](../logo-dailymotion.png)
+![](../logo-etsy.png)
+![](../logo-baidu.png)
+--
+![](../logo-wiki.png)
+![](../logo-pornhub.png)
+![](../logo-facebook.png)
+
+---
+
+# Un peu d&#39;histoire
+
+--
+- PHP 👶 - 1994
+
+--
+- PHP 3 🐘 - 1998
+
+--
+- PHP 4 💩💩 - 2000
+
+--
+- PHP 5 💩 - 2004
+
+--
+- ~~PHP 6~~ ⚰️
+
+--
+- PHP 5.6 🌱 - 2014
+
+--
+- PHP 7 🌳 - 2015
+
+--
+- PHP 8 🚀 - novembre 2020
+
+--
+&lt;center&gt;
+![](../logo-elephpant.png)
+
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js">
+</script>
+<script>
+    var slideshow = remark.create({ratio: "16:9"});
+</script>
+</body>
+</html>

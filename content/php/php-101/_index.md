@@ -1,6 +1,7 @@
 ---
 title: PHP-101
+weight: 10000
+
 ---
 
-
-WIP
+PHP for beginners.

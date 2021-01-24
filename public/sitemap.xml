@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/courses/1-php/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/courses/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/courses/2-http/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/courses/3-composer/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/courses/4-http_foundation/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/courses/5-annotations/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/evaluation/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/courses/6-doctrine/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/courses/7-twig/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/courses/8-router/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/courses/9-symfony/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp1/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp1/tp1/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp2/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp2/1-httpfoundation/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp2/2-doctrine/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp2/3-twig/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp2/4-router/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp3/00-specs/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp3/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp3/01-getting-started-with-symfony/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp3/02-doctrine/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp3/03-administration/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp3/04-controllers/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp3/05-form/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp3/06-security/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp3/07-services/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp3/08-validateurs/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/tp3/09-serializer/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/php/php-101/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/php/php-101/intro/</loc>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/php/php-101/install/</loc>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/php/php-101/basic_syntax/</loc>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/presentations/php/1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/systems/systems-101/intro/</loc>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/php/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/presentations/php101/1-intro/</loc>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/presentations/</loc>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/search/</loc>
+    <lastmod>2020-12-19T12:48:57+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/dim/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/systems/systems-101/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/systems/</loc>
+    <lastmod>2020-12-19T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://0fd660284dee.ngrok.io/presentations/sys101/1-intro/</loc>
+  </url>
+  
+</urlset>

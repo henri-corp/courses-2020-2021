@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TP3 on Henri L.</title>
+    <link>http://0fd660284dee.ngrok.io/dim/tp3/</link>
+    <description>Recent content in TP3 on Henri L.</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://0fd660284dee.ngrok.io/dim/tp3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Specifications Techniques</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/00-specs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/00-specs/</guid>
+      <description>Objectif Réaliser un système de blog avec Symfony. Ce système de blog est destiné à des webzines, elle gère des auteurs qui vont écrire des articles. Les membres inscrits pourront commenter les articles mais non en écrire.
+Features  Publier un article S&#39;inscrire/Se connecter Consulter un article Commenter un article  Permissions Il y aura un administrateur qui aura accès à un back-office de gestion des utilisateurs. L&#39;administrateur pourra également dé-publier un article.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/01-getting-started-with-symfony/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/01-getting-started-with-symfony/</guid>
+      <description>Ce projet va se dérouler sur plusieurs scéances et aura pour objectif de réaliser un système de blog avec Symfony.
+ Les blocs quote (ce bloc par exemple), sont des questions à répondre dans le fichier README.md de votre projet
+ Installation du Framework Pour installer le Framework, il faut d&#39;abord installer l&#39;invite de commande Symfony.
+Cette invite de commande, disponible ici, permet de :
+ Créer de nouveaux projets Symfony Déployer sur Symfony Cloud Lancer des serveurs PHP .</description>
+    </item>
+    
+    <item>
+      <title>Doctrine</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/02-doctrine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/02-doctrine/</guid>
+      <description>Modele Ressources  Doctrine and Symfony  Create entities En utilisant la commande make:entity, on va créer 3 entités :
+tooltip: le type &amp;quot;relation&amp;quot; permet d&#39;être assisté pour la création de relations
+ User (id,username, isActive, isBlocked) Post (id, content, author, createdAt, isPublished, isDeleted) Comment (id, author,content, createdAt, isDeleted)  Contraintes :
+ Post a un author qui est un User Post a des Comments User a des Posts User a des Comments Comment est attaché à un Post Comment a un author qui est User   Quelles relations existent entre les entités (Many To One/Many To Many/.</description>
+    </item>
+    
+    <item>
+      <title>Administration</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/03-administration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/03-administration/</guid>
+      <description>Administration Administration dans Symfony  Faire une recherche sur les différentes solutions disponibles pour l&#39;administration dans Symfony
+ EasyAdmin  Travail préparatoire : Qu&#39;est-ce que EasyAdmin ?
+ Installer EasyAdmin et le configurer en suivant la documentation Officielle de EasyAdmin.
+ Pourquoi doit-on implémenter des méthodes to string dans nos entités?
+ Ressources  Easyadmin  </description>
+    </item>
+    
+    <item>
+      <title>Controllers</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/04-controllers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/04-controllers/</guid>
+      <description>Ressources  Controllers  De manière générale, les bonnes pratiques sont les suivantes :
+ Un contrôleur ne devrait pas avoir plus de 5 méthodes Une méthode de contrôlleur ne devrait pas contenir plus de 20 lignes  Implementation Implémenter les vues du blog pour la lecture seule
+ParamResolver  Qu&#39;est-ce que le ParamConverter ?
+ </description>
+    </item>
+    
+    <item>
+      <title>Form</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/05-form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/05-form/</guid>
+      <description>Formulaires Ressources forms
+Integration dans le projet  Qu&#39;est-ce qu&#39;un formulaire Symfony ?
+ Créez, directement des formulaires dans le contrôleur pour gérer vos entités en utilisant la méthode du contrôleur $this-&amp;gt;createFormBuilder..., l&#39;afficher dans twig et gérer son contenu avec Doctrine.
+ Quels avantages offrent l&#39;usage d&#39;un formulaire ?
+ Themes de formulaires Intégrer Bootstrap dans le projet et mettez à jour vos formulaires avec les bonnes classes en conséquence.</description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/06-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/06-security/</guid>
+      <description>Avant-propos Documentation Symfony - Securité
+ Définir les termes suivants : Encoder, Provider, Firewall, Access Control, Role, Voter
+ N.B.: On n&#39;utilisera pas FOSUserBundle car ce bundle est inutile.
+ Qu&#39;est-ce que FOSUserBundle ? Pourquoi ne pas l&#39;utiliser ?
+ La sécurité intègre le hash de mot de passe, la connexion et la gestion des autorisations.
+ Définir les termes suivants : Argon2i, Bcrypt, Plaintext, BasicHTTP
+  Expliquer le principe de hachage.</description>
+    </item>
+    
+    <item>
+      <title>Services</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/07-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/07-services/</guid>
+      <description>Travail preparatoire Services
+ À quoi sert un service dans Symfony ?
+Avez-vous déjà utilisé des services dans ce projet ? Si oui, lesquels ?
+Définir les termes suivant : Dependency Injection, Service, Autowiring, Container
+ Premier service Extraire l&#39;envoi d&#39;email de l&#39;inscription et en faire un service App\Services\MailerManager qui aura une méthode confirmRegistration(User $user). Ce service aura besoin du Mailer et de Twig pour générer les templates html.
+Gestion d&#39;un utilisateur Créer un service App\Services\UserAccountManager pour gérer le chiffrement des mots de passe et envoyer un email de confirmation à la création du compte.</description>
+    </item>
+    
+    <item>
+      <title>Validateurs</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/08-validateurs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/08-validateurs/</guid>
+      <description>Data Validation Validateurs
+ À quoi sert le validateur ?
+Dans quel contexte peut-on valider des données ?
+ Mise en place Mettre en place les validations sur l&#39;inscription, la publication d&#39;un Post et les commentaires.
+Il faut également penser à valider l&#39;unicité des utilisateurs.</description>
+    </item>
+    
+    <item>
+      <title>Serializer</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/09-serializer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/09-serializer/</guid>
+      <description>Avant-propos  How to use serializer Serializer   Quels sont les différentes parties du Serializer et à quoi servent-elles ?
+ Implementation Ajoutez une api pour que les personnes puissent accéder au site.
+L&#39;API aura plusieurs actions :
+  Consulter la liste des auteurs de posts avec le titre de leurs posts.
+  Consulter la liste des derniers posts.
+  Le Top des posts.
+  Les commentaires pour un Post.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cours PHP/Systems/Symfony on Henri L.</title>
+    <link>http://0fd660284dee.ngrok.io/</link>
+    <description>Recent content in Cours PHP/Systems/Symfony on Henri L.</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://0fd660284dee.ngrok.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1 - PHP</title>
+      <link>http://0fd660284dee.ngrok.io/dim/courses/1-php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/courses/1-php/</guid>
+      <description>Introduction Why ?  Langage de scripting Langage Backend pour le web  C&#39;est un langage interprété
+ Qui s&#39;en sert ?  Facebook (toujours) Wikipédia Wordpress   Symfony  Qui s&#39;en sert ?  Blablacar Dailymotion MindGeek (wiki)   Historique   Personal Home Page 1 - 1994 par Rasmus Lerdorf php 3.0 : Team PHP - 1998  &amp;quot;PHP Hypertext Processor&amp;quot;   php 4 : 2000 -&amp;gt; 2005 php 5.</description>
+    </item>
+    
+    <item>
+      <title>2 - HTTP</title>
+      <link>http://0fd660284dee.ngrok.io/dim/courses/2-http/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/courses/2-http/</guid>
+      <description>HTTP Le protocol HTTP est un protocole de communication Client-Serveur inventé dans les années 90 pour le World-Wide-Web. La plupart des clients utilisant ce protocol sont les navigateurs web.
+ HTTP Version
+ 1991:	0.9 1996:	1.0 1997:	1.1 2015:	2.0 2018:	3.0   Pourquoi HTTP    Simple : Les messages sont compréhensibles par les humains.
+  Extensible : À partir de HTTP/1.0, les en-têtes HTTP permettent d&#39;étendre facilement le protocole.</description>
+    </item>
+    
+    <item>
+      <title>3 - Composer</title>
+      <link>http://0fd660284dee.ngrok.io/dim/courses/3-composer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/courses/3-composer/</guid>
+      <description>Composer  Composer est un gestionnaire de packets PHP créé en 2012. Venant remplacer directement 🕸️PEAR, Composer est aujourd&#39;hui le plus utilisé.
+On peut retrouver la liste des packets sur Packagist.org
+ Un packet, c&#39;est une bibliothèque de code écrite par des développeurs pour répondre à un besoin, faire gagner du temps, apporter quelque chose à la communauté.
+ Par ailleurs, Composer intègre des fonctions d&#39;autoload qui respectent les standards PSR-4.</description>
+    </item>
+    
+    <item>
+      <title>4 - HTTP Foundation</title>
+      <link>http://0fd660284dee.ngrok.io/dim/courses/4-http_foundation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/courses/4-http_foundation/</guid>
+      <description>Symfony/HTTP-Foundation Symfony est une suite de composants qui a pour but de repondre aux besoins des developpeurs et ajouter une couche d&#39;abstraction au langage PHP.
+En PHP on peut accéder aux différentes données d&#39;une requête en utilisant la variable $GLOBALS et ses filles $_GET, $_POST, $_SERVER, $_SERVER, $_FILES, $_ENV, $_SESSION, $_COOKIE
+Le problème de l&#39;usage de ces variables, c&#39;est le fait que ça rend le code vite illisible et non-réutilisable.</description>
+    </item>
+    
+    <item>
+      <title>5 - Annotations</title>
+      <link>http://0fd660284dee.ngrok.io/dim/courses/5-annotations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/courses/5-annotations/</guid>
+      <description>Annotations   En programmation, une annotation est un élément permettant d&#39;ajouter des méta-données à un code source.
+  En PHP, les annotations sont sur les classes, les méthodes, et les attributs
+  Know the difference :warning:
+1 2 3 4  /* * Je suis un commentaire */ private $property;   1 2 3 4  /** * Je suis un commentaire d&amp;#39; annotation */ private $property;    En PHP les annotations ne sont pas supportées par défaut dans le langage, on utilise en général une bibliothèque prévue pour cela.</description>
+    </item>
+    
+    <item>
+      <title>6 - Doctrine</title>
+      <link>http://0fd660284dee.ngrok.io/dim/courses/6-doctrine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/courses/6-doctrine/</guid>
+      <description>Doctrine-Project est une suite de bibliothèques dont la fonction première est la manipulation de données de base de données.
+On distingue 2 projets Doctrine :
+Doctrine DBAL (DataBase Abstraction Layer) et Doctrine ORM (Object Relational Mapper).
+ Qu&#39;est-ce qu&#39;un ORM ?
+ Un mapping objet-relationnel (en anglais object-relational mapping ou ORM) est un type de programme informatique qui se place en interface entre un programme applicatif et une base de données relationnelle pour simuler une base de données orientée objet.</description>
+    </item>
+    
+    <item>
+      <title>7 - Twig</title>
+      <link>http://0fd660284dee.ngrok.io/dim/courses/7-twig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/courses/7-twig/</guid>
+      <description>Templating Un Template est un fichier texte qui permet de générer n&#39;importe quel format de fichier texte (HTML, XML, CSV, LaTeX...). Le PHP est le format le plus populaire pour faire du templating - en utilisant la syntaxe alternative :
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  &amp;lt;!doctype html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;&amp;lt;?= $title ?&amp;gt;&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;List Of Users&amp;lt;/h1&amp;gt; &amp;lt;table&amp;gt; &amp;lt;?</description>
+    </item>
+    
+    <item>
+      <title>8 - Router</title>
+      <link>http://0fd660284dee.ngrok.io/dim/courses/8-router/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/courses/8-router/</guid>
+      <description>Un Router est un composant important qui a pour but de rediriger les requêtes HTTP entrantes vers les services requis.
+Au début du Web, plusieurs sites appliquaient leurs routeurs de la manière suivante :
+1  https://shop.funko.com/product/show.php?id=24983   Cette Solution offre un usage simple mais limité du protocole HTTP et est déconseillée pour plusieurs raisons :
+ L&#39;utilisateur ne sait pas où il est Les moteurs de recherche ne peuvent pas garantir une bonne indexation  L&#39; objectif du routeur est donc de résoudre des url de ce type :</description>
+    </item>
+    
+    <item>
+      <title>9 - Symfony</title>
+      <link>http://0fd660284dee.ngrok.io/dim/courses/9-symfony/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/courses/9-symfony/</guid>
+      <description>Symfony est un Framework MVC Requête/ Réponse Créé en 2005 par Fabien Potencier pour l&#39;entreprise SensioLabs.
+Symfony -&amp;gt; SF -&amp;gt; Sensio Framework
+Symfony, c&#39;est avant tout une série de composants utilisables indépendamment et le Framework est la glue qui les lie.
+ Un Framework MVC standard se compose de ces différentes parties :
+  Le protocole HTTP est un protocole de communication entre un client et un serveur. C&#39;est un protocole de Requête/Rêponse.</description>
+    </item>
+    
+    <item>
+      <title>TP1 - Todo list</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp1/tp1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp1/tp1/</guid>
+      <description>Téléchargez le fichier suivant.
+Pour l&#39;exécuter, lancez la commande :
+php -S 0.0.0.0:8000 Rendez-vous sur localhost:8000. C&#39;est une todo-list app, une liste des tâches. Elle stocke ses données en base et permet l&#39;ajout de tâches, la suppression ainsi que la possibilité de cocher ces cases.
+Cette application est dégueulasse.
+L&#39;objectif est donc de faire le ménage dans cette application.
+1 - Base de donnees On va commencer par créer un dossier qu&#39;on va appeler model.</description>
+    </item>
+    
+    <item>
+      <title>1 - Http Foundation</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp2/1-httpfoundation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp2/1-httpfoundation/</guid>
+      <description>Initialisation du projet  Maintenant que vous avez installé Composer, on va créer une structure de dossiers adaptée au projet.
+. ├── public │ └── index.php └── src │ └── Controller On va laisser le fichier index.php vide pour le moment.
+La première étape va être d&#39;appeler la commande composer init qui va initialiser le projet Composer. Une série de questions seront posées. On peut ignorer chaque question pour le moment et passer à la suite.</description>
+    </item>
+    
+    <item>
+      <title>2 - Doctrine</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp2/2-doctrine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp2/2-doctrine/</guid>
+      <description>Téléchargez le code disponible ici : tp3.zip et décompressez l&#39;archive. Faire une nouvelle branche appelée p2 sur le projet du TP2 et mettre son code dans cette branche.
+Allez ensuite avec votre terminal dans le dossier en question, et avant de continuer il va falloir installer les dépendances composer. L&#39;archive contient déjà un dossier composer mais de dossier vendor, la première étape consiste à faire php bin/composer install. Une fois les dépendances installées, vous pouvez démarrer le serveur comme au premier TP.</description>
+    </item>
+    
+    <item>
+      <title>3 - Twig</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp2/3-twig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp2/3-twig/</guid>
+      <description>En partant du TP précédent et de la branche correspondante, créez une nouvelle branche p3 :
+1 2  git checkout p2 git checkout -b p3   L&#39;objectif est de remplacer dans le tp2 les fichiers HTML par des fichiers twig, en utilisant obligatoirement les fonctionnalités suivantes :
+ Syntaxe for else Héritage Inclusion Filtres  Le cache de notre application n&#39;ira pas dans le dossier src mais dans un dossier à la racine du projet qui s&#39;appellera var/cache et la totalité du dossier var ne doit pas être commit.</description>
+    </item>
+    
+    <item>
+      <title>4 - Router</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp2/4-router/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp2/4-router/</guid>
+      <description>À partir du TP précédent, créez une nouvelle branche p4.
+Kernel Update Pour commencer, installez les composants suivants avec composer
+symfony/routing doctrine/annotations doctrine/cache symfony/config symfony/framework-bundle Une fois les composants installés, on va modifier 2 fichiers du début du projet, le point d&#39;entrée de toutes les requêtes HTTP
+1 2 3 4 5 6 7 8 9 10  &amp;lt;?php $loader = require __DIR__ . &amp;#39;/../vendor/autoload.php&amp;#39;; \Doctrine\Common\Annotations\AnnotationRegistry::registerLoader([$loader, &amp;#39;loadClass&amp;#39;]); use App\Kernel; $kernel = new Kernel(false, true); $kernel-&amp;gt;run();   Mais on fait également évoluer le kernel de cette manière :</description>
+    </item>
+    
+    <item>
+      <title>Specifications Techniques</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/00-specs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/00-specs/</guid>
+      <description>Objectif Réaliser un système de blog avec Symfony. Ce système de blog est destiné à des webzines, elle gère des auteurs qui vont écrire des articles. Les membres inscrits pourront commenter les articles mais non en écrire.
+Features  Publier un article S&#39;inscrire/Se connecter Consulter un article Commenter un article  Permissions Il y aura un administrateur qui aura accès à un back-office de gestion des utilisateurs. L&#39;administrateur pourra également dé-publier un article.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/01-getting-started-with-symfony/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/01-getting-started-with-symfony/</guid>
+      <description>Ce projet va se dérouler sur plusieurs scéances et aura pour objectif de réaliser un système de blog avec Symfony.
+ Les blocs quote (ce bloc par exemple), sont des questions à répondre dans le fichier README.md de votre projet
+ Installation du Framework Pour installer le Framework, il faut d&#39;abord installer l&#39;invite de commande Symfony.
+Cette invite de commande, disponible ici, permet de :
+ Créer de nouveaux projets Symfony Déployer sur Symfony Cloud Lancer des serveurs PHP .</description>
+    </item>
+    
+    <item>
+      <title>Doctrine</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/02-doctrine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/02-doctrine/</guid>
+      <description>Modele Ressources  Doctrine and Symfony  Create entities En utilisant la commande make:entity, on va créer 3 entités :
+tooltip: le type &amp;quot;relation&amp;quot; permet d&#39;être assisté pour la création de relations
+ User (id,username, isActive, isBlocked) Post (id, content, author, createdAt, isPublished, isDeleted) Comment (id, author,content, createdAt, isDeleted)  Contraintes :
+ Post a un author qui est un User Post a des Comments User a des Posts User a des Comments Comment est attaché à un Post Comment a un author qui est User   Quelles relations existent entre les entités (Many To One/Many To Many/.</description>
+    </item>
+    
+    <item>
+      <title>Administration</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/03-administration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/03-administration/</guid>
+      <description>Administration Administration dans Symfony  Faire une recherche sur les différentes solutions disponibles pour l&#39;administration dans Symfony
+ EasyAdmin  Travail préparatoire : Qu&#39;est-ce que EasyAdmin ?
+ Installer EasyAdmin et le configurer en suivant la documentation Officielle de EasyAdmin.
+ Pourquoi doit-on implémenter des méthodes to string dans nos entités?
+ Ressources  Easyadmin  </description>
+    </item>
+    
+    <item>
+      <title>Controllers</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/04-controllers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/04-controllers/</guid>
+      <description>Ressources  Controllers  De manière générale, les bonnes pratiques sont les suivantes :
+ Un contrôleur ne devrait pas avoir plus de 5 méthodes Une méthode de contrôlleur ne devrait pas contenir plus de 20 lignes  Implementation Implémenter les vues du blog pour la lecture seule
+ParamResolver  Qu&#39;est-ce que le ParamConverter ?
+ </description>
+    </item>
+    
+    <item>
+      <title>Form</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/05-form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/05-form/</guid>
+      <description>Formulaires Ressources forms
+Integration dans le projet  Qu&#39;est-ce qu&#39;un formulaire Symfony ?
+ Créez, directement des formulaires dans le contrôleur pour gérer vos entités en utilisant la méthode du contrôleur $this-&amp;gt;createFormBuilder..., l&#39;afficher dans twig et gérer son contenu avec Doctrine.
+ Quels avantages offrent l&#39;usage d&#39;un formulaire ?
+ Themes de formulaires Intégrer Bootstrap dans le projet et mettez à jour vos formulaires avec les bonnes classes en conséquence.</description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/06-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/06-security/</guid>
+      <description>Avant-propos Documentation Symfony - Securité
+ Définir les termes suivants : Encoder, Provider, Firewall, Access Control, Role, Voter
+ N.B.: On n&#39;utilisera pas FOSUserBundle car ce bundle est inutile.
+ Qu&#39;est-ce que FOSUserBundle ? Pourquoi ne pas l&#39;utiliser ?
+ La sécurité intègre le hash de mot de passe, la connexion et la gestion des autorisations.
+ Définir les termes suivants : Argon2i, Bcrypt, Plaintext, BasicHTTP
+  Expliquer le principe de hachage.</description>
+    </item>
+    
+    <item>
+      <title>Services</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/07-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/07-services/</guid>
+      <description>Travail preparatoire Services
+ À quoi sert un service dans Symfony ?
+Avez-vous déjà utilisé des services dans ce projet ? Si oui, lesquels ?
+Définir les termes suivant : Dependency Injection, Service, Autowiring, Container
+ Premier service Extraire l&#39;envoi d&#39;email de l&#39;inscription et en faire un service App\Services\MailerManager qui aura une méthode confirmRegistration(User $user). Ce service aura besoin du Mailer et de Twig pour générer les templates html.
+Gestion d&#39;un utilisateur Créer un service App\Services\UserAccountManager pour gérer le chiffrement des mots de passe et envoyer un email de confirmation à la création du compte.</description>
+    </item>
+    
+    <item>
+      <title>Validateurs</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/08-validateurs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/08-validateurs/</guid>
+      <description>Data Validation Validateurs
+ À quoi sert le validateur ?
+Dans quel contexte peut-on valider des données ?
+ Mise en place Mettre en place les validations sur l&#39;inscription, la publication d&#39;un Post et les commentaires.
+Il faut également penser à valider l&#39;unicité des utilisateurs.</description>
+    </item>
+    
+    <item>
+      <title>Serializer</title>
+      <link>http://0fd660284dee.ngrok.io/dim/tp3/09-serializer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/dim/tp3/09-serializer/</guid>
+      <description>Avant-propos  How to use serializer Serializer   Quels sont les différentes parties du Serializer et à quoi servent-elles ?
+ Implementation Ajoutez une api pour que les personnes puissent accéder au site.
+L&#39;API aura plusieurs actions :
+  Consulter la liste des auteurs de posts avec le titre de leurs posts.
+  Consulter la liste des derniers posts.
+  Le Top des posts.
+  Les commentaires pour un Post.</description>
+    </item>
+    
+    <item>
+      <title>Intro</title>
+      <link>http://0fd660284dee.ngrok.io/php/php-101/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/php/php-101/intro/</guid>
+      <description>PHP, c&#39;est quoi ? 🐘 PHP (officiellement, ce sigle est un acronyme récursif pour PHP Hypertext Preprocessor) est un langage de scripts généraliste et Open Source, spécialement conçu pour le développement d&#39;applications web. Il peut être intégré facilement au HTML.
+TOP ! mais... ça veut dire quoi 🤷 ? Un exemple :
+Exemple #1 Exemple d&#39;introduction
+1 2 3 4 5 6 7 8 9 10 11  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Exemple&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;?</description>
+    </item>
+    
+    <item>
+      <title>Installation et Prérequis</title>
+      <link>http://0fd660284dee.ngrok.io/php/php-101/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/php/php-101/install/</guid>
+      <description>La seule chose qui sera requise pour cette partie du cours sera PHP 8 installé sur votre machine.
+Linux 🐧 Ubuntu (avec APT) Il faut dabord ajouter le PPA PHP de Ondrej Sury, le PPA le plus maintenu à jour avec PHP.
+sudo add-apt-repository ppa:ondrej/php sudo apt-get update Une fois les bibliothèques mises à jour, il ne reste plus qu&#39;à installer php :
+sudo apt-get install php8.0-common php8.0-cli Mac OSX 🍏 Le plus simple pour installer PHP 8 sur Mac OSX est d&#39;installer d&#39;abord Homebrew.</description>
+    </item>
+    
+    <item>
+      <title>Basic Syntax</title>
+      <link>http://0fd660284dee.ngrok.io/php/php-101/basic_syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/php/php-101/basic_syntax/</guid>
+      <description>Scripts et Fichiers PHP Le PHP est un langage interprété comme le javascript. Lors de l&#39;execution le code source est lu puis executé par l&#39;interpréteur PHP. Aucun executable n&#39;est produit donc seul le code source est distribué.
+La manière la plus simple d&#39;executer du code PHP est de créer un fichier avec l&#39;extension .php et de lancer la commande suivante :
+1  php monScript.php   la balise PHP s&#39;utilise ainsi</description>
+    </item>
+    
+    <item>
+      <title>Hello</title>
+      <link>http://0fd660284dee.ngrok.io/presentations/php/1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/presentations/php/1/</guid>
+      <description>Usage Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis semper eros. Donec aliquet tincidunt tincidunt. In sollicitudin hendrerit rhoncus. Donec felis ex, sollicitudin vel odio sit amet, bibendum porttitor eros. Donec imperdiet, lectus ut fermentum pellentesque, ligula nibh lacinia purus, eget imperdiet ante tortor sit amet velit. Donec maximus felis nec velit mollis, et aliquam nulla pulvinar. Sed tincidunt enim ut neque varius porttitor. Aenean rhoncus, erat sed varius pellentesque, nunc nunc cursus eros, id mollis tortor ligula a ante.</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>http://0fd660284dee.ngrok.io/systems/systems-101/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/systems/systems-101/intro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PHP 101 - Introduction</title>
+      <link>http://0fd660284dee.ngrok.io/presentations/php101/1-intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/presentations/php101/1-intro/</guid>
+      <description>Le PHP c&#39;est quoi ? --
+PHP est un langage de scripts généraliste et Open Source, spécialement conçu pour le développement d&#39;applications web. Il peut être intégré facilement au HTML.
+--
+👏👏👏 Cool background-image: url(../thinking.gif) background-size: cover ?
+-- background-image: none
+1 2 3 4 5 6 7 8 9 10 11  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Exemple&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;?php echo &amp;#34;Bonjour, je suis un script PHP !&amp;#34;; ?&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;   --</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>http://0fd660284dee.ngrok.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Systems 101</title>
+      <link>http://0fd660284dee.ngrok.io/presentations/sys101/1-intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0fd660284dee.ngrok.io/presentations/sys101/1-intro/</guid>
+      <description>Un système d&#39;exploitation c&#39;est quoi ? --
+En informatique, un système d&#39;exploitation (souvent appelé OS — de l&#39;anglais Operating System) est un ensemble de programmes qui dirige l&#39;utilisation des ressources d&#39;un ordinateur par des logiciels applicatifs.
+--
+ Il reçoit les demandes d&#39;utilisation des applications pour les ressources de l&#39;ordinateur  ressources de stockage (mémoire vive et disque durs) 💾 ressources de calcul du CPU 🧠 ressources de communications vers les périphériques 🖱️🖨️⌨️ ressources de réseau 🌍     class: img-margins</description>
+    </item>
+    
+  </channel>
+</rss>

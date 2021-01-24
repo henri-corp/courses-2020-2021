@@ -1,4 +1,3 @@
-baseURL = "https://example.com/"
 title = "Henri L."
 enableRobotsTXT = true
 # this example loads the theme as hugo module
@@ -6,6 +5,7 @@ enableRobotsTXT = true
 # theme = ["github.com/onweru/compose"] # edit this if you'ld rather use a fork of this repo
 theme = "compose"
 enableGitInfo = true
+baseURL = " https://8cb81468dfd2.ngrok.io"
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
@@ -17,7 +17,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 [[menu.main]]
     name = "Systems"
     weight = 3
-    url = "/systems"
+    url = "/sys-101"
 [[menu.main]]
     name = "Symfony"
     weight = 4
@@ -52,12 +52,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   time_format_blog = "Monday, January 02, 2006"
   time_format_default = "January 2, 2006"
   enableDarkMode = true # set to false to disable darkmode by default # user will still have the option to use dark mode
-
+  docSections= ["dim","php","sys-101"]
   # Site logo
   [params.logo]
     lightMode = "logo-dark.svg"
     darkMode = "logo-light.svg"
-
 
   # optional
   # attribution. Feel free to delete this

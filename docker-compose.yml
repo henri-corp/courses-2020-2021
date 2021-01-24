@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  courses:
+    image: registry.h91.co/courses/2020:latest
+    build: .
+    ports:
+      - 8080:80
