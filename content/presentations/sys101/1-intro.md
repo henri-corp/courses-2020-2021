@@ -1,6 +1,6 @@
 ---
 title: "Systems 101" 
-description: "Qu'est ce que les systèmes et pourquoi on l'apprend ?"
+description: "Qu'est-ce que les systèmes et pourquoi on l'apprend ?"
 light: true
 ---
 
@@ -18,6 +18,30 @@ light: true
 --
 
 -  **Quels systèmes d'exploitation connaissez-vous ?**
+
+---
+
+# Mais avant...
+
+--
+
+# [henri.run/r/U7j](https://henri.run/r/U7j)
+
+... à tout à l'heure!
+
+<div class="qrcode">
+![](https://henri.run/r/U7j)
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script>
+var typeNumber = 4;
+var errorCorrectionLevel = 'L';
+var qr = qrcode(typeNumber, errorCorrectionLevel);
+qr.addData('Hi!');
+qr.make();
+document.querySelector('qrcode').innerHTML = qr.createImgTag();
+</script>
+
 
 ---
 
@@ -258,17 +282,22 @@ Très vite il associe aux développeurs de GNU (dérivé de UNIX) et forment ens
 
 ## Et Aujourd'hui ? 
 
-Linux est le système d'exploitation le plus utilisé au monde
+--
+
+> Linux est un cancer qui s'attache, au sens de la propriété intellectuelle, à tout ce qu'il touche.
+>> Steve Balmer - PDG de Microsoft / 2000-2014
+
 
 --
 
 ![](https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg)
 
+Linux est le système d'exploitation le plus utilisé au monde
+
+
+
 --
 
 Et vous dans tout ça ?
-
-
----
 
 

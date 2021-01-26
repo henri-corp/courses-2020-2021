@@ -5,7 +5,6 @@ enableRobotsTXT = true
 # theme = ["github.com/onweru/compose"] # edit this if you'ld rather use a fork of this repo
 theme = "compose"
 enableGitInfo = true
-baseURL = " https://8cb81468dfd2.ngrok.io"
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
