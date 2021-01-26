@@ -177,3 +177,14 @@ Commandes sur le texte
 ### `head` & `tail`
 --
 
+---
+# Éditeurs de texte
+
+Les 3 éditeurs en lignes de commande les plus connus:
+- nano 
+- vim 
+- emacs
+
+// Décrire ici un peu chacuns
+
+---
