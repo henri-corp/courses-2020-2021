@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9af345b-f961-40b7-8988-ac96aed79c76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/presentations/sys101/2-commandes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/sys-101/tp/tp2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/compose/layouts/presentations/single.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/compose/layouts/shortcodes/center.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/presentations/sys101/1-intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/presentations/sys101/1-intro.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sys-101/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/sys-101/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sys-101/intro.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sys-101/tp/tp1.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/sys-101/tp/tp1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/sass/sass/main.sass_ca26857cefa9076967ab300682271513.content" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/sass/sass/main.sass_ca26857cefa9076967ab300682271513.content" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/sass/sass/main.sass_ca26857cefa9076967ab300682271513.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/sass/sass/main.sass_ca26857cefa9076967ab300682271513.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/compose" beforeDir="false" afterPath="$PROJECT_DIR$/themes/compose" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/compose/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/compose/assets/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/compose/assets/sass/_base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/themes/compose/assets/sass/_base.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/compose/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/compose/layouts/_default/baseof.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/compose/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/compose/layouts/_default/single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/compose/layouts/partials/document.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/compose/layouts/partials/document.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/compose/layouts/partials/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/compose/layouts/partials/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/compose/layouts/partials/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/compose/layouts/partials/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/compose/layouts/partials/pager.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/compose/layouts/partials/pager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/compose/layouts/partials/scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/compose/layouts/partials/scripts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/presentations/sys101/2-commandes.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/presentations/sys101/2-commandes.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
