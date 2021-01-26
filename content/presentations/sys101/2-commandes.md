@@ -123,36 +123,83 @@ Options utiles :
 ### `cd`
 --
 
+Change le dossier courant
+
+Arguments :
+
+- Le chemin du dossier vers lequel aller, **défaut:** le home directory
+
 
 ---
 ### `cp`
 --
 
+Copie le(s) fichier(s) vers un autre endroit
+
+Arguments :
+
+- Le chemin du fichier à copier
+- Le chemin de destination
+
+Options :
+
+- `-r`: Copie de manière récusrive les dossiers
 
 ---
 ### `pwd`
 --
 
+Affiche le dossier courant
 
 ---
 ### `mv`
 --
 
+Déplace un(des) fichier(s) (également utilisé pour renommer un fichier)
+
+Arguments :
+
+- Le(s) chemin(s) du(des) fichier(s) à déplacer
+- Le chemin de destination (Le dossier de destination si plusieurs fichiers sont à déplacer)
 
 ---
 ### `rm`
 --
 
+Supprime un(des) fichier(s)
+
+Arguments :
+
+- Le(s) chemin(s) de(s) fichier(s) à supprimer
+
+Options :
+
+- `-r`: Supprime de manière récursive les dossiers
+- `-f`: Force la suppression sans demander confirmation
 
 ---
 ### `mkdir`
 --
 
+Créé un(des) dossier(s)
+
+Arguments :
+
+- Le(s) dossier(s) (ou chemin(s)) à créer
+
+Options :
+
+- `-p`: Créé les dossiers parents 
 
 ---
 ### `touch`
 --
 
+Change l'horodatage du(des) fichier(s). Est souvent utiliser pour créer un(des) fichiers
+
+Arguments :
+
+- Liste de(s) fichier(s) à mettre à jour/créer
 
 ---
 
@@ -166,25 +213,61 @@ Commandes sur le texte
 ### `wc`
 --
 
+Affiche le nombre de lignes, de mots et de caractères dans le fichier
+
+Arguments :
+
+- Le(s) fichier(s) pour le(s)quel(s) on souhaite connaitre ces informations (Si plusieurs fichiers sont précisés, le total est renvoyé) 
 
 ---
 ### `cat`, `more` or `less`
 --
 
+- `cat` concatène le(s) fichier(s) passés en paramètre et renvoie le résultat 
+
+- `more` affiche le contenu d'un (ou plusieurs) fichier(s) en permettant de scroller
+
+- `less` is more
+
+Arguments :
+
+- Le(s) fichier(s) à afficher
 
 ---
 
 ### `head` & `tail`
 --
 
+Permet d'afficher les premières ou dernières lignes d'un fichier
+
+Arguments :
+
+- Le(s) fichier(s) à afficher
+
+Option(s) : 
+
+- `n`: Le nombre de lignes à afficher
+
 ---
 # Éditeurs de texte
 
 Les 3 éditeurs en lignes de commande les plus connus:
-- nano 
-- vim 
-- emacs
-
-// Décrire ici un peu chacuns
+- nano : Éditeur de texte simple en lignes de commande 
+    - `^X` : quitter
+    - `^W` : rechercher
+    - `Alt + U` : copier
+    - [et quelques autres](https://www.nano-editor.org/dist/latest/cheatsheet.html)
+- vim : Éditeur de texte avancé en lignes de commande
+    - `i` : taper du texte 
+    - `echap` : repasser en mode commande
+    - `w` : sauvegarder
+    - `q` : quitter
+    - `wq` ou `x` ou `ZZ` : sauvegarder et quitter
+    - [et plein d'autres](https://devhints.io/vim)
+- emacs : Éditeur de texte avancé en lignes de commande avec possibilité d'avoir un GUI
+    - `^X + ^C` : quitter
+    - `Alt + W` : copier
+    - `Ctrl + Y` : coller
+    - [et plein d'autres](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf)
 
 ---
