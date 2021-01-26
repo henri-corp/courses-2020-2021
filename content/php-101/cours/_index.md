@@ -1,6 +1,6 @@
 ---
-title: PHP-101
-weight: 10000
+title: cours
+weight: 10001
 
 ---
 

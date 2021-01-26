@@ -201,8 +201,50 @@ Arguments :
 
 - Liste de(s) fichier(s) à mettre à jour/créer
 
----
 
+---
+class: first-slide
+
+# Les commandes à connaitre
+
+Commandes sur les sessions et la machine
+
+---
+### `sudo`
+--
+
+Permet d'exécuter une commande en tant qu'administrateur.
+
+Arguments :
+- la commande a exécuter
+
+Options :
+- `-s`: Permet de verrouiller la commande sudo 
+---
+### `halt`
+--
+
+Permet d'éteindre un ordinateur
+
+---
+### `reboot`
+--
+
+Permet de programmer un redémarrage
+---
+### `ssh`
+--
+
+Permet d'établir une connexion en utilisant le protocole **ssh**
+
+Arguments:
+- `utilisateur@adresseMachine` : le nom de l'utilisateur et l'adresse de la machine sur laquelle se connecter
+---
+### `exit`
+--
+
+quitter une connexion ssh.
+---
 class: first-slide
 
 # Les commandes à connaitre
@@ -246,7 +288,8 @@ Arguments :
 
 Option(s) : 
 
-- `n`: Le nombre de lignes à afficher
+- `-n 10`: Le nombre de lignes à afficher (ici 10)
+- `-f`: Forcer la mise à jour du résultat si le fichier change
 
 ---
 # Éditeurs de texte
@@ -257,17 +300,18 @@ Les 3 éditeurs en lignes de commande les plus connus:
     - `^W` : rechercher
     - `Alt + U` : copier
     - [et quelques autres](https://www.nano-editor.org/dist/latest/cheatsheet.html)
+--
 - vim : Éditeur de texte avancé en lignes de commande
     - `i` : taper du texte 
     - `echap` : repasser en mode commande
-    - `w` : sauvegarder
-    - `q` : quitter
-    - `wq` ou `x` ou `ZZ` : sauvegarder et quitter
+    - `:w` : sauvegarder
+    - `:q` : quitter
+    - `:wq` ou `:x` ou `ZZ` : sauvegarder et quitter
     - [et plein d'autres](https://devhints.io/vim)
+--
 - emacs : Éditeur de texte avancé en lignes de commande avec possibilité d'avoir un GUI
     - `^X + ^C` : quitter
     - `Alt + W` : copier
     - `Ctrl + Y` : coller
     - [et plein d'autres](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf)
 
----

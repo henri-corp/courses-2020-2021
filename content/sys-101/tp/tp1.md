@@ -152,6 +152,9 @@ Avant de commencer il faut définir plusieurs notions :
 > - parent dir (`..`)
 > - working dir (`.`)
 
+>  qui est root ?
+>
+
 > Que font les commandes suivantes ?
 > - `pwd`
 > - `cd`

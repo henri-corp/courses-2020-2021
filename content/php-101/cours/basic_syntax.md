@@ -269,7 +269,7 @@ $a = 1;
 $a += 2;
 $a -= 3;
 ```
-
+<!--
 ## Fonctions
 
 ### Affichage
@@ -277,3 +277,4 @@ $a -= 3;
 Il existe plusieurs fonctions d'affichage en PHP, la plus utilisée est la fonction `echo`.
 
 ##### Echo
+-->

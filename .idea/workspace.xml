@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9af345b-f961-40b7-8988-ac96aed79c76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/content/php-101/cours/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/php-101/tp/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/presentations/sys101/3-dossiers.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/sys-101/tp/tp3.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/php/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/php/php-101/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/php/php-101/basic_syntax.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/cours/basic_syntax.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/php/php-101/dead-php.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/cours/dead-php.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/php/php-101/install.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/cours/install.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/php/php-101/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/cours/intro.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/presentations/sys101/2-commandes.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/presentations/sys101/2-commandes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/sys-101/tp/tp1.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/sys-101/tp/tp1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/c2/layouts/presentations/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/c2/layouts/presentations/single.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +44,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../perso/Amber" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/presentations/sys101" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,10 +56,13 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/presentations/sys101" />
+      <recent name="$PROJECT_DIR$/content/php-101/cours" />
       <recent name="$PROJECT_DIR$/content/sys-101/tp" />
       <recent name="$PROJECT_DIR$/content/presentations/php101" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/php-101/cours" />
+      <recent name="$PROJECT_DIR$/content/php-101" />
       <recent name="$PROJECT_DIR$/content/SYS101" />
     </key>
   </component>
