@@ -22,9 +22,11 @@ $ CMD [--OPTS[=...]] [ARGS...]
 
 --
 
-- `CMD` : le programme que l'on veut exécuter --
+- `CMD` : le programme que l'on veut exécuter 
+--
 
-- `OPT` : les options de la commande --
+- `OPT` : les options de la commande
+--
 
 - `CMD` : les arguments de la commande
 
@@ -46,7 +48,9 @@ function CMD(ARG1, ARG2, OPTS
 $ CMD [--OPTS[=...]] [ARGS...]
 ```
 
--- Par exemple :
+--
+
+Par exemple :
 
 - une commande pour lister tous les fichiers dans un dossier
 
@@ -54,7 +58,10 @@ $ CMD [--OPTS[=...]] [ARGS...]
 ls -a -l /home
 ```
 
--- commande : `ls`, arguments : `/home`, options : `a`, `l`
+--
+
+commande : `ls`, arguments : `/home`, options : `a`, `l`
+
 --
 
 - une commande pour copier un dossier
@@ -63,7 +70,10 @@ ls -a -l /home
 cp -R folder1 folder2
 ```
 
--- commande : `cp`, arguments : `folder1`, `folder2`, options : `R`
+--
+
+commande : `cp`, arguments : `folder1`, `folder2`, options : `R`
+
 --
 
 
@@ -200,6 +210,92 @@ Change l'horodatage du(des) fichier(s). Est souvent utiliser pour créer un(des)
 Arguments :
 
 - Liste de(s) fichier(s) à mettre à jour/créer
+
+---
+### `chmod`
+--
+
+Change la permission du(des) fichier(s)
+
+Arguments :
+
+- règle de permission
+- Le(s) dossier(s) (ou chemin(s)) à modifier
+
+Options :
+
+- `-R`: De manière récursive
+
+---
+### `chown`
+--
+
+Change la propriété du(des) fichier(s)
+
+Arguments :
+
+- le propriétaire[:le groupe]
+- le fichier
+
+Options :
+
+- `-R`: De manière récursive
+
+Exemple : 
+
+```shell
+drwxrwxr-x 4 henri administrateurs 4,0K janv. 23 19:04 a
+```
+
+le user c'est Henri, le groupe c'est administrateurs
+
+---
+
+Permissions : 
+
+3 niveaux : `Read` - `Write` - `eXecute`
+
+3 personnes : propriétaire, le groupe et le reste.
+
+--
+
+Règles par masque : 
+- 1 : `x`
+- 2 : `w`
+- 4 : `r`
+
+On définit le masque par l'addition des valeurs.
+
+
+
+- 777 : 
+--
+7 : utilisateur, 7 : groupe, 7 : public => `rwx rwx rwx`
+ : Tout le monde peut tout faire avec le fichier
+--
+  
+- 744 : 
+--
+7 : utilisateur, 4 : groupe, 4 : public => `rwx r-- r--`
+  : le Owner peut tout faire, lew autres peuvent uniquement lire le fichier
+--
+  
+- 321 :
+--
+  3 : utilisateur, 2 : groupe, 1 : public => `-wx -w- --x` (boite de dépôt du groupe)
+
+---
+
+Exemple d'usage : 
+```shell
+total 24K
+drwxrwxr-x 4 henri henri 4,0K janv. 23 19:04 a
+-rw-rw-r-- 1 henri henri    2 janv. 24 15:56 a.txt
+drwxrwxr-x 4 henri henri 4,0K janv. 23 19:04 b
+-rw-rw-r-- 1 henri henri    2 janv. 24 15:56 b.txt
+d--------- 5 henri henri 4,0K janv. 26 23:44 F
+drwx------ 2 henri henri 4,0K janv. 24 23:43 out
+```
 
 
 ---
