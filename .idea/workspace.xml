@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d9af345b-f961-40b7-8988-ac96aed79c76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/php-101/cours/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/php-101/tp/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/presentations/sys101/3-dossiers.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/sys-101/tp/tp3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/presentations/dim/1-PHP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/presentations/sys101/4-Git.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/presentations/sys101/git-who-use.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/presentations/sys101/git.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/presentations/sys101/github-profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/presentations/sys101/github-project-page.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/presentations/sys101/github-timeline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/sys-101/tp/git-stages.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/php/_index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/php/php-101/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/php/php-101/basic_syntax.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/cours/basic_syntax.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/php/php-101/dead-php.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/cours/dead-php.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/php/php-101/install.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/cours/install.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/php/php-101/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/cours/intro.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/presentations/sys101/2-commandes.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/presentations/sys101/2-commandes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sys-101/tp/tp1.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/sys-101/tp/tp1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/c2/layouts/presentations/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/c2/layouts/presentations/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/dim/TP1/tp1.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/dim/TP1/tp1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/dim/courses/1-PHP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/presentations/php/1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/sys-101/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/sys-101/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/sys-101/tp/tp3.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/sys-101/tp/tp3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/sass/sass/main.sass_ca26857cefa9076967ab300682271513.content" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/sass/sass/main.sass_ca26857cefa9076967ab300682271513.content" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/sass/sass/main.sass_ca26857cefa9076967ab300682271513.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/sass/sass/main.sass_ca26857cefa9076967ab300682271513.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/c2/assets/sass/_base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/themes/c2/assets/sass/_base.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/c2/assets/sass/_variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/themes/c2/assets/sass/_variables.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +62,12 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/presentations/sys101" />
-      <recent name="$PROJECT_DIR$/content/php-101/cours" />
       <recent name="$PROJECT_DIR$/content/sys-101/tp" />
+      <recent name="$PROJECT_DIR$/content/php-101/cours" />
       <recent name="$PROJECT_DIR$/content/presentations/php101" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/presentations/dim" />
       <recent name="$PROJECT_DIR$/content/php-101/cours" />
       <recent name="$PROJECT_DIR$/content/php-101" />
       <recent name="$PROJECT_DIR$/content/SYS101" />

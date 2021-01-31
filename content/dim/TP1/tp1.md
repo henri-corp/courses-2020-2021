@@ -36,7 +36,7 @@ Voici un exemple de ce qui est attendu :
 final class Database
 {
     private static ?self $instance = null;
-    private $pdo;
+    private PDO $pdo;
 
     private function __construct($path)
     {

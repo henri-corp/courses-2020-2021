@@ -1,10 +1,16 @@
 ---
-title: 1 - PHP
+title: PHP
 weight: 1
 ---
+## Qui parmi vous fait du PHP ? 
 
-## Introduction
-### Why ?
+<div style="text-align: center;margin-top: 10px;"><img src="../headaches.png" style="height: 350px"/></div>
+
+---
+
+
+
+## PHP C'est quoi ? 
 
 - Langage de scripting
 - Langage Backend pour le web
@@ -25,7 +31,7 @@ C'est un langage **interprété**
 
 ---
 
-### Qui s'en sert ? 
+### Qui s'en sert ?
 
 
 - Blablacar
@@ -47,7 +53,8 @@ C'est un langage **interprété**
 - php 5.3 : 2009
 - php 5.6 : 2014
 - php 7 : 2015
-- php 7.4 : novembre 2019
+- php 8.0 : novembre 2019
+- PHP 8 : Novembre 2020
 
 [museum.php.net](https://museum.php.net)
 
@@ -55,58 +62,35 @@ C'est un langage **interprété**
 ### Pourquoi ce cours ?
 
 - Remettre tout le monde à niveau
-- Vous mettre à jour, avant de rentrer dans le vif du sujet
+- Pour Vous mettre à jour, avant de rentrer dans le vif du sujet
 
-----
+---
 ## Outils pour ce cours
 
-
-PHP 7.4 avec l'extension PDO SQLite ET C'EST TOUT !
-
----
-### Installation
-
-
-- Linux Ubuntu
-```bash
-sudo add-apt-repository ppa:ondrej/php
-sudo apt-get update
-sudo apt-get install php7.4-cli \
-    php7.4-xml \
-    php7.4-json \
-    php7.4-sqlite3 \
-    php7.4-mbstring \
-    php7.4-intl
-```
+--
+- PHP 8 (avec SQlite)
+--
+  
+- ...
+--
+  
+- et c'est tout!
 
 ---
-- Mac OSX Avec Homebrew
-```bash
-brew update
-brew install php@7.4
-```
 
----
-- Windows
-
-Télécharger les binaires sur windows.php.net et l'extraire le contenu dans `c:/php`.
-
-Faire pointer sa variable d'environement (PATH) sur `C:\php` ou utiliser directement en ligne de commande `C:\php\php.exe`
-
----
 ### Usage
 
 
-En ligne de commande : 
+En ligne de commande :
 
 ```bash
 php -v
 ```
 ```bash
-PHP 7.4.1 (cli) (built: Dec 18 2019 14:44:22) ( NTS )
+PHP 8.0.1 (cli) (built: Jan 13 2021 08:23:31) ( NTS )
 Copyright (c) The PHP Group
-Zend Engine v3.4.0, Copyright (c) Zend Technologies
-    with Zend OPcache v7.4.1, Copyright (c), by Zend Technologies
+Zend Engine v4.0.1, Copyright (c) Zend Technologies
+    with Zend OPcache v8.0.1, Copyright (c), by Zend Technologies
 ```
 
 ---
@@ -116,14 +100,13 @@ Démarrer un serveur local qui pointe sur un dossier public
 php -S 0.0.0.0:8000 -t public
 ```
 ```bash
-PHP 7.4.1 Development Server (http://0.0.0.0:8000) started
+PHP 8.0.1 Development Server (http://0.0.0.0:8000) started
 ```
 Le serveur est disponible sur http://localhost:8000
 
-----
+---
 ## Syntaxe de base
 
----
 ```php
 <?php
 
@@ -135,7 +118,7 @@ echo $myVar . " " . $myInt;
 $myInt = $myInt * 2;
 ```
 
----
+--
 ```php
 function addition(int $a, int $b) int{
     return $a + $b;
@@ -168,9 +151,9 @@ Pour les inclusions il ne faut pas utiliser les "once" : ces fonctions ne sont p
 
 > Include peut être utilisé mais ne va pas générer d'erreur en cas d'absence du fichier.
 
-----
+---
 ## Syntaxe Objet
-
+---
 PHP est un langage Langage Orienté Objet
 
 ```php
@@ -201,17 +184,17 @@ class Bar {
 - Non, c'est pas obligatoire
 - Mais oui c'est mieux
 
-----
+---
 
-Ce qui peut être typé : 
- - Les arguments d'une fonction/méthode **7.0**
- - Les valeurs de retour de fonction **7.0**
- - Les attributs d'un objet ! **7.4**
+Ce qui peut être typé :
+- Les arguments d'une fonction/méthode **7.0**
+- Les valeurs de retour de fonction **7.0**
+- Les attributs d'un objet ! **7.4**
 
 Ce qui ne peut pas être typé :
- - Les variables
+- Les variables
 
-----
+---
 
 Exemple de typage :
 ```php
@@ -234,7 +217,7 @@ class Bar{
 
 ```
 
-----
+---
 
 On peut ajouter des arguments optionnels, ceux-ci pourront valoir soit le type soit null.
 ```php
@@ -254,11 +237,28 @@ class Bar{
     }
 }
 ```
+---
+Encore Mieux avec PHP 8 : 
+
+```php
+class Foo{}
+
+class Bar{
+    public function __construct(private ?Foo $foo)
+    {
+    }
+    
+    public function getFoo(): ?Foo
+    {
+        return $this->foo;
+    }
+}
+```
 
 ---
 ### Namespaces
 
-Les Namespaces PHP sont arrivés en PHP version `>= 5.3.0`. 
+Les Namespaces PHP sont arrivés en PHP version `>= 5.3.0`.
 
 En comparaison avec le Java, un Namespace est un **Package JAVA**.
 

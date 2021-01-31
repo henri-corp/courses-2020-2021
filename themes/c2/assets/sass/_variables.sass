@@ -3,6 +3,8 @@ html
   --light: #fff
   --dark:  rgb(28,28,30)
   --haze: #f2f5f7
+  --oppositeColor: var(--dark)
+
   --bubble: rgb(36,36,38)
   --accent: var(--haze)
   --bg: var(--light)
@@ -15,6 +17,7 @@ html
 
   @mixin darkmode
     --color-mode: "dark"
+    --oppositeColor: var(--light)
     --theme: rgb(153, 51, 255)
     --bg: var(--dark)
     --text: #eee
