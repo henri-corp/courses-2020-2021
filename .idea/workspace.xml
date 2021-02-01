@@ -5,24 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9af345b-f961-40b7-8988-ac96aed79c76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/presentations/dim/1-PHP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/presentations/sys101/4-Git.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/presentations/sys101/git-who-use.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/presentations/sys101/git.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/presentations/sys101/github-profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/presentations/sys101/github-project-page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/presentations/sys101/github-timeline.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/sys-101/tp/git-stages.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/php-101/cours/2-fondamentals.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/php-101/cours/3-Types.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/php-101/cours/4-Variables.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/php-101/cours/5-operations.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/php-101/cours/6-structures.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/php-101/cours/7-fonctions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/php-101/cours/8-fonctions-standards.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/php-101/tp/tp1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/php-101/tp/tp2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/dim/TP1/tp1.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/dim/TP1/tp1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/dim/courses/1-PHP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/presentations/php/1.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sys-101/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/sys-101/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/php-101/cours/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/cours/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/php-101/cours/basic_syntax.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/presentations/php101/2-basic-syntax.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/php-101/cours/install.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/cours/1-install.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/php-101/cours/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/cours/0-intro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/php-101/tp/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/tp/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/sys-101/tp/tp3.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/sys-101/tp/tp3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/sass/sass/main.sass_ca26857cefa9076967ab300682271513.content" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/sass/sass/main.sass_ca26857cefa9076967ab300682271513.content" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/sass/sass/main.sass_ca26857cefa9076967ab300682271513.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/sass/sass/main.sass_ca26857cefa9076967ab300682271513.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/c2/assets/sass/_base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/themes/c2/assets/sass/_base.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/c2/assets/sass/_variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/themes/c2/assets/sass/_variables.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +48,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/presentations/sys101" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/php-101/tp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -61,12 +59,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/php-101/tp" />
+      <recent name="$PROJECT_DIR$/content/php-101/cours" />
       <recent name="$PROJECT_DIR$/content/presentations/sys101" />
       <recent name="$PROJECT_DIR$/content/sys-101/tp" />
-      <recent name="$PROJECT_DIR$/content/php-101/cours" />
       <recent name="$PROJECT_DIR$/content/presentations/php101" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/presentations/php101" />
       <recent name="$PROJECT_DIR$/content/presentations/dim" />
       <recent name="$PROJECT_DIR$/content/php-101/cours" />
       <recent name="$PROJECT_DIR$/content/php-101" />

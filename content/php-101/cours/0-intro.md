@@ -1,6 +1,6 @@
 ---
-title: Intro
-weight: 10001
+title: Introduction
+weight: 10000
 show_previous: false
 presentation: php101/1-intro
 ---

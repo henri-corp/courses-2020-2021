@@ -1,9 +1,12 @@
 ---
-title: Installation et Prérequis
-weight: 10002
+title: 1 - Installation et Prérequis
+weight: 10001
 ---
 
 La seule chose qui sera requise pour cette partie du cours sera PHP 8 installé sur votre machine.
+## La solution "universelle"
+[XAMPP](https://www.apachefriends.org/download.html) est la solution "clé en main" pour tous les systèmes.
+
 
 ## Linux 🐧
 

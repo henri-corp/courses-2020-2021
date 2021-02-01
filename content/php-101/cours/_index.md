@@ -1,6 +1,6 @@
 ---
 title: cours
-weight: 10001
+weight: 9999
 
 ---
 

@@ -137,7 +137,7 @@ Une fois cela fait, on peut retourner voir les logs et on constate la chose suiv
 
 On se rend compte aujourd'hui que nous n'avions pas compris le premier exercice qui consistait à remplacer directement son prénom et son nom.
 
-Pour cela, on va se mettre sur le commit précédent.
+Pour cela, on va se mettre sur le commit "initial commit".
 
 > Trouvez la commande qui permet de retourner sur un commit par son identifiant
 >
@@ -225,7 +225,7 @@ Un conflit est survenu dans le fichier. Pour le fixer, il faut décider de quell
 et quelle version on souhaite supprimer.
 
 
-Chaque version est séparée par un `=====` et commence par `<<<<<` et `>>>>>`.
+Chaque version commence par `<<<<<`, finit par `>>>>>` et est séparée par un `=====`.
 
 > Pourquoi prendre le temps de résoudre ce conflit ? 
 
@@ -327,8 +327,8 @@ Ajoutez également une image dans le projet, et mettez-en une référence dans l
 > Présentez votre fichier final au prof ! 
 
 
-Créez un compte Github. Attention, votre compte vous suit partout, alors on évite
-les `petiteFleureDu74` ou `MerciJackyEtMichel`, mais on peut se permettre de mettre un pseudonyme
+Créez un compte Github. Attention, votre compte vous suivra partout, alors évitez
+les `petiteFleureDu74` ou `MerciJackyEtMichel` 🍆, mais on peut se permettre de mettre un pseudonyme
 dans la limite du _raisonnable_.
 
 Pour la suite du TP, on va parler de ce pseudo comme `votrePseudo`.
@@ -338,12 +338,15 @@ Maintenant, allez sur github et créer un projet qui s'appellera `votrePseudo`. 
 Une fois cela fait, allez sur github.com/votrePseudo. Que voyez vous ?
 
 ### Aspect Social
-Allez voir les profils de personnes, et suivez-les. Voici une liste de profils intéressants :
+Allez voir les profils de personnes, et suivez-les. Voici une liste de profils intéressants par exemple 😎 :
 - decima
 - AlbanCrepel
 - DamienDabernat
+- Akhu
 
-Si vous avez apprécié mon cours, vous pouvez également mettre une petite étoile sur le projet : `henri-corp/courses-2020-2021`
+
+
+Si vous avez apprécié mon cours, vous pouvez également **star** le projet : `henri-corp/courses-2020-2021`
 
 
 
