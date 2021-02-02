@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9af345b-f961-40b7-8988-ac96aed79c76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/php-101/cours/2-fondamentals.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/php-101/cours/3-Types.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/php-101/cours/4-Variables.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/php-101/cours/5-operations.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/php-101/cours/6-structures.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/php-101/cours/7-fonctions.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/php-101/cours/8-fonctions-standards.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/php-101/tp/tp1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/php-101/tp/tp2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/php-101/tp/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/php-101/tp/img_1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/php-101/cours/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/cours/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/php-101/cours/basic_syntax.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/presentations/php101/2-basic-syntax.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/php-101/cours/install.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/cours/1-install.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/php-101/cours/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/cours/0-intro.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/php-101/tp/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/tp/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sys-101/tp/tp3.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/sys-101/tp/tp3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/dim/TP1/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/php-101/tp/tp2.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/php-101/tp/tp2.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
