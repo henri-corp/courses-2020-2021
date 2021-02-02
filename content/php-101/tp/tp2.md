@@ -81,6 +81,10 @@ Si le joueur `1` est passé en paramètre renvoie `2`. Si le joueur `2` est pass
 
 La partie 5 consiste à créer une documentation pour le code source.
 
+Créez un fichier "README.md" qui donne les informations suivantes : 
+- Quels sont les prérequis ? (PHP 8 par exemple)
+- Comment lancer le projet
+- Comment jouer
 
 ## Partie 6 - Bonus
 
