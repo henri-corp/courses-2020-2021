@@ -31,18 +31,14 @@ Dans la classe Database, on va créer une propriété privée statique de type `
 Voici un exemple de ce qui est attendu :
 
 ```php
-<?php
-
 final class Database
 {
-    private static ?self $instance = null;
+    private static $instance = null;
     private PDO $pdo;
-
     private function __construct($path)
     {
         $this->pdo = new PDO("sqlite:/$path");
     }
-
     public static function initialize($path)
     {
         if (self::$instance !== null) {
@@ -50,7 +46,6 @@ final class Database
         }
         self::$instance = new self($path);
     }
-
     public static function getInstance(): PDO
     {
         return self::$instance->pdo;
@@ -63,28 +58,14 @@ C'est un singleton.
 Dans la classe TaskRepository, on va créer les méthodes suivantes :
 ```php
 <?php
-
 class TaskRepository
 {
     const TABLE = "tasks";
-    public function Initialize(){
-    
-    }
-    
-    public function getAll(){
-
-    }
-    
-    public function update($id, $checked=false){
-
-    }
-
-    public function add($description){
-
-    }
-    public function delete($id){
-
-    }
+    public function Initialize(){}
+    public function getAll(){}
+    public function update($id, $checked=false){}
+    public function add($description){}
+    public function delete($id){}
 }
 ```
 En utilisant la méthode getInstance, implémenter les méthodes pour initialiser la base, récupérer toutes les tâches, les mettre à jour, en ajouter ou en supprimer.

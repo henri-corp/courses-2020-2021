@@ -19,11 +19,20 @@ C'est un langage **interprété**
 
 
 ---
+class: img-list
+
 ### Qui s'en sert ?
 
-- Facebook (toujours)
-- Wikipédia
-- Wordpress
+--
+![](/presentations/php101/logo-blablacar.svg)
+![](/presentations/php101/logo-dailymotion.png)
+![](/presentations/php101/logo-etsy.png)
+![](/presentations/php101/logo-baidu.png)
+
+--
+![](/presentations/php101/logo-wiki.png)
+![](/presentations/php101/logo-pornhub.png)
+![](/presentations/php101/logo-facebook.png)
 
 ---
 
@@ -42,19 +51,29 @@ C'est un langage **interprété**
 ---
 ### Historique
 
+--
+- PHP 👶 - 1994
 
----
-- Personal Home Page 1 - 1994 par Rasmus Lerdorf
-- php 3.0 : Team PHP - 1998
-    - "PHP Hypertext Processor"
-- php 4   : 2000 -> 2005
-- php 5.0 : 2004
-- ~~php 6   : 2005~~
-- php 5.3 : 2009
-- php 5.6 : 2014
-- php 7 : 2015
-- php 8.0 : novembre 2019
-- PHP 8 : Novembre 2020
+--
+- PHP 3 🐘 - 1998
+
+--
+- PHP 4 💩💩 - 2000
+
+--
+- PHP 5 💩 - 2004
+
+--
+- ~~PHP 6~~ ⚰️
+
+--
+- PHP 5.6 🌱 - 2014
+
+--
+- PHP 7 🌳 - 2015
+
+--
+- PHP 8 🚀 - novembre 2020
 
 [museum.php.net](https://museum.php.net)
 
@@ -140,6 +159,14 @@ echo $addition3(3, 6);
 
 ---
 
+```bash
+include("page1.php");           
+require("page2.php");           
+include_once("page3.php"); 
+require_once("page4.php"); 
+```
+
+---
 ```bash
 include("page1.php");           // OK but...
 require("page2.php");           // OK

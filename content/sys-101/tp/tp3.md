@@ -277,7 +277,7 @@ Sur cette branche, on va modifier le fichier README pour modifier la section "ho
 |/  
 * 8f221ef initial commit
 ```
-On va maintenant changer de dossier et aller dans `../gitProfile/gitProfileCopy` et regarder le fichier README.md
+On va maintenant changer de dossier et aller dans `../gitProfileCopy` et regarder le fichier README.md
 > le fichier a-t-il changé ? 
 > Sur quelle branche sommes-nous ? 
 
