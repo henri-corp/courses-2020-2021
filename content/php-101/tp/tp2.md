@@ -19,12 +19,12 @@ Le premier des deux joueurs à aligner 3 X en ligne, colonne ou diagonale à gag
 Si la grille est pleine le match est nul. 
 
 
-## Partie 1 - initialisation du projet
+## Partie 1 - Initialisation du projet
 
 Via la plateforme github, effectuez un "fork" du projet, avec le bouton fork.
 Cette fonctionnalité va créer une copie du projet sur votre compte github. 
 
-Pour lancer le jeu, rendez vous dans le projet et exécutez 
+Pour lancer le jeu, rendez-vous dans le projet et exécutez 
 ```shell
 php index.php
 ```
@@ -43,7 +43,7 @@ Le problème vient de la variable `$game`.
 
 Modifiez la déclaration de la variable pour qu'elle soit un tableau en 2 dimensions (un tableau qui contient des tableaux) de 3x3 cases. Toutes les valeurs de ce tableau doivent être déclarées à `null`.
 
-## Partie 2 - affichage
+## Partie 2 - Affichage
 
 ![img.png](../img.png)
 
@@ -55,7 +55,7 @@ Cette fonction passe le contenu de la fonction en paramètre, ce contenu peut ê
 - Si elle reçoit 2, elle devra retourner `O`,
 - Si elle reçoit `null`, elle devra retourner une chaine de caractère contenant un espace `" "`.
 
-Si tout a été fait correctement, voici le resultat de la grille.
+Si tout a été fait correctement, voici le résultat de la grille.
 
 ![img_1.png](../img_1.png)
 
@@ -71,7 +71,7 @@ S'il ne reste pas de case vide, il faudra renvoyer `false`, sinon `true`.
 
 ## Partie 4 - Partie en solo
 
-Il manque une dernière fonction ! la fonction `changePlayer` qui est la fonction magique qui permet d'alterner un joueur ou l'autre.
+Il manque une dernière fonction ! La fonction `changePlayer` qui est la fonction magique qui permet d'alterner un joueur ou l'autre.
 
 Cette fonction prend en paramètre le numéro du joueur actuel 1 ou 2.
 Si le joueur `1` est passé en paramètre renvoie `2`. Si le joueur `2` est passé en paramètre renvoie `1`.
@@ -82,9 +82,9 @@ Si le joueur `1` est passé en paramètre renvoie `2`. Si le joueur `2` est pass
 La partie 5 consiste à créer une documentation pour le code source.
 
 Créez un fichier "README.md" qui donne les informations suivantes : 
-- Quels sont les prérequis ? (PHP 8 par exemple)
-- Comment lancer le projet
-- Comment jouer
+- Quels sont les pré-requis ? (PHP 8 par exemple)
+- Comment lancer le projet ?
+- Comment jouer ?
 
 ## Partie 6 - Bonus
 

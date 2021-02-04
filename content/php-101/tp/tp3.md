@@ -1,34 +1,34 @@
 ---
-title: TP3 - Mon portefolio
+title: TP3 - Mon portfolio
 weight: 20003
 ---
 
 ## Mise en place du projet
 
 Cette étape est à faire avec le professeur.
-Faites un `fork` du projet `henri-corp/fake-portefolio`. 
-Clonez votre version du projet dans le dossier de votre http de votre installation xampp
+Faites un `fork` du projet `henri-corp/fake-portfolio`. 
+Clonez votre version du projet dans le dossier de votre http de votre installation XAMPP
 et lancez le serveur XAMPP.
 
 Ce projet devra être commité au 22 février au soir et servira à évaluer le module.
 
 Voici le "faux" site de présentation de `Marie-Louise Bourreau`.
 
-la page index.html
+La page index.html
 
 ![img_2.png](https://i.imgur.com/XjaKQ09l.png)
 
-la page realisations.html
+La page realisations.html
 
 ![img_3.png](https://i.imgur.com/gs5dW3ql.png)
 
-la page contact.html
+La page contact.html
 
 ![img_4.png](https://i.imgur.com/F7oIhgDl.png)
 
 Le but du TP3 est d'améliorer le site grâce à PHP.
 
-## Étape 1 - mutualiser les haut et pieds de page
+## Étape 1 - Mutualiser les hauts et pieds de page
 
 La première étape va consister à regarder, et comprendre le code source en commun entre toutes les pages.
 
@@ -36,21 +36,21 @@ On constate que le menu est commun aux trois pages ainsi que le pied de page.
 
 Créez un fichier `header.php` qui contiendra tout le code html de l'en-tête ainsi que le menu du haut.
 
-Crée également un fichier qui s'appellera `footer.php` et qui contiendra la totalité du pied de page.
+Créez également un fichier qui s'appellera `footer.php` et qui contiendra la totalité du pied de page.
 
 Ces deux fichiers doivent êtres intégrés aux 3 fichiers de base, avec la fonction `require_once` de PHP.
 
-> le menu et le css ont disparus. Une erreur survient, que s'est-il passé ? 
-> corrigez l'erreur sur les 3 fichiers et n'oubliez pas de modifier le chemin dans le menu.
+> Le menu et le CSS ont disparu. Une erreur survient, que s'est-il passé ? 
+> Corrigez l'erreur sur les 3 fichiers et n'oubliez pas de modifier le chemin dans le menu.
 
-> **hint :** si tout est bien fait, le menu n'aura a être changé qu'à un seul endroit.
+> **hint :** Si tout est bien fait, le menu n'aura à être changé qu'à un seul endroit.
 
-> **hint 2 :** si tout est bien fait, vous n'aurez **pas** plusieurs balise <html>. 
+> **hint 2 :** Si tout est bien fait, vous n'aurez **pas** plusieurs balises <html>. 
 
-## Étape 2 - arrières plans dynamiques
+## Étape 2 - Arrières-plans dynamiques
 
-Cette étape simple consiste à fournir un arrière plan dynamique sur chaque page, en utilisant la fonction `rand`.
-changez dans le code du header la ligne correspondante.
+Cette étape simple consiste à fournir un arrière-plan dynamique sur chaque page, en utilisant la fonction `rand`.
+Changez dans le code du header la ligne correspondante.
 
 ## Étape 3 - Données dynamiques
 
@@ -100,7 +100,7 @@ Pour tester, il est également possible d'ajouter un 4ᵉ élément au tableau `
 > l'inclure plusieurs fois dans un autre fichier : une boucle par exemple.
 
 ## Étape 4 - Pied de page
-Le Pied de page est celui de l'année actuelle. Il serait plus intéressant si celui-ci pouvait changer en fonction de l'année courrante. 
+Le pied de page est celui de l'année actuelle. Il serait plus intéressant si celui-ci pouvait changer en fonction de l'année courante. 
 
 > **hint:** La fonction `date` permet de manipuler des dates et des formats. `now` c'est le moment présent.
 
@@ -117,11 +117,11 @@ Dans data.php créez une variable `$user` qui contiendra les clés suivantes :
 
 Assurez-vous que le footer, ainsi que la page d'accueil utilisent ces variables au lieu des valeurs en dur dans le code html.
 
-> **hint**: si vous remplacez le contenu de la clé name par votre nom, vous devriez voir votre nom partout sur le site : dans le footer, sur la page d'accueil,... 
+> **hint**: Si vous remplacez le contenu de la clé name par votre nom, vous devriez voir votre nom partout sur le site : dans le footer, sur la page d'accueil, etc. 
 ## Étape 6 - Aller au bout
 
 Comme dans l'étape 3, sortez les données de formations et de passion.
 
-## Étape 7 - bonus
-Dans cette partie l'objectif est de remplacer les données par des données qui vous sont propres : vos formations, vos loisirs, etc etc...
+## Étape 7 - Bonus
+Dans cette partie l'objectif est de remplacer les données par des données qui vous sont propres : vos formations, vos loisirs, etc.
 Si vous avez **parfaitement** fait tout le projet, vous devriez vous retrouver à modifier uniquement le fichier `data.php`
