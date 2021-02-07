@@ -26,7 +26,7 @@ appelée HttpFoundation est au coeur de **TOUS** les frameworks PHP modernes.
 
 ## Request
 
----
+--
 
 La classe [Request](https://api.symfony.com/5.0/Symfony/Component/HttpFoundation/Request.html) est le lien direct avec
 toutes les variables de `$GLOBALS`.
@@ -34,15 +34,16 @@ toutes les variables de `$GLOBALS`.
 Un lien direct est fait avec des classes de
 type [ParameterBag](https://api.symfony.com/5.0/Symfony/Component/HttpFoundation/ParameterBag.html), et ainsi :
 
----
+--
 
-| PHP | $request |
-| --- | --- |
-| `$_GET` | `$request->query` |
-| `$_POST` | `$request->request` |
-| `$_FILES` | `$request->files` |
-| `$_COOKIES` | `$request->cookies` |
-| `$_SERVER` | `$request->server`& `$request->headers`  |
+| PHP         | $request                                |
+|-------------|-----------------------------------------|
+| `$_GET`     | `$request->query`                       |
+| `$_POST`    | `$request->request`                     |
+| `$_FILES`   | `$request->files`                       |
+| `$_COOKIES` | `$request->cookies`                     |
+| `$_SERVER`  | `$request->server`& `$request->headers` |
+
 
 ---
 
@@ -55,6 +56,8 @@ if(isset($_GET["id"])){
   $id = 42;
 }
 ```
+
+--
 
 ```php
 use Symfony\Component\HttpFoundation\Request;
@@ -70,6 +73,7 @@ if(isset($_POST["name"])){
   $name = $_POST["name"];
 }
 ```
+--
 
 ```php
 $name = $request->request->get("name","");
@@ -82,6 +86,7 @@ if(isset($_POST["submit"])){
 
 }
 ```
+--
 
 ```php
 if($request->request->has("submit")){
@@ -89,11 +94,11 @@ if($request->request->has("submit")){
 }
 ```
 
-----
+---
 
 ## Response
 
----
+--
 
 La classe [Response](https://api.symfony.com/5.0/Symfony/Component/HttpFoundation/Response.html) est une classe qui
 permet de réaliser une réponse HTTP tout en évitant de faire des appels aux fonctions `header` et autres du php.
@@ -105,6 +110,8 @@ En pratique :
 ```php
 echo "hello world";
 ```
+
+--
 
 ```php
 use \Symfony\Component\HttpFoundation\Response;
@@ -122,6 +129,8 @@ header("HTTP/1.0 404 Not Found");
 echo "Page not found!";
 ```
 
+--
+
 ```php
 $response = new Response("Page not found!", Response::HTTP_NOT_FOUND);
 $response->send();
@@ -134,6 +143,8 @@ Redirection :
 ```php
 header("Location: /login");
 ```
+
+--
 
 ```php
 use \Symfony\Component\HttpFoundation\RedirectResponse;
@@ -151,6 +162,8 @@ header('Content-Type: application/json');
 
 echo json_encode(['key' => 'value']);
 ```
+
+--
 
 ```php
 use \Symfony\Component\HttpFoundation\JsonResponse;
@@ -174,6 +187,8 @@ header('Pragma: public');
 header('Content-Length: ' . filesize($filePath));
 readfile("file.txt");
 ```
+
+--
 
 ```php
 use Symfony\Component\HttpFoundation\BinaryFileResponse;

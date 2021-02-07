@@ -27,7 +27,7 @@ Qu'est-ce qu'un ORM ?
 
 > Ce programme définit des correspondances entre les schémas de la base de données et les classes du programme applicatif. On pourrait le désigner par là, « comme une couche d'abstraction entre le monde objet et monde relationnel».
 
----
+--
 
 <img  style="height: 500px;" src="https://i.imgur.com/8fWiKTV.png"/>
 
@@ -35,13 +35,13 @@ Qu'est-ce qu'un ORM ?
 
 ## Entities
 
----
+--
 
 Les entités Doctrine se déclarent par des annotations apportées à même le code.
 
 L'entité est une classe qui, une fois instanciée, représente une entrée dans la base de données.
 
----
+--
 
 Prenons par exemple la classe Trainer. Les conventions de nommage nous dit de stocker l'entité dans un dossier **
 Entity**.
@@ -179,7 +179,7 @@ en question.
 
 ### Typage des colonnes
 
----
+--
 
 Une liste des types non exhaustive que l'on peut utiliser en temps que type de colonne :
 
@@ -196,7 +196,7 @@ Une liste des types non exhaustive que l'on peut utiliser en temps que type de c
 
 ### Relation
 
----
+--
 
 Avant de continuer dans l'explication, créons une entité Pokemon avec ses getters/setters :
 
@@ -253,7 +253,7 @@ Dans la class Pokemon, nous allons ajouter un champs suivant qui s'appellera reg
 
 ---
 
-A partir de maintenant, nous ne travaillons pas avec des Id mais uniquement avec des entités : si on récupère un
+A partir de maintenant, nous ne travaillons **pas avec des Id mais uniquement avec des entités** : si on récupère un
 pokemon, en appelant la méthode getRegistrar, on obtiendra un objet de type Trainer.
 
 ---
@@ -402,7 +402,7 @@ $pokemons = $trainer->getTargets();
 
 ## Entity Manipulation
 
----
+--
 
 La manipulation des entités se fait via l'entityManager `Doctrine\ORM\EntityManagerInterface`.
 
@@ -420,16 +420,16 @@ Nous aborderons juste après ces différentes méthodes.
 
 ### Data Loading
 
----
+--
 
 Un Repository est une classe liée directement au modèle. Dans les conventions de code, elle se nom EntityRepository et
 se trouve dans un dossier Entity.
 
 
 
----
+--
 
-Pour lier une entitée à un Repository il faut modifier l'annotation Entity ajoutée à l'entité et rajouter la propriété
+Pour lier une entité à un Repository il faut modifier l'annotation Entity ajoutée à l'entité et rajouter la propriété
 repositoryClass="\App\Repository\EntityRepository"
 
 ```php
@@ -439,9 +439,9 @@ repositoryClass="\App\Repository\EntityRepository"
  */
 ```
 
----
+--
 
-et le Repository doit hériter de `Doctrine\ORM\EntityRepository`
+Et le Repository doit hériter de `Doctrine\ORM\EntityRepository`
 
 ```php
 
