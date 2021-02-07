@@ -2,12 +2,13 @@
 title: 3 - HTTP
 weight: 3
 type: presentations
+light: true
 
 ---
 # HTTP
 Le protocol HTTP est un protocole de communication Client-Serveur inventé dans les années 90 pour le World-Wide-Web. La plupart des clients utilisant ce protocol sont les navigateurs web.
 
----
+--
 
 HTTP Version
 - 1991:	0.9
@@ -16,10 +17,10 @@ HTTP Version
 - 2015:	2.0
 - 2018:	3.0
 
-----
+---
 ## Pourquoi HTTP
 
----
+--
 
 - Simple : 
 Les messages sont compréhensibles par les humains.
@@ -27,15 +28,17 @@ Les messages sont compréhensibles par les humains.
 - Extensible : 
 À partir de HTTP/1.0, les en-têtes HTTP permettent d'étendre facilement le protocole. De nouvelles fonctionnalités peuvent même être introduites par un simple accord entre le client et le serveur.
 
-----
+---
 ## Flux HTTP
 Lorsqu'un client veut communiquer avec un serveur, il réalise les étapes suivantes :
 
----
-Il ouvre une connexion TCP : la connexion TCP va être utilisée pour envoyer une ou plusieurs requêtes et pour recevoir une réponse. Le client peut ouvrir une nouvelle connexion, réutiliser une connexion existante ou ouvrir plusieurs connexions TCP vers le serveur.
+--
 
----
-Il envoie un message HTTP : les messages HTTP (avant HTTP/2) sont lisibles par les humains. Avec HTTP/2, ces simples messages sont en-capsulés dans des trames, rendant la lecture directe impossible, mais le principe reste le même.
+- Il ouvre une connexion TCP : la connexion TCP va être utilisée pour envoyer une ou plusieurs requêtes et pour recevoir une réponse. Le client peut ouvrir une nouvelle connexion, réutiliser une connexion existante ou ouvrir plusieurs connexions TCP vers le serveur.
+
+--
+
+- Il envoie un message HTTP : les messages HTTP (avant HTTP/2) sont lisibles par les humains. Avec HTTP/2, ces simples messages sont en-capsulés dans des trames, rendant la lecture directe impossible, mais le principe reste le même.
 ```http
 GET / HTTP/1.1
 Host: developer.mozilla.org
@@ -43,7 +46,7 @@ Accept-Language: fr
 ```
 
 ---
-Il lit la réponse envoyée par le serveur :
+- Il lit la réponse envoyée par le serveur :
 
 ```http
 HTTP/1.1 200 OK
@@ -59,16 +62,16 @@ Content-Type: text/html
 <html>.....
 ```
 
----
-Il ferme ou réutilise la connexion pour les requêtes suivantes.
-
-----
-## Message HTTP
+--
+- Il ferme ou réutilise la connexion pour les requêtes suivantes.
 
 ---
-### Requete
+## Messages HTTP
 
 ---
+### Requête
+
+--
 
 ```http
 POST / HTTP/1.1
@@ -88,7 +91,7 @@ username=Henri&password=Henri
 
 ---
 
-#### Methodes
+#### Méthodes
 
 - GET: Récupérer une ressource
 - HEAD: Récupérer les métadata de la ressource
@@ -97,7 +100,7 @@ username=Henri&password=Henri
 - PATCH: Mettre à jour partiellement la ressource
 - DELETE: Supprimer la ressource
 
----
+--
 
 #### Mime-types
 
@@ -116,9 +119,9 @@ username=Henri&password=Henri
 ![](https://mdn.mozillademos.org/files/13687/HTTP_Request.png)
 
 ---
-### Reponse
+### Réponse
 
----
+--
 
 ```http
 HTTP/1.1 200 OK
@@ -141,16 +144,17 @@ Body: le reste
 #### Code HTTP
 
 - 2XX Succès
+  
   - 200 - OK
   - 201 - CREATED
   - 204 - NO CONTENT (tout s'est bien passé mais le serveur n'a pas de contenu à nous renvoyer)
-
----
+	
+--
 
 - 3XX Redirection
 	- 301 - MOVED PERMANENTLY (la ressource a été déplacée de manière permanente)
 
----
+--
 
 - 4XX Erreur Client
 	- 400 - BAD REQUEST
@@ -161,7 +165,7 @@ Body: le reste
 	- 409 - CONFLICT
 	- 418 - I'M A TEAPOT (la ressource demandée est une téillère et non une caftière)
 
----
+--
 
 - 5XX Erreur Serveur
 	- 500 - INTERNAL SERVER ERROR (générique)
