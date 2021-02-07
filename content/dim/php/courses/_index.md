@@ -1,6 +1,6 @@
 ---
-title: DIM
-weight: 17
+title: "cours"
 bookCollapseSection: true
+weight: -1
 
 ---

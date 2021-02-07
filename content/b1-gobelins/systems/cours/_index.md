@@ -1,6 +1,4 @@
 ---
-title: DIM
-weight: 17
+title: Cours
 bookCollapseSection: true
-
 ---

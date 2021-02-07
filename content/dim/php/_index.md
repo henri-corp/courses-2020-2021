@@ -1,6 +1,6 @@
 ---
-title: DIM
-weight: 17
+title: "Symfony"
 bookCollapseSection: true
+weight: 5
 
 ---

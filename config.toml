@@ -1,26 +1,14 @@
-title = "Henri L."
+title = ""
 enableRobotsTXT = true
 # this example loads the theme as hugo module
 # comment out line below, and uncomment the line after it if you prefer to load the theme normally
 # theme = ["github.com/onweru/compose"] # edit this if you'ld rather use a fork of this repo
-theme = "c2"
-enableGitInfo = true
+theme = "hugo-book"
+
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
-#  menu items
-[[menu.main]]
-    name = "PHP"
-    weight = 2
-    url = "/php-101"
-[[menu.main]]
-    name = "Systems"
-    weight = 3
-    url = "/sys-101"
-[[menu.main]]
-    name = "Symfony"
-    weight = 4
-    url = "/dim"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -28,15 +16,13 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     [markup.goldmark.extensions]
       typographer = false
   [markup.highlight]
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = true
-    lineNumbersInTable = true
-    noClasses = false
-    style = "monokai"
-    tabWidth = 2
+#    style = "algol"
+    style = "paraiso-dark"
+
+    lineNumbersInTable = false
+    lineNos = false
+
+  tabWidth = 2
   [markup.tableOfContents]
     endLevel = 4
     ordered = false
@@ -45,7 +31,9 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 # Everything below this are Site Params
 
 [params]
-
+  BookSection = '*'
+  BookTheme = "light"
+  BookLogo='/images/logo.svg'
   repo = "https://github.com/decima/cv"
 
   time_format_blog = "Monday, January 02, 2006"
