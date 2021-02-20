@@ -19,5 +19,6 @@ Implémenter les vues du blog pour la lecture seule
 
 ### ParamResolver
 
-> Qu'est-ce que le ParamConverter ?
-
+{{< hint info >}}
+Qu'est-ce que le ParamConverter ? À quoi sert le Doctrine Param Converter ?
+{{< /hint >}}

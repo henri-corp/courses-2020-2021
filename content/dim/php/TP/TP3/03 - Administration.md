@@ -11,15 +11,21 @@ weight: 33
 
 ### Administration dans Symfony
 
-> Faire une recherche sur les différentes solutions disponibles pour l'administration dans Symfony
+{{< hint info >}}
+Faire une recherche sur les différentes solutions disponibles pour l'administration dans Symfony
+{{< /hint >}}
 
 ### EasyAdmin
 
-> Travail préparatoire : Qu'est-ce que EasyAdmin ?
+{{< hint info >}}
+Travail préparatoire : Qu'est-ce que EasyAdmin ?
+{{< /hint >}}
 
 Installer EasyAdmin et le configurer en suivant la documentation Officielle de EasyAdmin.
 
-> Pourquoi doit-on implémenter des méthodes to string dans nos entités?
+{{< hint info >}}
+Pourquoi doit-on implémenter des méthodes to string dans nos entités?
+{{< /hint >}}
 
 ### Ressources
 

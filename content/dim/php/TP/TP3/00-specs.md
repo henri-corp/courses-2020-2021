@@ -1,12 +1,12 @@
 ---
-title: Specifications Techniques
+title: Spécifications Techniques
 weight: 30
 ---
 ## Objectif
 
 Réaliser un système de blog avec Symfony. Ce système de blog est destiné à des webzines, elle gère des auteurs qui vont écrire des articles. Les membres inscrits pourront commenter les articles mais non en écrire.
 
-## Features
+## Fonctionnalités
 
 - Publier un article
 - S'inscrire/Se connecter
@@ -23,7 +23,7 @@ Les utilisateurs pourront se connecter et commenter les articles du site.
 
 Les visiteurs pourront regarder les articles et voir les commentaires.
 
-## Wireframe
+## Wireframes
 
 Voici le Wireframe du blog
 

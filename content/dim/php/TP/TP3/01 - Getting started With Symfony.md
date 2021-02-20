@@ -6,7 +6,9 @@ weight: 31
 
 Ce projet va se dérouler sur plusieurs scéances et aura pour objectif de réaliser un système de blog avec Symfony. 
 
-> Les blocs quote (ce bloc par exemple), sont des **questions à répondre** dans le fichier **README.md** de votre projet
+{{< hint info >}}
+Les blocs quote (ce bloc par exemple), sont des **questions à répondre** dans le fichier **README.md** de votre projet
+{{< /hint >}}
 
 ## Installation du Framework
 
@@ -44,5 +46,5 @@ symfony serve
 ```
 Si vous allez sur l'URL fournie par la commande, vous pourrez voir :
 
-![](https://i.imgur.com/FXxGWEM.png)
+![img.png](../img.png)
 

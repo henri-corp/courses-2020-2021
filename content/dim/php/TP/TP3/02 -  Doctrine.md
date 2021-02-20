@@ -5,13 +5,13 @@ weight: 32
 
 
 
-## Modele
+## Modèle
 
 ### Ressources
 
 - [Doctrine and Symfony](https://symfony.com/doc/current/doctrine.html)
 
-### Create entities
+### Créer les entités
 
 En utilisant la commande `make:entity`, on va créer 3 entités : 
 
@@ -30,22 +30,30 @@ Contraintes :
 - Comment est attaché à un Post
 - Comment a un author qui est User
 
-> Quelles relations existent entre les entités (Many To One/Many To Many/...) ? Faire un schéma de la base de données.
+{{< hint info >}}
+ Quelles relations existent entre les entités (Many To One/Many To Many/...) ? Faire un schéma de la base de données.
+{{< /hint >}}
 
-### Connexion a la base
+### Connexion à la base
 
 Modifier le connecteur à la base pour qu'il utilise SQLite
 
-> Expliquer ce qu'est le fichier .env
+{{< hint info >}}
+Expliquer ce qu'est le fichier .env
+{{< /hint >}}
 
 
 
-> Expliquer pourquoi il faut changer le connecteur à la base de données
+{{< hint info >}}
+Expliquer pourquoi il faut changer le connecteur à la base de données
+{{< /hint >}}
 
 ### Migrations
 
 L'objectif de cette partie est de découvrir les migrations avec Symfony.
 
-> Expliquer l'intérêt des migrations d'une base de données
+{{< hint info >}}
+Expliquer l'intérêt des migrations d'une base de données
+{{< /hint >}}
 
 Réaliser une migration de la base de donnée et l'appliquer.

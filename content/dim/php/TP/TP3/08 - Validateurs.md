@@ -1,17 +1,18 @@
 ---
+
 title: Validateurs
+
 weight: 38
+
 ---
 
 ## Data Validation
 
 [Validateurs](https://symfony.com/doc/current/validation.html)
 
-> À quoi sert le validateur ?
->
-> Dans quel contexte peut-on valider des données ? 
+{{< hint info >}} À quoi sert le validateur ?
 
-
+Dans quel contexte peut-on valider des données ? {{< /hint >}}
 
 ### Mise en place
 

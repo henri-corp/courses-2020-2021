@@ -13,12 +13,16 @@ weight: 35
 
 ### Integration dans le projet
 
-> Qu'est-ce qu'un formulaire Symfony ?
+{{< hint info >}}
+ Qu'est-ce qu'un formulaire Symfony ?
+{{< /hint >}}
 
 Créez, directement des formulaires dans le contrôleur pour gérer vos entités en utilisant la méthode du contrôleur 
 `$this->createFormBuilder...`, l'afficher dans twig et gérer son contenu avec Doctrine.
 
-> Quels avantages offrent l'usage d'un formulaire ?
+{{< hint info >}}
+Quels avantages offrent l'usage d'un formulaire ?
+{{< /hint >}}
 
 ### Themes de formulaires
 
@@ -34,5 +38,7 @@ Créer des classes externes pour gérer vos formulaires.
 
 [thèmes de formulaire Symfony](https://symfony.com/doc/current/form/form_themes.html) 
 
-> Quelles sont les différentes personalisations de formulaire qui peuvent être faites dans Symfony ?
+{{< hint info >}}
+Quelles sont les différentes personalisations de formulaire qui peuvent être faites dans Symfony ?
+{{< /hint >}}
 

@@ -8,9 +8,11 @@ weight: 39
 - [How to use serializer](https://symfony.com/doc/current/serializer.html)
 - [Serializer](https://symfony.com/doc/current/components/serializer.html)
 
-> Quels sont les différentes parties du Serializer et à quoi servent-elles ?
+{{< hint info >}}
+Quels sont les différentes parties du Serializer et à quoi servent-elles ?
+{{< /hint >}}
 
-## Implementation
+## Implémentation
 
 Ajoutez une api pour que les personnes puissent accéder au site.
 
@@ -24,16 +26,14 @@ L'API aura plusieurs actions :
 
 L'objectif de cette partie est de **ne pas** utiliser API Platform. 
 
-L'api pourra renvoyer sa réponse au format `json` ou `xml`, en fonction de ce que l'utilisateur passe en paramètre dans l'URL.
+L'API pourra renvoyer sa réponse au format `json` ou `xml`, en fonction de ce que l'utilisateur passe en paramètre dans l'URL.
 
-### Get Authors and their Posts
+### Lister les auteurs et leurs posts
 
 ```
 GET /api/authors.{format}
 AUTH-KEY: My-authentication-key
 ```
-
-
 
 ```json
 200 OK
