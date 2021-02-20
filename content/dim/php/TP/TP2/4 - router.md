@@ -1,7 +1,7 @@
 ---
 title: 4 - Router
 weight: 24
-draft: true
+draft: false
 ---
 À partir du TP précédent, créez une nouvelle branche `p4`. 
 
@@ -17,6 +17,7 @@ symfony/framework-bundle
 ```
 
 Une fois les composants installés, on va modifier 2 fichiers du début du projet, le point d'entrée de toutes les requêtes HTTP
+
 ```php
 <?php
 
@@ -30,7 +31,7 @@ $kernel = new Kernel(false, true);
 $kernel->run();
 ```
 
-Mais on fait également évoluer le kernel de cette manière : 
+Remplacez le kernel précédent par le code suivant : 
 ```php
 <?php
 
@@ -42,6 +43,7 @@ use Doctrine\Common\Cache\FilesystemCache;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Tools\Setup;
+use Koriym\Attributes\AttributeReader;
 use Symfony\Bundle\FrameworkBundle\Routing\AnnotatedRouteControllerLoader;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -50,20 +52,20 @@ use Symfony\Component\Routing\Loader\AnnotationDirectoryLoader;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\Routing\RequestContext;
 use Symfony\Component\Routing\Router;
+use Symfony\Component\Routing\RouterInterface;
 
 class Kernel
 {
-    private bool $cacheIsEnabled = true;
-    private bool $devIsEnabled = true;
-    private $request = null;
-    private $entityManager = null;
-    private ?Router $router = null;
+    private ?Request $request = null;
+    private ?EntityManagerInterface $entityManager = null;
+    private ?RouterInterface $router = null;
 
 
-    public function __construct($devIsEnabled = true, $cacheIsEnabled = false)
+    public function __construct(
+        private bool $devIsEnabled = true,
+        private bool $cacheIsEnabled = false
+    )
     {
-        $this->cacheIsEnabled = $cacheIsEnabled;
-        $this->devIsEnabled = $devIsEnabled;
         $this->request = Request::createFromGlobals();
         $this->entityManager = $this->buildEntityManager();
     }
@@ -85,10 +87,9 @@ class Kernel
         );
         $response = $this->route($this->request);
         $response->send();
-
     }
 
-    private function buildEntityManager(): EntityManager
+    private function buildEntityManager(): EntityManagerInterface
     {
         $config = Setup::createAnnotationMetadataConfiguration(
             array(__DIR__ . "/Entity"),
@@ -117,8 +118,7 @@ class Kernel
     private function route(Request $request): Response
     {
         $context = new RequestContext('/');
-
-// Routing can match routes with incoming requests
+        // Routing can match routes with incoming requests
         try {
             $parameters = $this->router->match($request->getPathInfo());
         } catch (ResourceNotFoundException $notFoundException) {
@@ -135,27 +135,23 @@ class Kernel
 
     private function parametersResolver($className, $method, $routerParameters = []): array
     {
-
-        try {
-            $reflexion = new \ReflectionMethod($className, $method);
-        } catch (\ReflectionException $e) {
-            return [];
-        }
-
+        //this code gives you the ability to see if a method should have a parameter
+        //if so, set it as object or value.
+        $reflexion = new \ReflectionMethod($className, $method);
         $params = $reflexion->getParameters();
         $autoInject = [
             Request::class => $this->request,
             EntityManagerInterface::class => $this->entityManager,
+            RouterInterface::class => $this->router,
         ];
         $paramValues = [];
         foreach ($params as $param) {
             if ($param->hasType() && isset($autoInject[$param->getType()->getName()])) {
                 $paramValues[$param->getPosition()] = $autoInject[$param->getType()->getName()];
             } else {
-                $paramValues[$param->getPosition()] = $routerParameters[$param->getName()];
+                $paramValues[$param->getPosition()] = $routerParameters[$param->getName()] ?? null;
             }
         }
-
         return $paramValues;
     }
 }
@@ -167,12 +163,26 @@ En retournant sur le site, on constate que la page ne fonctionne plus.
 
 > Pourquoi le site ne fonctionne plus ?
 
-Ajouter l'annotation suivante avec les imports nécessaires sur la méthode Index du contrôleur principal
-```text
- @Route("/",name="homepage")
+Ajouter l'attribut PHP8 suivant sur la méthode index du contrôleur principal
+```php
+#[Route("/",name:"homepage")]
 ```
 
-Rien ne se passe. Désactivez le cache. Si tout se passe bien, vous obtenez l'erreur suivante : 
+Si vous le souhaitez, vous pouvez privilégier le format annotation plus classique : 
+```php
+/**
+* @Route("/",name="homepage")
+*/
+```
+
+N'oubliez pas d'importer la classe `Symfony\Component\Routing\Annotation\Route`.
+
+
+Rien ne se passe. Désactivez le cache.
+
+> Quel cache ? Comment le désactiver ?
+
+Si tout se passe bien, vous obtenez l'erreur suivante : 
 
 ```text
 ...Uncaught Error: Call to undefined method App\Controller\HomeController::setRouter()....
@@ -180,9 +190,13 @@ Rien ne se passe. Désactivez le cache. Si tout se passe bien, vous obtenez l'er
 
 > Que signifie cette erreur ? Trouver où cet appel est effectué, et implémentez le code pour fixer ce problème.
 
-Implémentez toutes les routes nécessaires pour résoudre les appels. Les liens ne fonctionnent plus.
+Ajoutez dans la classe Abstraite `AbstractController` une propriété de type `?RouterInterface` et définissez-lui des accesseurs et mutateurs.
 
-> Résoudre les problème avec `$id` dans certaines méthodes - Sans modifier le contenu des controlleurs.
+Ajoutez toutes les annotations/Attributs sur toutes les routes. 
+
+> Résoudre les problèmes avec `$id` dans les méthodes show/edit/delete - Sans modifier le contenu des controllers.
+
+⚠️⚠️⚠️Ne changez pas tout de suite les URL du site.
 
 ## Naming and Generation
 
@@ -190,6 +204,32 @@ Pour résoudre le problème de lien, il faut implémenter une [fonction twig](ht
 ```twig
 {{ path("game_show",{id: game.id}) }}
 ```
-et modifier tous les liens avec la méthode `path`.
 
-Enfin, ajouter une nouvelle méthode dans l'AbstractController nommée `redirectToRoute` qui va utiliser le `Router` et la méthode `redirect`. Remplacer toutes les redirections présentes dans les `controller` par cette méthode. 
+Implémentez cette fonction twig là où twig est initialisé et utilisé pour la rendre disponible dans le code. 
+
+Modifiez tous les liens des templates avec la fonction twig `path`.
+
+> **L'objectif ici est de NE PLUS UTILISER de chemins mais uniquement les noms des routes !**
+
+
+
+Enfin, ajouter une nouvelle méthode dans l'AbstractController nommée `redirectToRoute` qui va utiliser le `RouterInterface` et la méthode `redirectTo` déjà existante.
+Remplacer toutes les redirections présentes dans les `controller` et utilisant le `RedirectTo` par cette méthode.
+
+
+## Aller plus loin - Param Converter (partie facultative)
+Modifiez le kernel pour améliorer le parametersResolver.
+
+L'objectif ici est de remplacer la méthode show de la class GameController par le code suivant : 
+```php
+    #[Route("/game/show/{game}", name:"game_show")]
+    public function show(Game $game): Response
+    {
+        return $this->render("game/show.html.twig", ["game" => $game]);
+    }
+```
+
+Pour cette partie, il est conseillé de comprendre la logique de la méthode `parametersResolver` puis d'imaginer comment récupérer le
+Repository par rapport au type de l'argument passé en paramètre. 
+
+> HINT : `User::class` c'est le nom canonique de la classe, soit `App\Entity\User`
