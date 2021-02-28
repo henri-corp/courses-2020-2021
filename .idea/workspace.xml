@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9af345b-f961-40b7-8988-ac96aed79c76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/content/dim/php/TP/TP3/git.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/other/docker/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/other/docker/install.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/other/go/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/dim/php/courses/4-HTTP_Foundation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/dim/php/courses/4-HTTP_Foundation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/dim/php/courses/6-Doctrine.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/dim/php/courses/6-Doctrine.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/dim/php/TP/TP2/4 - router.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/dim/php/TP/TP2/4 - router.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/dim/php/TP/TP3/01 - Getting started With Symfony.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/dim/php/TP/TP3/01 - Getting started With Symfony.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/dim/php/TP/TP3/06 - Security.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/dim/php/TP/TP3/06 - Security.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/dim/php/courses/9-Symfony.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/dim/php/courses/9 - Symfony.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +58,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/other/docker/tp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,11 +69,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/other/docker/tp" />
+      <recent name="$PROJECT_DIR$/content/other" />
+      <recent name="$PROJECT_DIR$/content/dim/php/TP/TP3" />
       <recent name="$PROJECT_DIR$/content/resources" />
       <recent name="$PROJECT_DIR$/content/dim/php/courses" />
-      <recent name="$PROJECT_DIR$/content/b1-gobelins" />
-      <recent name="$PROJECT_DIR$/content/dim/courses" />
-      <recent name="$PROJECT_DIR$/content/presentations/sys101" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/dim/php/TP/TP1" />

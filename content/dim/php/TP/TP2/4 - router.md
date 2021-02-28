@@ -3,11 +3,11 @@ title: 4 - Router
 weight: 24
 draft: false
 ---
-À partir du TP précédent, créez une nouvelle branche `p4`. 
+À partir du TP précédent, on va intégrer le symfony/router. 
 
 ## Kernel Update
 
-Pour commencer, installez les composants suivants avec composer
+Pour commencer, installez les composants suivants avec composer.
 ```
 symfony/routing
 doctrine/annotations

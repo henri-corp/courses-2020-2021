@@ -12,7 +12,7 @@ weight: 36
 
 {{< hint info >}} Définir les termes suivants : Encoder, Provider, Firewall, Access Control, Role, Voter {{< /hint >}}
 
-**N.B.: On n'utilisera pas FOSUserBundle car ce bundle est inutile.**
+{{< hint danger>}}N.B.: On n'utilisera pas FOSUserBundle car ce bundle est inutile.{{< /hint >}}
 
 {{< hint info >}} Qu'est-ce que FOSUserBundle ? Pourquoi ne pas l'utiliser ? {{< /hint >}}
 
