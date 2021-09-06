@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9af345b-f961-40b7-8988-ac96aed79c76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/dim/php/TP/TP3/git.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/other/docker/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/other/docker/install.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/other/go/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/dim/php/TP/TP2/4 - router.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/dim/php/TP/TP2/4 - router.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/dim/php/TP/TP3/01 - Getting started With Symfony.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/dim/php/TP/TP3/01 - Getting started With Symfony.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/dim/php/TP/TP3/06 - Security.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/dim/php/TP/TP3/06 - Security.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/dim/php/courses/9-Symfony.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/dim/php/courses/9 - Symfony.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/dim/php/courses/9 - Symfony.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/dim/php/courses/9 - Symfony.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

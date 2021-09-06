@@ -59,7 +59,7 @@ Symfont c'est...
 background-image: url(/resources/thinking.gif)
 background-size: cover
 
-?
+WUT?
 
 ---
 
@@ -87,17 +87,21 @@ Pourquoi le cours a été découpé comme ça ?
 
 --
 - TP1 : Todolist
+  
   - Comprendre l'intérêt d'un code organisé
-  - Comprendre que ce qui est sale, c'est les développeurs, pas le langage.
+  - Comprendre que ce qui est sale, c'est les développeurs, pas le langage
 
 --
+
 - TP2 : Utiliser les composants symfony
-  - Comprendre que les composants sont indépendants.
-  - Comprendre pourquoi tout le monde les utilisent.
-  - Comprendre le concept de briques.
+  
+  - Comprendre que les composants sont indépendants
+  - Comprendre pourquoi tout le monde les utilisent
+  - Comprendre le concept de briques
 
 --
+
 - TP3 : Utilisation du framework Symfony
+  
   - Manipuler le framework
-  - Faire des outils rapidement
-  - Continuer la découverte des composants.
+  - Continuer la découverte des composants
