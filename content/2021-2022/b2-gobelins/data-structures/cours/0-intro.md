@@ -33,7 +33,7 @@ Cours sur la donnée :
         contact : henri@larget.fr
         <br/>
         <br/>
-        <small>Quand je lis un email, je réponds directement, sauf si j'oublie, donc sans réponse de ma part après 48h, relancez moi sans faute, sinon je vous répondrai jamais.</small>
+        <small>Quand je lis un email, je réponds directement, sauf si j'oublie, donc sans réponse de ma part après 48h, relancez-moi, je ne le prendrai pas mal, sinon je vous répondrai jamais.</small>
     </td>
 </tr>
 </table>
@@ -42,5 +42,5 @@ Cours sur la donnée :
 
 ## Comment ?
 
-- Sceance 1 : Types de données
+- Séance 1 : [types de données](../1-types)
 

@@ -2,6 +2,6 @@
 weight = 2021010001
 
 
-title = "cours"
+title = "Cours"
 bookCollapseSection = true
 +++

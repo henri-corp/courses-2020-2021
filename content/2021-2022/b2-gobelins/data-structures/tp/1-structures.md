@@ -9,21 +9,21 @@ Chaque exercice est indépendant mais les structures définies avant sont utilis
 
 Répondre aux questions en justifiant chaque réponse :
 
-- Quel type de donnée doit-on utiliser pour définir un age ?
-- Quel type de donnée doit-on utiliser pour définir un numéro de téléphone ?
-- Quel type de donnée doit-on utiliser pour définir un code postal français ?
-- Je souhaite stocker le mot "Bonjour", quel type dois-je utiliser ?
+- Quel type de donnée doit-on utiliser pour définir un `age` ?
+- Quel type de donnée doit-on utiliser pour définir un `phoneNumber` ?
+- Quel type de donnée doit-on utiliser pour définir un `postalCode` français ?
+- Je souhaite stocker le mot `Bonjour`, quel type dois-je utiliser ?
 - Définir les structures de base pour les types suivants : 
-    - date (1991-12-30)
-    - address (3 esplanade Augustin Aussedat, Papeteries image factory, Cran Gevrier, 74000 Annecy)
-    - time (exemple : 15:04:05 GMT)
-    - money (exemple : 1000€)
-    - iso8601Datetime ([iso8601](https://www.w3.org/TR/NOTE-datetime) / [rfc3339](https://datatracker.ietf.org/doc/html/rfc3339))
-    - rfc3966Phone ([rfc3966](https://datatracker.ietf.org/doc/html/rfc3966))
+    - `date` (1991-12-30)
+    - `address` (3 esplanade Augustin Aussedat, Papeteries Image Factory, Cran-Gevrier, 74000 Annecy)
+    - `time` (15:04:05 GMT)
+    - `money` (857.65€ ⚠️)
+    - `iso8601Datetime` ([iso8601](https://www.w3.org/TR/NOTE-datetime) / [rfc3339](https://datatracker.ietf.org/doc/html/rfc3339))
+    - `rfc3966Phone` ([rfc3966](https://datatracker.ietf.org/doc/html/rfc3966))
 
 # Exercice 2
 
-Vous devez realiser une application de gestion des livres de la bibliothèque pour permettre aux visiteurs de trouver rapidement un livre en stock.
+Vous devez réaliser une application de gestion des livres de la bibliothèque pour permettre aux visiteurs de trouver rapidement un livre en stock.
 
 Le moteur de recherche devra permettre de trouver un livre par son nom, son auteur, des mots-clés (hashtags?), ou encore par son editeur. 
 
@@ -47,6 +47,6 @@ Dans le contexte d'organisation du retour en présentiel, une école souhaite me
 
 # Exercice 5
 
-On vous demande de réaliser un outil de gestion de congés dans votre entreprise. Quand un employé fait une demande de congés, elle doit être approuvée par son supperieur hierarchique et le service RH. Chaque refus de demande doit être motivé que ce soit par le supperieur hierarchique ou les RH. 
+On vous demande de réaliser un outil de gestion de congés dans votre entreprise. Quand un employé fait une demande de congés, elle doit être approuvée par son supérieur hiérarchique et le service RH. Chaque refus de demande doit être motivé que ce soit par le supérieur hiérarchique ou les RH. 
 
 1. Proposez une description des différentes structures de données en jeu dans ce problème
