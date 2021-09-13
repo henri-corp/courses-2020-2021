@@ -1,0 +1,9 @@
+<svg height="200px" viewBox="-150 -60 300 120" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="0" cy="0" r="50" stroke="black" fill="transparent"/>
+    <circle cx="-50" cy="0" r="50" stroke="red" fill="transparent"/>
+    <circle cx="-25" cy="-43" r="50" stroke="green" fill="transparent"/>
+    <circle cx="25" cy="-43" r="50" stroke="yellow" fill="transparent"/>
+    <circle cx="50" cy="0" r="50" stroke="blue" fill="transparent"/>
+    <circle cx="25" cy="43" r="50" stroke="purple" fill="transparent"/>
+    <circle cx="-25" cy="43" r="50" stroke="pink" fill="transparent"/>
+</svg>
