@@ -1,6 +1,6 @@
 ---
 title: "2 - Formats de données" 
-light: false
+light: true
 type: presentations
 weight: 2021021102
 ---
@@ -332,6 +332,13 @@ Mime: `application/xml`
 | Complet                           | Très verbeux                          |
 | Possibilité d'avoir des attributs | Complexe sur des structures profondes |
 
+Dérivés :
+ - RSS (flux de journaux standards)
+ - SVG (images vectorielles)
+ - HTML (langage Web)
+
+et pleins d'autres...
+
 ---
 
 ### CSV (Coma-Separated Values)
@@ -504,6 +511,19 @@ Mime: `text/toml` (⚠️pas de standard international)
 |                                   | Pas encore un standard W3C/ECMA              |
 |                                   | Très Jeune et non adopté par tout le monde   |
 
+---
+
+## Dans quel cas utiliser quel format ?
+
+⚠️ Disclaimer : ce n'est que mon avis, de ce que j'ai pu rencontrer.
+
+
+| Cas d'usage                     | Formats         |
+|---------------------------------|-----------------|
+| Stockage plat (tableaux,listes) | CSV, JSON       |
+| Stockage structuré              | JSON, XML       |
+| Configuration                   | YAML, TOML      |
+
 
 
 ---
@@ -515,7 +535,7 @@ Ces formats sont très utilisés pour **restituer** l'information.
 
 
 ---
-### HTML
+### HTML ❄️
 
 HTML (et ses dérivés, HTM, XHTML) est un format de présentation de la donnée interprétée par un navigateur web.
 C'est un format simple qui est dérivé de XML, et qui a pour but de structurer des pages internet.
@@ -543,7 +563,7 @@ C'est un format simple qui est dérivé de XML, et qui a pour but de structurer 
 Mime : `text/html`
 
 ---
-### Markdown
+### Markdown ❤️
 
 MD est un format de mise en forme de texte simple et minimaliste. Ce cours est rédigé à 95% en markdown.
 
@@ -563,6 +583,39 @@ le Nouvel Empire.
    
 ```
 Mime : `text/markdown`
+
+---
+### LaTeX (`/ˈlɑːtɛx/ LAH-tekh`) 1984 🧔🏻
+
+LaTeX est un langage de présentation de données très utilisé dans le milieu académique.
+
+<img src="../latex.png" style="width:450px;position:absolute;right:20px;"/>
+
+```Tex
+\documentclass{article}
+\usepackage{hyperref}
+\title{Fondation}
+\author{Isaac Asimov}
+\date{1951}
+\begin{document}
+\maketitle
+Fondation est une \textbf{chronique} qui relate les grandes 
+crises auxquelles la petite planète \textit{Terminus} devra 
+faire face au fil des siècles, et des grandes figures qui  
+marqueront son histoire dans l'ascension de la Fondation vers 
+le destin que lui a dessiné Hari Seldon : devenir le berceau 
+d'où naîtra le Nouvel Empire.
+\end{document}
+
+```
+
+La grande force de LaTeX réside dans sa syntaxe mathématique
+
+```latex
+\frac{n!}{k!(n-k)!} = \binom{n}{k}
+```
+<img src="../latex2.svg" style="width:200px;"/>
+
 
 ---
 
