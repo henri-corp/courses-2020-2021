@@ -32,7 +32,7 @@ Pour les besoins du cours, il a été mis à disposition des machines ubuntu en 
 Pour accéder à la machine il faut ouvrir un terminal et taper la commande suivante :
 
 ```shell
-ssh ubuntu@VOTREPRENOM.tp1.henri.run
+ssh ubuntu@tp1-VOTREPRENOM.henri.run
 ```
 
 > Qu'est-ce que "ubuntu" dans la ligne de commande saisie précédemment ?
@@ -40,7 +40,7 @@ ssh ubuntu@VOTREPRENOM.tp1.henri.run
 le message suivant doit s'afficher :
 
 ```text
-The authenticity of host 'VOTREPRENOM.tp1.henri.run (1.2.3.4)' can't be established.
+The authenticity of host 'tp1-VOTREPRENOM.henri.run (1.2.3.4)' can't be established.
 ECDSA key fingerprint is SHA256:adjwEA8qrkxYRniJKq8XmKoQtkmAuwMBoNMHUviAgoM.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
 ```

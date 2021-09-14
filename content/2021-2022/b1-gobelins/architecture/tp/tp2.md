@@ -11,8 +11,9 @@ weight: 11
 >   - Le format attendu pour le glossaire est libre (de préférence un format markdown)
 ## Mise en place du TP
 
-Récupérez le fichier [tp2.ova](/media/tp2.ova) et ouvrez le fichier .ova avec virtualBox.
+Si vous êtes chez vous, récupérez le fichier [tp2.ova](/media/tp2.ova) et ouvrez le fichier .ova avec virtualBox.
 
+Sinon, il est possible de se connecter sur la machine distante en tapant : tp2-VOTREPRENOM.henri.run
 
 
 ## Hackerman
@@ -36,12 +37,9 @@ Par ailleurs, nous avons réussi à mettre en place des malwares sur la machine,
 Nous les avons appelés : **les 5 clés**. 
 Chaque clé, mises bout à bout nous donnera le mot de passe du site hackers.h91.co.
 
-Nous avons laissé ces scripts dans un dossier de votre `home directory`.
-
+Nous avons laissé ces scripts dans un dossier caché de votre `home directory`. trouvez-le !
 
 ## Clé 1 : Retrouver les executables
-> **Aide :**
-> quelques commandes utiles : `ls`, `cd`, `man`
 
 Pour commencer, il faut retrouver les scripts laissé dans le `home directory` aussi connu sous le nom de `~`.
 Rendez-vous dans ce dossier.
@@ -57,8 +55,6 @@ $ ./test ARGUMENT1 ARGUMENT2 ARGUMENT3...
 Pour récupérer la première clé il faudra lancer l'exécution du fichier `KEY_1`. La même chose sera à faire pour les clés suivantes.
 
 ## Clé 2 : Créer des fichiers
-> **Aide :**
-> Quelques commandes utiles : `nano`, `mkdir`, `man`, `echo` `>`
 
 Pour la seconde clé, nous allons devoir injecter des fichiers du système, pour cela, il faudra créer un dossier `/security`
 et à l'intérieur, créer 2 fichiers : `1` et `2` qui auront respectivement comme contenu `1110 1011` et `0011 1001`
@@ -70,8 +66,6 @@ et à l'intérieur, créer 2 fichiers : `1` et `2` qui auront respectivement com
 Une fois cela fait, lancez le script `KEY_2`
 
 ## Clé 3 : Comptage
-> **Aide :**
-> Quelques commandes utiles : `rm`, `ls`, `cd`, `wc`, `man`
 
 {{< hint danger >}}
 Nous avons été repérés ! VITE il faut aller supprimer le dossier `security` créé précédemment !
@@ -81,9 +75,6 @@ Une fois qu'on aura le nombre de lettres, on pourra passer ce nombre en argument
 
 
 ## Clé 4 : ça se complique
-
-> **Aide :**
-> Quelques commandes utiles : `ping`, `chmod`,`ls`, `man`
 
 L'ennemi est malin ! Il a caché des informations sur un autre ordinateur mais on ne connait pas son adresse ip.
 
@@ -96,8 +87,6 @@ Nous avons un autre problème : Quelqu'un a corrompu notre script ! Il faut qu'o
 Une fois cela fait, nous pourrons passer l'IP en argument de `KEY_4`
 
 ## Clé 5 : Faille sur le site
-> **Aide :**
-> Quelques commandes utiles : `apt-get`, `curl`,`man`
 
 Nos ingénieurs essaient toujours d'accéder au site en parallèle, et l'un deux à trouver une faille : une url qui semblerait être publique.
 Cette url est [hackers.h91.co/last-key](https://hackers.h91.co/last-key) mais personne n'arrive à accéder au système.

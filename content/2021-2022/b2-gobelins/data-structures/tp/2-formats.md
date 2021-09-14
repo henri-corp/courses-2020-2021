@@ -142,7 +142,7 @@ si vous avez besoin d'une image de ressource elle se trouve ici : [cake.jpg](../
 
 ## Exercice 7
 
-En vous du code fourni dans l'exercice, dessinez cette rosace en svg.
+En vous aidant du code fourni dans l'exercice et du cours, dessinez cette rosace dans son rectangle en svg.
 
 ![](../tp2-resources/rosace.png)
 
@@ -152,6 +152,16 @@ En vous du code fourni dans l'exercice, dessinez cette rosace en svg.
 </svg>
 ```
 
+Les couleurs utilisées sont : 
+- `#f0f0f0`
+- `red`
+- `blue`
+- `black`
+- `green`
+- `yellow`
+- `purple`
+- `pink`
+- `transparent`
 > Hint n°1 : Pour visualiser votre travail, utilisez votre navigateur.
 
 > Hint n°2 : Pour trouver le centre du cercle, le caré de l'hypothénuse est égal à la somme des carrés des 2 autres cotés.
