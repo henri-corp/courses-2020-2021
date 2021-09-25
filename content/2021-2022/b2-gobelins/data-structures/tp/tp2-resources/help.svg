@@ -1,10 +1,9 @@
-<svg viewBox="-150 -150 300 300" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="-105 -25 160 50" xmlns="http://www.w3.org/2000/svg" style="background:#fafafa;">
     <circle cx="0" cy="0" r="50" stroke="black" fill="transparent"/>
     <circle cx="-50" cy="0" r="50" stroke="black" fill="transparent"/>
     <line x1="-50" y1="0" x2="0" y2="0" stroke="#CCCCCC"  stroke-dasharray="4" fill="transparent"/>
     <line x1="-25" y1="0" x2="0" y2="0" stroke="black"  fill="transparent"/>
     <line x1="-25" y1="0" x2="-25" y2="-43" stroke="black"  fill="transparent"/>
     <line x1="0" y1="0" x2="-25" y2="-43" stroke="black"  fill="transparent"/>
-    <line x1="-25" y1="-5" x2="-20" y2="-5" stroke="blue"  fill="transparent"/>
-    <line x1="-20" y1="0" x2="-20" y2="-5" stroke="blue"  fill="transparent"/>
+    <rect x="-25" y="-5" width="5" height="5" stroke="black" fill="#cffccf"/>
 </svg>

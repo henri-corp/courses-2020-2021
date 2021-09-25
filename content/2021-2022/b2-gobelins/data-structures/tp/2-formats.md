@@ -16,7 +16,7 @@ Chacun de mes contacts a les informations suivantes :
  - Une addresse postable complète (HINT: exercice 1)
  - Des membres de la famille qui sont composés de :
     - Un lien de parenté
-    - un lien vers une autre personne du carnet
+    - Un lien vers une autre personne du carnet
 
 1. Proposez une structure XML pour répondre au besoin
 2. Proposez une structure JSON pour répondre au besoin
@@ -38,7 +38,7 @@ Chacun de mes contacts a les informations suivantes :
 
 ## Exercice 2
 Je souhaite stocker les notes d'étudiants dans ma base. Un étudiant (Nom/Prénom) a une ou plusieurs notes.
-Chaque note est associé à un nom de matière et à un type d'évaluation (par exemple : data_sructures_tp2).
+Chaque note est associée à un nom de matière et à un type d'évaluation (par exemple : data_sructures_tp2).
 
 1. Proposez une solution à ce problème en JSON
 2. Proposez une solution à ce problème en CSV
@@ -48,7 +48,7 @@ Chaque note est associé à un nom de matière et à un type d'évaluation (par 
 
 ## Exercice 3
 Je souhaite extraire 2 fichiers CSV des données suivantes : orders.csv et order_products.csv
-Proposez une solution pour afficher le json suivant dans 2 fichiers CSV:
+Proposez une solution pour afficher le json suivant dans 2 fichiers CSV :
 ```json
 [
     {
@@ -111,34 +111,34 @@ Proposez une solution pour afficher le json suivant dans 2 fichiers CSV:
 ## Exercice 4
 
 J'ai un menu de restaurant qui a les informations suivantes : 
-- nom du produit
-- une description de 100 caractères maximum
-- prix du produit
-- alergènes possible
-- une catégorie de produit (une parmi la liste suivante : Entrée | Boisson | Viandes | Poisson | Salade | Dessert)
+- Nom du produit
+- Une description de 100 caractères maximum
+- Prix du produit
+- Allergènes possibles
+- Une catégorie de produit (une parmi la liste suivante : Entrée | Boisson | Viandes | Poisson | Salade | Dessert)
 
 1. Proposez une représentation en YAML
 2. Proposez une représentation en CSV
 3. Proposez une représentation en XML
 4. Proposez une représentation en JSON
-5. Laquelle choisiriez vous et pourquoi ?
+5. Laquelle choisiriez-vous et pourquoi ?
 
 
 # Formats de présentation
 
 ## Exercice 5
-Pour cet exercice vous allez avoir besoin de ce fichier : 
+Pour cet exercice, vous allez avoir besoin de ce fichier : 
 [scp101.txt](../tp2-resources/scp101.txt)
 
 L'objectif est de mettre en forme l'article scp101.txt au format HTML suivant [scp101.png](../tp2-resources/scp101.png)
 
 ## Exercice 6
-Pour cet exercice vous allez avoir besoin de ce fichier : 
+Pour cet exercice, vous allez avoir besoin de ce fichier : 
 [scp871.txt](../tp2-resources/scp871.txt)
 
 L'objectif est de mettre en forme l'article scp101.txt au format HTML suivant [scp871.png](../tp2-resources/scp871.png)
 
-si vous avez besoin d'une image de ressource elle se trouve ici : [cake.jpg](../tp2-resources/cake.jpg)
+Si vous avez besoin d'une image de ressource, elle se trouve ici : [cake.jpg](../tp2-resources/cake.jpg)
 
 ## Exercice 7
 
@@ -164,7 +164,5 @@ Les couleurs utilisées sont :
 - `transparent`
 > Hint n°1 : Pour visualiser votre travail, utilisez votre navigateur.
 
-> Hint n°2 : Pour trouver le centre du cercle, le caré de l'hypothénuse est égal à la somme des carrés des 2 autres cotés.
-
-> Hint n°3 :  
+> Hint n°2 :  
 > <img src="../tp2-resources/help.svg" height="500px;" width="100%;"/>

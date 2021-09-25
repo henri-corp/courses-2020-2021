@@ -25,7 +25,7 @@ Une extension de fichier **ne définit pas** le type du fichier.
 Ce qui définit le fichier c'est la capacité à un logiciel à repérer 
 certaines informations dans le fichier qui lui indiquent le format.
 
-En parlant de format on parle également de [MIME-types](https://www.rfc-editor.org/rfc/rfc2046.html) (Multipurpose Internet Mail Extensions), un standard de notation du type de media.
+En parlant de format on parle également de [MIME-types](https://www.rfc-editor.org/rfc/rfc2046.html) (Multipurpose Internet Mail Extensions), un standard de notation du type de média.
 
 
 ---
@@ -149,9 +149,9 @@ count: false
 
 # Formats d'image
 
-### Mime Types
+### MIME Types
 
-| Extension | Type de document                  | Mime          |
+| Extension | Type de document                  | MIME          |
 |-----------|-----------------------------------|---------------|
 | jpg, jpeg | image au format JPEG              | image/jpeg    |
 | png       | Portable Network Graphics         | image/png     |
@@ -174,10 +174,12 @@ Il existe une distinction entre les **formats analogiques** et les **formats num
 ---
 
 # Formats de vidéo/son
+### MIME Types
 
-| Extension  | Type de document                            | Mime                    |
+
+| Extension  | Type de document                            | MIME                    |
 |------------|---------------------------------------------|-------------------------|
-| .oga       | OGG audio                                   | audio/ogg               |
+| .ogg       | OGG audio                                   | audio/ogg               |
 | .ogv       | OGG video                                   | video/ogg               |
 | .mp3       | MP3 audio                                   | audio/mpeg              |
 | .mp4       | MP4 video                                   | video/mp4               |
@@ -278,7 +280,7 @@ Un format de données est une convention
 Le format **txt** est le format basique d'un fichier non binaire qui peut être lu par un humain.
 C'est le format le plus simple, car basique, et contient directement les caractères.
 
-mime : `text/plain`
+MIME : `text/plain`
 
 ---
 
@@ -325,7 +327,7 @@ XML est un format ancien créé en 1996 et publié par la W3C. C'est un langage 
   </book>
 </books>
 ```
-Mime: `application/xml`
+MIME : `application/xml`
 
 | Avantages                         |     Inconvénients                     |
 |-----------------------------------|---------------------------------------|
@@ -337,7 +339,7 @@ Dérivés :
  - SVG (images vectorielles)
  - HTML (langage Web)
 
-et pleins d'autres...
+Et pleins d'autres...
 
 ---
 
@@ -351,7 +353,7 @@ id,title,author,year
 ASI01,Foundation,Isaac Asimov,1951
 ASI02,Foundation and Empire,Isaac Asimov,1952
 ```
-Sa variante TSV
+Sa variante TSV :
 
 ```tsv
 id	title	author	year
@@ -366,7 +368,7 @@ ADA01,"Life, the Universe and Everything","Douglas Adams",1982
 | Avantages                           |     Inconvénients                          |
 |-------------------------------------|--------------------------------------------|
 | Simple                              | Simple                                     |
-| Facile à lire                       | **ne permet pas les structures complexes** |
+| Facile à lire                       | **Ne permet pas les structures complexes** |
 | Représentation en tableau naturelle |                                            |
 
 ---
@@ -405,7 +407,7 @@ Format reprennant la structure javascript
   }
 }
 ```
-Mime: `application/json`
+MIME : `application/json`
 
 | Avantages                         |     Inconvénients                     |
 |-----------------------------------|---------------------------------------|
@@ -416,7 +418,7 @@ Mime: `application/json`
 
 ### YAML (Yet Another Markup Language)
 
-YAML est un format léger de structure de donnée utilisé pour des fichiers de configuration entre autres.
+YAML est un format léger de structure de données utilisé pour des fichiers de configuration entre autres.
 
 ```yaml
 books:
@@ -479,11 +481,11 @@ authors:
 
 ### YAML
 
-Mime: `application/x-yaml` ou `text/yaml` (⚠️pas de standard international)
+MIME : `application/x-yaml` ou `text/yaml` (⚠️ pas de standard international)
 
 | Avantages                         |     Inconvénients                     |
 |-----------------------------------|---------------------------------------|
-| Simple                            | structure faible/erratique            |
+| Simple                            | Structure faible/erratique            |
 | Complet                           | Pas encore un standard W3C/ECMA       |
 
 ---
@@ -503,13 +505,13 @@ La version 1.0.0 est sortie le **12 Janvier 2021**.
   year = 1951
 ```
 
-Mime: `text/toml` (⚠️pas de standard international)
+MIME : `text/toml` (⚠️ pas de standard international)
 
 | Avantages                         |     Inconvénients                            |
 |-----------------------------------|----------------------------------------------|
 | Simple                            | Format peu pratique pour beaucoup de données |
 |                                   | Pas encore un standard W3C/ECMA              |
-|                                   | Très Jeune et non adopté par tout le monde   |
+|                                   | Très jeune et non adopté par tout le monde   |
 
 ---
 
@@ -560,7 +562,7 @@ C'est un format simple qui est dérivé de XML, et qui a pour but de structurer 
   </body>
 </html>
 ```
-Mime : `text/html`
+MIME : `text/html`
 
 ---
 ### Markdown ❤️
@@ -582,7 +584,7 @@ vers le destin que lui a dessiné Hari Seldon : devenir le berceau d'où naîtra
 le Nouvel Empire. 
    
 ```
-Mime : `text/markdown`
+MIME : `text/markdown`
 
 ---
 ### LaTeX (`/ˈlɑːtɛx/ LAH-tekh`) 1984 🧔🏻
@@ -622,11 +624,11 @@ La grande force de LaTeX réside dans sa syntaxe mathématique
 
 ### Les formats Office 💩
 
-Office jusqu'en 2007 utilisait un format fermé propriétaire (.doc,.xls,.ppt).
+Office jusqu'en 2007 utilisait un format fermé propriétaire (.doc, .xls, .ppt).
 
 En 2005, un nouveau standard a vu le jour,  Office Open XML déployé pour la version 2007 de word/excel/..., qui est en réalité un format XML archivé. (docx, xlsx, pptx)
 
-Mimes : 
+MIME types : 
 - docx : application/vnd.openxmlformats-officedocument.wordprocessingml.document
 - xlsx : application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 - pptx : application/vnd.openxmlformats-officedocument.presentationml.presentation

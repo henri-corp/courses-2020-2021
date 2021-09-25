@@ -1,0 +1,14 @@
+Vous êtes devant l'entrée de la grotte, et vous entendez un bruit au loin.
+
+1. Je rentre dans la grotte
+2. Je retourne travailler mon projet.
+
+Votre choix ? 1
+
+Finalement vous vous dites qu'entrer dans une mine c'est moins dangeureux que
+satisfaire un professeur sadique. D'un coup un troll vous attaque.
+
+1. Essayer de se défendre (lancer un dé) ?
+2. Fuir ?
+
+Votre choix ? 1

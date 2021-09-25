@@ -81,7 +81,7 @@ Les entiers ont 4 opérations de base : Addition, Soustraction, Multiplication e
 
 -  `2 - 17 = -15`
 - `2 + 2 = 4`
-- `2 * 3 = 8`
+- `2 * 3 = 6`
 - `31/10 = ?`
 
 ```go

@@ -1,19 +1,18 @@
 ---
 title: "0 - Présentation du module" 
-light: false
+light: true
 type: presentations
-weight: 2021021102
+weight: 2021022101
 ---
 
-# Structure de données
+# Bases de données
 
-Cours sur la donnée :
+Cours sur les système de base de données :
 
-- son type, 
+- Y'a pas que SQL dans la vie
 
-- son format, 
+- Le bon outil pour le bon problème
 
-- sa transformation
 
 ---
 
@@ -42,7 +41,11 @@ Cours sur la donnée :
 
 ## Comment ?
 
-- Séance 1 : [types de données](../1-types)
-- Séance 2 : [Formats de données](../2-formats)
-- Séance 3 : [Structures](../3-structures)
+- Séance 1 : [PosgreSQL](../1-SQL)
+- Séance 2 : [Redis](../2-Redis)
+- Séance 3 : [MongoDB](../2-Redis)
+- Séance 4 : [Elasticsearch](../2-Redis)
+- Séance 5 : [Neo4j](../2-Redis)
+- Séance 6 : [InfluxDB](../2-Redis)
+- Séance 7 : [Cassandra](../2-Redis)
 
