@@ -15,7 +15,7 @@ mot de passe: `bddtp1prenom`.
         
 
 ## Exercice 1 - Agence de voyage galactique
-![](../tp1.png)
+![](../tp1-ex1.png)
 La base de donnée à utiliser porte votre prénom. Dans un fichier Markdown à rendre, répondez aux questions en fournissant les requêtes SQL :
 
 1. Lister toutes les planètes.
@@ -31,7 +31,7 @@ La base de donnée à utiliser porte votre prénom. Dans un fichier Markdown à 
 
 ## Exercice 2 - Base de films
 
-![](../tp2.png)
+![](../tp1-ex2.png)
 La base de donnée à utiliser est `imdb`. 
 Dans un fichier Markdown à rendre, répondez aux questions en fournissant les requêtes SQL :
 

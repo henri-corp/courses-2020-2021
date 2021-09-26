@@ -43,9 +43,9 @@ Cours sur les système de base de données :
 
 - Séance 1 : [PosgreSQL](../1-SQL)
 - Séance 2 : [Redis](../2-Redis)
-- Séance 3 : [MongoDB](../2-Redis)
-- Séance 4 : [Elasticsearch](../2-Redis)
-- Séance 5 : [Neo4j](../2-Redis)
-- Séance 6 : [InfluxDB](../2-Redis)
-- Séance 7 : [Cassandra](../2-Redis)
+- Séance 3 : [MongoDB](../3-mongodb)
+- Séance 4 : [Elasticsearch](../4-elasticsearch)
+- Séance 5 : [Neo4j](../5-neo4j)
+- Séance 6 : [InfluxDB](../6-influxdb)
+- Séance 7 : [Cassandra](../7-cassandra)
 
