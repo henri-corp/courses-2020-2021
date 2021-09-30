@@ -23,7 +23,7 @@ Avant de commencer à réaliser les exercices, redis a mis à disposition un tut
 ## Exercice 1
 
 En reprenant la logique de
-l'[exercice 1 du TP3-structures](http://localhost:1313/2021-2022/b2-gobelins/data-structures/tp/3-structures/#exercice-1)
+l'[exercice 1 du TP3-structures](/2021-2022/b2-gobelins/data-structures/tp/3-structures/#exercice-1)
 ,
 
 1. À l'aide d'une boucle et d'un `RPUSH`, insérer dans une liste redis nommée `students_ex1`
@@ -66,7 +66,7 @@ connaitre la taille.
 ## Exercice 2
 
 En reprenant la logique de
-l'[exercice 2 du TP3-structures](http://localhost:1313/2021-2022/b2-gobelins/data-structures/tp/3-structures/#exercice-2)
+l'[exercice 2 du TP3-structures](/2021-2022/b2-gobelins/data-structures/tp/3-structures/#exercice-2)
 ,
 
 1. À l'aide d'une boucle et d'un `RPUSH`, insérer dans une liste redis nommée `students_ex2`
