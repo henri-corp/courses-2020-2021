@@ -108,7 +108,7 @@ Créez un fichier nommé `Dockerfile` à la racine du projet :
 ```
 FROM php:7.4-fpm
 
-ADD https://getcomposer.org/composer-stable.phar /usr/bin/composer
+ADD https://getcomposer.org/download/1.10.22/composer.phar /usr/bin/composer
 
 RUN chmod a+x /usr/bin/composer
 

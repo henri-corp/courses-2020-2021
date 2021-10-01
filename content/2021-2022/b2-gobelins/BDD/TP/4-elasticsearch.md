@@ -10,6 +10,8 @@ Le serveur Elasticsearch est disponible à l'adresse : https://es.course.larget.
 
 Kibana est disponible sur : https://kibana.course.larget.fr. 
 
+Les identifiants de connexion sont : `student` / `student`.
+
 Vous pouvez utiliser n'importe quel client HTTP pour faire une requête vers Elasticsearch ou utiliser la fonctionnalité
 `devtools` de Kibana.
 Voici un exemple pour faire une requête POST vers une url 
@@ -17,7 +19,7 @@ Voici un exemple pour faire une requête POST vers une url
 <?php
 
 //post a json {"a":1, "b":"test"} to an url using PHP
-$url = 'http://localhost/test';
+$url = 'http://username:password@es.course.larget.fr/';
 
 $data = array('a' => 1, 'b' => 'test');
 $data_string = json_encode($data);
@@ -36,7 +38,7 @@ $result = file_get_contents($url, false, $context);
 ```javascript
 //npm install axios
 const axios = require('axios').default.create({
-    baseURL: 'https://es.course.larget.fr/',
+    baseURL: 'https://username:password@es.course.larget.fr/',
 });
 
 const data = {
@@ -95,7 +97,7 @@ GET /shakespeare/_search?size=0
 1. Comptez le nombre de pièces différentes
 2. Listez toutes les pièces ainsi que le nombre de documents pour chacune d'elles.
 3. Listez le nombre de documents, par pièces puis par personnage.
-4. Pour chaque pièces, donnez l'acteur qui a le plus de répliques.
+4. Pour chaque pièce, donnez l'acteur qui a le plus de répliques.
 5. Comptez le nombre de personnages par pièces.
 6. Pour la pièce `Romeo and Juliet`, donnez les 2 personnages qui parlent le plus ainsi que le nombre de dialogues de chacun.
-7. Pour chaque pièces, donner le nombre moyen de répliques
+7. Pour chaque pièce, donner le nombre moyen de répliques
