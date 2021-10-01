@@ -89,5 +89,15 @@ MATCH (i:InventoryPart)<--(:Inventory)<--(s:Set)
 MATCH (i)-->(p:Part)
 return ROUND( toFLoat(COUNT(p))/COUNT(DISTINCT s.id),2)
 
+# 13
+MATCH (i:InventoryPart)<--(:Inventory)<--(s:Set)
+MATCH (i)-->(p:Part)
+RETURN 
+(toFloat(SUM(i.quantity))/COUNT(DISTINCT s.id)) / (toFLoat(COUNT(p))/COUNT(DISTINCT s.id)) as b
+
+# 14
+
+MATCH (i:InventoryPart)
+RETURN AVG(i.quantity)
 
 ```

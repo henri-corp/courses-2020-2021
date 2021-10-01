@@ -109,3 +109,6 @@ La liste des noeuds :
 
 12. Donner la moyenne arrondie à 2 chiffre après la virgule du nombre de pièces différentes par set.
 
+13. En utiliser les statistiques d'avant, donner la moyenne du nombre de pièces de types différent dans les sets.
+
+14. Vérifier ce calcul en calculant la moyenne des quantités. Les resultats sont-ils identiques ? Quelle valeur utiliseriez-vous?
