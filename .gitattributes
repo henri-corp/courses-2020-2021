@@ -1,1 +1,2 @@
 *.json filter=lfs diff=lfs merge=lfs -text
+steam.json filter=lfs diff=lfs merge=lfs -text

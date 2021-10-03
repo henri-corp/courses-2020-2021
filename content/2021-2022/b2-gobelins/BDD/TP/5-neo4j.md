@@ -112,3 +112,8 @@ La liste des noeuds :
 13. En utiliser les statistiques d'avant, donner la moyenne du nombre de pièces de types différent dans les sets.
 
 14. Vérifier ce calcul en calculant la moyenne des quantités. Les resultats sont-ils identiques ? Quelle valeur utiliseriez-vous?
+
+## Aller plus loin
+- JS https://neo4j.com/developer/javascript/
+- PHP https://neo4j.com/developer/php/
+- Python https://neo4j.com/developer/python/
