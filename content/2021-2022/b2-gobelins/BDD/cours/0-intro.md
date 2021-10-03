@@ -47,5 +47,4 @@ Cours sur les système de base de données :
 - Séance 4 : [Elasticsearch](../4-elasticsearch)
 - Séance 5 : [Neo4j](../5-neo4j)
 - Séance 6 : [InfluxDB](../6-influxdb)
-- Séance 7 : [Cassandra](../7-cassandra)
 
