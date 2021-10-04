@@ -13,6 +13,7 @@ INFLUX SERVER: https://influx.henri.run/
 TOKEN: pgBb3Xdq72hQXGrareQfcGUs8Im8YpXrUAgMmvTc_y2JSBAGu4hhxX15G8rGuJm7OXtCDVB6-j0LbKcs_HVT5g==
 ORGANISATION: students
 ```
+On va utiliser la base de code : https://github.com/henri-corp/tp-influx-js-skeleton
 
 
 Pour les exercices vous allez utiliser un bucket nommé `votre_prenom` et on va utiliser le jeu de données du prix de l'avocat entre 4 janvier 2015 et le 29 novembre 2020 disponible ici : [avocado-2020.csv](../avocado-2020.csv).

@@ -7,9 +7,9 @@ weight: 2021022101
 
 # Bases de données
 
-Cours sur les système de base de données :
+Cours sur les systèmes de base de données :
 
-- Y'a pas que SQL dans la vie
+- Y a pas que SQL dans la vie
 
 - Le bon outil pour le bon problème
 

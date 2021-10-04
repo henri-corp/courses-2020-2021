@@ -40,7 +40,7 @@ GET  SET
 ```
 --
 ### Listes (LIST)
-Les listes sont ordonnées et sont performantes pour êtres lues a partir du début ou de la fin.
+Les listes sont ordonnées et sont performantes pour êtres lues à partir du début ou de la fin.
 
 > 🤔 une histoire de file d'attente et de pile.
 
@@ -52,7 +52,7 @@ LPOP     RPOP
 
 ---
 ### Sets (SET)
-Les sets sont des boites de valeurs uniques. On peut déposer une valeur, vérifier si une valeur est dans le SET, et en prendre un au hasard.
+Les sets sont des boîtes de valeurs uniques. On peut déposer une valeur, vérifier si une valeur est dans le SET, et en prendre un au hasard.
 ```
 SADD SPOP SREM SISMEMBER SMEMBERS
 ```

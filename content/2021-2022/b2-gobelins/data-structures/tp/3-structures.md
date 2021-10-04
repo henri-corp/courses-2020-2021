@@ -21,7 +21,7 @@ fonctions autorisées :
   et [`array_push`](https://www.php.net/manual/en/function.array-push.php)
 - `while` / `do while`
 - [`count`](https://www.php.net/manual/en/function.count.php)
-- pour créer une nouvelle liste : `$newList = arrray();`
+- pour créer une nouvelle liste : `$newList = array();`
 
 ```php
 // charger les valeurs de 1 à 1000 dans un tableau
@@ -60,7 +60,7 @@ fonctions autorisées :
   et [`array_push`](https://www.php.net/manual/en/function.array-push.php)
 - `while` / `do while`
 - [`count`](https://www.php.net/manual/en/function.count.php)
-- pour créer une nouvelle liste : `$newList = arrray();`
+- pour créer une nouvelle liste : `$newList = array();`
 
 ```php
 // charger les valeurs de 1 à 1000 dans un tableau
