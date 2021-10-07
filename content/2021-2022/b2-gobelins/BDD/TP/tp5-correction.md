@@ -73,9 +73,8 @@ return girlParts.name as name,qtBoy.quantity as quantity, boyColor.name as color
 
 # 10
 
-MATCH (s:Set)
- return COUNT(DISTINCT s.id)
-
+MATCH (i:InventoryPart)
+return SUM(i.quantity)
 
 
 # 11

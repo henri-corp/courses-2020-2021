@@ -30,7 +30,7 @@ En partant de la collection solarsystem, effectuer les recherches suivantes :
 4. Compter le nombre de satellites de la terre
 5. Quel est le rayon de la terre ?
 6. Combien d'astres sont plus grands que la terre ?
-7. Combien d'astres ont été découvert entre le 1er janvier 2005 et le 31 décembre 2004?
+7. Combien d'astres ont été découvert entre le 1er janvier 2000 et le 31 décembre 2004?
 
 ## Exercice 3
 Importer les données du fichier [Steam.json](../steam.json) dans une collection mongodb nommée `steam`.

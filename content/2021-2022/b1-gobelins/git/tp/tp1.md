@@ -1,8 +1,8 @@
 ---
-title: TP1 - Git
-weight: 2021011101
+title: TP1 - Git profile
+weight: 2021012101
 ---
-> L'objectif de ce TP : découvrir Git et les commandes de base - sans utiliser d'interfaces gratuites.
+> L'objectif de ce TP : découvrir Git et les commandes de base - sans utiliser d'interfaces graphiques.
 > 
 > Toutes les commandes git peuvent être ajoutées au mémo à réaliser. Il y a des questions auxquelles il faut répondre également.
 > 
